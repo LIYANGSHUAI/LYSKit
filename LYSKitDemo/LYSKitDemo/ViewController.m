@@ -24,6 +24,9 @@
         }];
     } tapNum:1 touchNum:1];
     
+    
+    self.view.backgroundColor = LYS_HEX(@"#FFC0CB");
+    
 }
 
 

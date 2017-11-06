@@ -104,7 +104,7 @@
 #define LYS_Implementation_RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
 #pragma mark - 透明度默认是1.0的RGB格式和颜色转换 -
-#define LYS_Implementation_RGB(r,g,b) LY_RGBA(r,g,b,1.0f)
+#define LYS_Implementation_RGB(r,g,b) LYS_Implementation_RGBA(r,g,b,1.0f)
 
 #pragma mark - 颜色字符串转换为对应的颜色 -
 #define LYS_Implementation_HEX(str)\
