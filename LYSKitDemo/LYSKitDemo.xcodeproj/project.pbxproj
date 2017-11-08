@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC1C78CC1FB2D23F009ED677 /* LYS_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1C78CB1FB2D23F009ED677 /* LYS_Reachability.m */; };
+		CC1C78CE1FB2FD38009ED677 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC1C78CD1FB2FD38009ED677 /* README.md */; };
 		CC237D601FB03E330011C167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D5F1FB03E330011C167 /* AppDelegate.m */; };
 		CC237D631FB03E330011C167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D621FB03E330011C167 /* ViewController.m */; };
 		CC237D661FB03E330011C167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC237D641FB03E330011C167 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		CC1C78CA1FB2D23F009ED677 /* LYS_Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Reachability.h; sourceTree = "<group>"; };
 		CC1C78CB1FB2D23F009ED677 /* LYS_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Reachability.m; sourceTree = "<group>"; };
+		CC1C78CD1FB2FD38009ED677 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		CC237D5B1FB03E330011C167 /* LYSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC237D5E1FB03E330011C167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC237D5F1FB03E330011C167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CC237D741FB03E590011C167 /* LYSKit.podspec */,
+				CC1C78CD1FB2FD38009ED677 /* README.md */,
 				CC237D761FB03F000011C167 /* LYSKit */,
 				CC237D5E1FB03E330011C167 /* AppDelegate.h */,
 				CC237D5F1FB03E330011C167 /* AppDelegate.m */,
@@ -169,6 +172,7 @@
 			files = (
 				CC237D6B1FB03E330011C167 /* LaunchScreen.storyboard in Resources */,
 				CC237D681FB03E330011C167 /* Assets.xcassets in Resources */,
+				CC1C78CE1FB2FD38009ED677 /* README.md in Resources */,
 				CC237D751FB03E590011C167 /* LYSKit.podspec in Resources */,
 				CC237D661FB03E330011C167 /* Main.storyboard in Resources */,
 			);
