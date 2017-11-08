@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1C78CC1FB2D23F009ED677 /* LYS_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1C78CB1FB2D23F009ED677 /* LYS_Reachability.m */; };
 		CC237D601FB03E330011C167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D5F1FB03E330011C167 /* AppDelegate.m */; };
 		CC237D631FB03E330011C167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D621FB03E330011C167 /* ViewController.m */; };
 		CC237D661FB03E330011C167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC237D641FB03E330011C167 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC1C78CA1FB2D23F009ED677 /* LYS_Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Reachability.h; sourceTree = "<group>"; };
+		CC1C78CB1FB2D23F009ED677 /* LYS_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Reachability.m; sourceTree = "<group>"; };
 		CC237D5B1FB03E330011C167 /* LYSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC237D5E1FB03E330011C167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC237D5F1FB03E330011C167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				CC237D7C1FB03F000011C167 /* LYS_Define_interface.h */,
 				CC237D7D1FB03F000011C167 /* LYS_Manager.h */,
 				CC237D7E1FB03F000011C167 /* LYS_Manager.m */,
+				CC1C78CA1FB2D23F009ED677 /* LYS_Reachability.h */,
+				CC1C78CB1FB2D23F009ED677 /* LYS_Reachability.m */,
 				CC237D7F1FB03F000011C167 /* LYSKit.h */,
 			);
 			name = LYSKit;
@@ -179,6 +184,7 @@
 				CC237D631FB03E330011C167 /* ViewController.m in Sources */,
 				CC237D811FB03F000011C167 /* LYS_Category.m in Sources */,
 				CC237D801FB03F000011C167 /* LYS_BaseObjc.m in Sources */,
+				CC1C78CC1FB2D23F009ED677 /* LYS_Reachability.m in Sources */,
 				CC237D6E1FB03E330011C167 /* main.m in Sources */,
 				CC237D821FB03F000011C167 /* LYS_Manager.m in Sources */,
 				CC237D601FB03E330011C167 /* AppDelegate.m in Sources */,
@@ -316,13 +322,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9P4CA2L57Y;
 				INFOPLIST_FILE = LYSKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LYSKit.LYSKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.zhenjiceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f4493a39-e240-46c7-8c2c-a160344ebc16";
+				PROVISIONING_PROFILE_SPECIFIER = zhenjiceshi;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -332,13 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9P4CA2L57Y;
 				INFOPLIST_FILE = LYSKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LYSKit.LYSKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.zhenjiceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f4493a39-e240-46c7-8c2c-a160344ebc16";
+				PROVISIONING_PROFILE_SPECIFIER = zhenjiceshi;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

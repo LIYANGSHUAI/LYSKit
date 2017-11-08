@@ -14,5 +14,5 @@
 #import "LYS_Define_implementation.h"
 #import "LYS_Define_interface.h"
 #import "LYS_Manager.h"
-
+#import "LYS_Reachability.h"
 #endif /* LYSKit_h */

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LYS_BaseObjc.h"
+#import "LYS_Reachability.h"
 @class LYSTupleManager;
 /**
  定义一个结构体,用来存储一个特定日期的年月日时分秒
@@ -228,6 +229,35 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
          success:(void(^)(CLPlacemark *placemark))success;
 @end
 
+@interface LYSystemManager : NSObject
+
+/**
+ 获取设备型号信息
+
+ @return 返回型号
+ */
++ (LYSTuple)deviceString;
+
+/**
+ 注册网络监听
+
+ @param action 监听回调事件
+ @param reachability 网络监听对象
+ */
++ (void)ly_notifitionReachability:(void(^)(LYS_Reachability *reachability))action reachability:(LYS_Reachability *)reachability promptly:(BOOL)promptly;
+
+/**
+ 移除网络监听
+
+ @param reachability 网络监听对象
+ */
++ (void)ly_stopNotifitionReachability:(LYS_Reachability *)reachability;
+@end
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
 @interface LYSandboxManager : NSObject
 /*
  * --- Documents 使用该路径放置关键数据，也就是不能通过App重新生成的数据。该路径可通过配置实现iTunes共享文件。可被iTunes备份。（现在保存在该路径下的文件还需要考虑iCloud同步),如数据库文件，或程序中浏览到的文件数据。如果进行备份会将此文件夹中的文件包括其中
@@ -239,35 +269,35 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  获取沙盒路径
-
+ 
  @return 返回沙盒路径
  */
 + (NSString *)ly_sandboxPathForHomeDirectory;
 
 /**
  获取沙盒Documents路径
-
+ 
  @return 返回路径字符串
  */
 + (NSString *)ly_sandboxPathForDocument;
 
 /**
  获取沙盒Library
-
+ 
  @return 返回路径字符串
  */
 + (NSString *)ly_sandboxPathForLibrary;
 
 /**
  获取沙盒Caches路径
-
+ 
  @return 返回路径字符串
  */
 + (NSString *)ly_sandboxPathForCaches;
 
 /**
  拼接路径(以"/"拼接)
-
+ 
  @param filePathA 用于拼接的路径字符串
  @param filePathB 用于拼接的路径
  @return 返回拼接后的路径
@@ -276,7 +306,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  拼接路径(以"."拼接)
-
+ 
  @param filePathA 用于拼接的路径字符串
  @param filePathB 用于拼接的路径
  @return 返回拼接后的路径
@@ -285,7 +315,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  创建目录
-
+ 
  @param filePath 目录路径
  @return 返回是否创建成功
  */
@@ -293,7 +323,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  创建文件
-
+ 
  @param filePath 目录文件
  @param fileData 文件内容
  @return 返回是否创建成功
@@ -302,7 +332,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  移除文件
-
+ 
  @param filePath 需要移除的文件
  @return 返回是否移除成功
  */
@@ -310,7 +340,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  移动文件
-
+ 
  @param filePathA 需要被移动的文件
  @param filePathB 要移动到的文件
  @return 返回是否移动成功
@@ -319,7 +349,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  复制文件
-
+ 
  @param fielPathA 需要被复制的文件
  @param filePathB 要复制到的文件
  @return 返回是否复制成功
@@ -328,7 +358,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  判断文件是否存在
-
+ 
  @param filePath 文件路径
  @return 返回是否存在
  */
@@ -336,7 +366,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  获取文件属性
-
+ 
  @param filePath 文件路径
  @return 返回文件属性信息
  */
@@ -344,7 +374,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  获取文件大小
-
+ 
  @param filePath 文件路径
  @return 返回文件信息
  */
@@ -352,7 +382,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  对文件进行写入操作
-
+ 
  @param filePath 需要写入的文件
  @param fileData 需要写入的内容
  @return 返回是否操作成功
@@ -361,7 +391,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  对文件进行读操作,获取文件内容
-
+ 
  @param filePath 文件路径
  @return 返回文件内容数据
  */
@@ -369,7 +399,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  归档文件
-
+ 
  @param obj 文件对象
  @param keyPath 文件的标识
  @return 文件数据
@@ -378,7 +408,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  反归档文件
-
+ 
  @param mData 文件数据
  @param keyPath 文件的标识
  @return 文件对象
@@ -390,20 +420,9 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 /**
  给一个类添加NSCoding协议
-
+ 
  @param objcClass 需要被添加协议的类
  */
 + (void)ly_addNSCodingProtocolForClass:(Class)objcClass;
 @end
-
-@interface LYSystemManager : NSObject
-
-/**
- 获取设备型号信息
-
- @return 返回型号
- */
-+ (LYSTuple)deviceString;
-@end
-
 
