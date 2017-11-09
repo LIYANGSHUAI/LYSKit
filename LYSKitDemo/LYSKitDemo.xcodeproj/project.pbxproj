@@ -146,6 +146,7 @@
 		CC44B0451FB4475B00C5326C /* LYSKit */ = {
 			isa = PBXGroup;
 			children = (
+				CC44B0CB1FB4500E00C5326C /* LYSBaseManager */,
 				CC44B0461FB4475B00C5326C /* LYSandboxManager.h */,
 				CC44B0471FB4475B00C5326C /* LYSandboxManager.m */,
 				CC44B0481FB4475B00C5326C /* LYSAPPDelegateManager.h */,
@@ -153,21 +154,15 @@
 				CC44B04A1FB4475B00C5326C /* LYSDateManager.h */,
 				CC44B04B1FB4475B00C5326C /* LYSDateManager.m */,
 				CC44B04C1FB4475B00C5326C /* LYSDefineManager.h */,
-				CC44B04D1FB4475B00C5326C /* LYSGCDManager.h */,
-				CC44B04E1FB4475B00C5326C /* LYSGCDManager.m */,
 				CC44B04F1FB4475B00C5326C /* LYSKeyedArchiverManager.h */,
 				CC44B0501FB4475B00C5326C /* LYSKeyedArchiverManager.m */,
 				CC44B0511FB4475B00C5326C /* LYSKit.h */,
-				CC44B0521FB4475B00C5326C /* LYSKVOManager.h */,
-				CC44B0531FB4475B00C5326C /* LYSKVOManager.m */,
 				CC44B0541FB4475B00C5326C /* LYSLocationManager.h */,
 				CC44B0551FB4475B00C5326C /* LYSLocationManager.m */,
 				CC44B0561FB4475B00C5326C /* LYSReachability.h */,
 				CC44B0571FB4475B00C5326C /* LYSReachability.m */,
 				CC44B0581FB4475B00C5326C /* LYSReachabilityManager.h */,
 				CC44B0591FB4475B00C5326C /* LYSReachabilityManager.m */,
-				CC44B05A1FB4475B00C5326C /* LYSRuntimeManager.h */,
-				CC44B05B1FB4475B00C5326C /* LYSRuntimeManager.m */,
 				CC44B05C1FB4475B00C5326C /* LYSTupleManager.h */,
 				CC44B05D1FB4475B00C5326C /* LYSTupleManager.m */,
 				CC44B05E1FB4475B00C5326C /* LYSystemManager.h */,
@@ -193,6 +188,19 @@
 			);
 			name = LYSKit;
 			path = ../../LYSKit;
+			sourceTree = "<group>";
+		};
+		CC44B0CB1FB4500E00C5326C /* LYSBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				CC44B04D1FB4475B00C5326C /* LYSGCDManager.h */,
+				CC44B04E1FB4475B00C5326C /* LYSGCDManager.m */,
+				CC44B0521FB4475B00C5326C /* LYSKVOManager.h */,
+				CC44B0531FB4475B00C5326C /* LYSKVOManager.m */,
+				CC44B05A1FB4475B00C5326C /* LYSRuntimeManager.h */,
+				CC44B05B1FB4475B00C5326C /* LYSRuntimeManager.m */,
+			);
+			path = LYSBaseManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
