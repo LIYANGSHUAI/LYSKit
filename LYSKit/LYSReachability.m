@@ -15,12 +15,12 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
-#import "LYS_Reachability.h"
+#import "LYSReachability.h"
 
 #pragma mark IPv6 Support
 //Reachability fully support IPv6.  For full details, see ReadMe.md.
 
-NSString *LYS_ReachabilityChangedNotification = @"LYS_kNetworkReachabilityChangedNotification";
+NSString *LYSReachabilityChangedNotification = @"LYS_kNetworkReachabilityChangedNotification";
 
 
 #pragma mark - Supporting functions
@@ -51,11 +51,11 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
 {
 #pragma unused (target, flags)
 	NSCAssert(info != NULL, @"info was NULL in ReachabilityCallback");
-	NSCAssert([(__bridge NSObject*) info isKindOfClass: [LYS_Reachability class]], @"info was wrong class in ReachabilityCallback");
+	NSCAssert([(__bridge NSObject*) info isKindOfClass: [LYSReachability class]], @"info was wrong class in ReachabilityCallback");
 
-    LYS_Reachability* noteObject = (__bridge LYS_Reachability *)info;
+    LYSReachability* noteObject = (__bridge LYSReachability *)info;
     // Post a notification to notify the client that the network reachability changed.
-    [[NSNotificationCenter defaultCenter] postNotificationName: LYS_ReachabilityChangedNotification object: noteObject];
+    [[NSNotificationCenter defaultCenter] postNotificationName: LYSReachabilityChangedNotification object: noteObject];
     if (noteObject.notifitionCallBack) {
         noteObject.notifitionCallBack(noteObject);
     }
@@ -64,14 +64,14 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
 
 #pragma mark - Reachability implementation
 
-@implementation LYS_Reachability
+@implementation LYSReachability
 {
 	SCNetworkReachabilityRef _reachabilityRef;
 }
 
 + (instancetype)ly_reachabilityWithHostName:(NSString *)hostName
 {
-	LYS_Reachability* returnValue = NULL;
+	LYSReachability* returnValue = NULL;
 	SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL, [hostName UTF8String]);
 	if (reachability != NULL)
 	{
@@ -92,7 +92,7 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
 {
 	SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, hostAddress);
 
-	LYS_Reachability* returnValue = NULL;
+	LYSReachability* returnValue = NULL;
 
 	if (reachability != NULL)
 	{
@@ -162,23 +162,23 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
 
 #pragma mark - Network Flag Handling
 
-- (LYS_NetworkStatus)networkStatusForFlags:(SCNetworkReachabilityFlags)flags
+- (LYSNetworkStatus)networkStatusForFlags:(SCNetworkReachabilityFlags)flags
 {
 	ly_PrintReachabilityFlags(flags, "networkStatusForFlags");
 	if ((flags & kSCNetworkReachabilityFlagsReachable) == 0)
 	{
 		// The target host is not reachable.
-		return LYS_NetworkStatusNotReachable;
+		return LYSNetworkStatusNotReachable;
 	}
 
-    LYS_NetworkStatus returnValue = LYS_NetworkStatusNotReachable;
+    LYSNetworkStatus returnValue = LYSNetworkStatusNotReachable;
 
 	if ((flags & kSCNetworkReachabilityFlagsConnectionRequired) == 0)
 	{
 		/*
          If the target host is reachable and no connection is required then we'll assume (for now) that you're on Wi-Fi...
          */
-		returnValue = LYS_NetworkStatusReachableViaWiFi;
+		returnValue = LYSNetworkStatusReachableViaWiFi;
 	}
 
 	if ((((flags & kSCNetworkReachabilityFlagsConnectionOnDemand ) != 0) ||
@@ -193,7 +193,7 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
             /*
              ... and no [user] intervention is needed...
              */
-            returnValue = LYS_NetworkStatusReachableViaWiFi;
+            returnValue = LYSNetworkStatusReachableViaWiFi;
         }
     }
 
@@ -202,33 +202,33 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
 		/*
          ... but WWAN connections are OK if the calling application is using the CFNetwork APIs.
          */
-		returnValue = LYS_NetworkStatusReachableViaWWAN;
+		returnValue = LYSNetworkStatusReachableViaWWAN;
         if ((flags & kSCNetworkReachabilityFlagsIsWWAN) == kSCNetworkReachabilityFlagsIsWWAN)
         {
             /*
              ... but WWAN connections are OK if the calling application is using the CFNetwork APIs.
              */
-            returnValue = LYS_NetworkStatusReachableViaWWAN;
+            returnValue = LYSNetworkStatusReachableViaWWAN;
             if ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0) {
                 CTTelephonyNetworkInfo *phonyNetwork = [[CTTelephonyNetworkInfo alloc] init];
                 NSString *currentStr = phonyNetwork.currentRadioAccessTechnology;
                 if (currentStr) {
                     if ([currentStr isEqualToString:CTRadioAccessTechnologyLTE]) {
-                        return LYS_NetworkStatusRaeachableVia4G;
+                        return LYSNetworkStatusRaeachableVia4G;
                     }else if ([currentStr isEqualToString:CTRadioAccessTechnologyGPRS]|| [currentStr isEqualToString:CTRadioAccessTechnologyEdge]){
-                        return LYS_NetworkStatusReachableVia2G;
+                        return LYSNetworkStatusReachableVia2G;
                     }else{
-                        return LYS_NetworkStatusReachableVia3G;
+                        return LYSNetworkStatusReachableVia3G;
                     }
                 }
             }
             if ((flags & kSCNetworkReachabilityFlagsTransientConnection) == kSCNetworkReachabilityFlagsTransientConnection) {
                 if((flags & kSCNetworkReachabilityFlagsConnectionRequired) == kSCNetworkReachabilityFlagsConnectionRequired) {
-                    return LYS_NetworkStatusReachableVia2G;
+                    return LYSNetworkStatusReachableVia2G;
                 }
-                return LYS_NetworkStatusReachableVia3G;
+                return LYSNetworkStatusReachableVia3G;
             }
-            return LYS_NetworkStatusReachableViaWWAN;
+            return LYSNetworkStatusReachableViaWWAN;
         }
 	}
     
@@ -250,10 +250,10 @@ static void ly_ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
 }
 
 
-- (LYS_NetworkStatus)currentReachabilityStatus
+- (LYSNetworkStatus)currentReachabilityStatus
 {
 	NSAssert(_reachabilityRef != NULL, @"currentNetworkStatus called with NULL SCNetworkReachabilityRef");
-	LYS_NetworkStatus returnValue = LYS_NetworkStatusNotReachable;
+	LYSNetworkStatus returnValue = LYSNetworkStatusNotReachable;
 	SCNetworkReachabilityFlags flags;
     
 	if (SCNetworkReachabilityGetFlags(_reachabilityRef, &flags))

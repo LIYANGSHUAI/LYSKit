@@ -10,25 +10,25 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>
 
-typedef NS_ENUM(NSUInteger, LYS_NetworkStatus) {
-    LYS_NetworkStatusNotReachable = 0,
-    LYS_NetworkStatusReachableVia2G,
-    LYS_NetworkStatusReachableVia3G,
-    LYS_NetworkStatusRaeachableVia4G,
-    LYS_NetworkStatusReachableViaWWAN,
-    LYS_NetworkStatusReachableViaWiFi
+typedef NS_ENUM(NSUInteger, LYSNetworkStatus) {
+    LYSNetworkStatusNotReachable = 0,
+    LYSNetworkStatusReachableVia2G,
+    LYSNetworkStatusReachableVia3G,
+    LYSNetworkStatusRaeachableVia4G,
+    LYSNetworkStatusReachableViaWWAN,
+    LYSNetworkStatusReachableViaWiFi
 };
 
 #pragma mark IPv6 Support
 //Reachability fully support IPv6.  For full details, see ReadMe.md.
 
 
-extern NSString *LYS_ReachabilityChangedNotification;
+extern NSString *LYSReachabilityChangedNotification;
 
 
-@interface LYS_Reachability : NSObject
+@interface LYSReachability : NSObject
 
-@property (nonatomic,copy)void(^notifitionCallBack)(LYS_Reachability *reachability);
+@property (nonatomic,copy)void(^notifitionCallBack)(LYSReachability *reachability);
 
 /*!
  * Use to check the reachability of a given host name.
@@ -56,7 +56,7 @@ extern NSString *LYS_ReachabilityChangedNotification;
 - (BOOL)startNotifier;
 - (void)stopNotifier;
 
-- (LYS_NetworkStatus)currentReachabilityStatus;
+- (LYSNetworkStatus)currentReachabilityStatus;
 
 /*!
  * WWAN may be available, but not active until a connection has been established. WiFi may require a connection for VPN on Demand.
