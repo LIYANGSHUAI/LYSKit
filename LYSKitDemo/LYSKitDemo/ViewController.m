@@ -42,6 +42,7 @@
         self.view.backgroundColor = ary[reachability.currentReachabilityStatus];
     } reachability:[LYSReachability ly_reachabilityForInternetConnection] promptly:YES];
     
+    NSLog(@"%@",LYSTuple(@14, @12).one);
     
 }
 

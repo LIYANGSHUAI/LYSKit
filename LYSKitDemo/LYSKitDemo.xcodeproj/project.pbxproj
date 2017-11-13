@@ -15,27 +15,10 @@
 		CC237D6B1FB03E330011C167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC237D691FB03E330011C167 /* LaunchScreen.storyboard */; };
 		CC237D6E1FB03E330011C167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D6D1FB03E330011C167 /* main.m */; };
 		CC237D751FB03E590011C167 /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC237D741FB03E590011C167 /* LYSKit.podspec */; };
-		CC44B0721FB4475B00C5326C /* LYSandboxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0471FB4475B00C5326C /* LYSandboxManager.m */; };
-		CC44B0731FB4475B00C5326C /* LYSAPPDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0491FB4475B00C5326C /* LYSAPPDelegateManager.m */; };
-		CC44B0741FB4475B00C5326C /* LYSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B04B1FB4475B00C5326C /* LYSDateManager.m */; };
-		CC44B0751FB4475B00C5326C /* LYSGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B04E1FB4475B00C5326C /* LYSGCDManager.m */; };
-		CC44B0761FB4475B00C5326C /* LYSKeyedArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0501FB4475B00C5326C /* LYSKeyedArchiverManager.m */; };
-		CC44B0771FB4475B00C5326C /* LYSKVOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0531FB4475B00C5326C /* LYSKVOManager.m */; };
-		CC44B0781FB4475B00C5326C /* LYSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0551FB4475B00C5326C /* LYSLocationManager.m */; };
 		CC44B0791FB4475B00C5326C /* LYSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0571FB4475B00C5326C /* LYSReachability.m */; };
-		CC44B07A1FB4475B00C5326C /* LYSReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0591FB4475B00C5326C /* LYSReachabilityManager.m */; };
-		CC44B07B1FB4475B00C5326C /* LYSRuntimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B05B1FB4475B00C5326C /* LYSRuntimeManager.m */; };
-		CC44B07C1FB4475B00C5326C /* LYSTupleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B05D1FB4475B00C5326C /* LYSTupleManager.m */; };
-		CC44B07D1FB4475B00C5326C /* LYSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B05F1FB4475B00C5326C /* LYSystemManager.m */; };
-		CC44B07E1FB4475B00C5326C /* NSDate+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0611FB4475B00C5326C /* NSDate+LYSCategory.m */; };
-		CC44B07F1FB4475B00C5326C /* NSDictionary+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0631FB4475B00C5326C /* NSDictionary+LYSCategory.m */; };
-		CC44B0801FB4475B00C5326C /* NSString+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0651FB4475B00C5326C /* NSString+LYSCategory.m */; };
-		CC44B0811FB4475B00C5326C /* UIColor+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0671FB4475B00C5326C /* UIColor+LYSCategory.m */; };
-		CC44B0821FB4475B00C5326C /* UIImage+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0691FB4475B00C5326C /* UIImage+LYSCategory.m */; };
-		CC44B0831FB4475B00C5326C /* UINavigationBar+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B06B1FB4475B00C5326C /* UINavigationBar+LYSCategory.m */; };
-		CC44B0841FB4475B00C5326C /* UITabBar+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B06D1FB4475B00C5326C /* UITabBar+LYSCategory.m */; };
-		CC44B0851FB4475B00C5326C /* UIView+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B06F1FB4475B00C5326C /* UIView+LYSCategory.m */; };
-		CC44B0861FB4475B00C5326C /* UIViewController+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0711FB4475B00C5326C /* UIViewController+LYSCategory.m */; };
+		CC44B0CE1FB4550900C5326C /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0CD1FB4550900C5326C /* LYS_Category.m */; };
+		CC44B0D11FB45AEF00C5326C /* LYS_BaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0D01FB45AEF00C5326C /* LYS_BaseObj.m */; };
+		CC44B0D41FB45C2400C5326C /* LYS_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44B0D31FB45C2400C5326C /* LYS_Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,50 +34,15 @@
 		CC237D6C1FB03E330011C167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC237D6D1FB03E330011C167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC237D741FB03E590011C167 /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../LYSKit.podspec; sourceTree = "<group>"; };
-		CC44B0461FB4475B00C5326C /* LYSandboxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSandboxManager.h; sourceTree = "<group>"; };
-		CC44B0471FB4475B00C5326C /* LYSandboxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSandboxManager.m; sourceTree = "<group>"; };
-		CC44B0481FB4475B00C5326C /* LYSAPPDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSAPPDelegateManager.h; sourceTree = "<group>"; };
-		CC44B0491FB4475B00C5326C /* LYSAPPDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSAPPDelegateManager.m; sourceTree = "<group>"; };
-		CC44B04A1FB4475B00C5326C /* LYSDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDateManager.h; sourceTree = "<group>"; };
-		CC44B04B1FB4475B00C5326C /* LYSDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSDateManager.m; sourceTree = "<group>"; };
-		CC44B04C1FB4475B00C5326C /* LYSDefineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDefineManager.h; sourceTree = "<group>"; };
-		CC44B04D1FB4475B00C5326C /* LYSGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSGCDManager.h; sourceTree = "<group>"; };
-		CC44B04E1FB4475B00C5326C /* LYSGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSGCDManager.m; sourceTree = "<group>"; };
-		CC44B04F1FB4475B00C5326C /* LYSKeyedArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKeyedArchiverManager.h; sourceTree = "<group>"; };
-		CC44B0501FB4475B00C5326C /* LYSKeyedArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSKeyedArchiverManager.m; sourceTree = "<group>"; };
 		CC44B0511FB4475B00C5326C /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
-		CC44B0521FB4475B00C5326C /* LYSKVOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKVOManager.h; sourceTree = "<group>"; };
-		CC44B0531FB4475B00C5326C /* LYSKVOManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSKVOManager.m; sourceTree = "<group>"; };
-		CC44B0541FB4475B00C5326C /* LYSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSLocationManager.h; sourceTree = "<group>"; };
-		CC44B0551FB4475B00C5326C /* LYSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSLocationManager.m; sourceTree = "<group>"; };
 		CC44B0561FB4475B00C5326C /* LYSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSReachability.h; sourceTree = "<group>"; };
 		CC44B0571FB4475B00C5326C /* LYSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSReachability.m; sourceTree = "<group>"; };
-		CC44B0581FB4475B00C5326C /* LYSReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSReachabilityManager.h; sourceTree = "<group>"; };
-		CC44B0591FB4475B00C5326C /* LYSReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSReachabilityManager.m; sourceTree = "<group>"; };
-		CC44B05A1FB4475B00C5326C /* LYSRuntimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSRuntimeManager.h; sourceTree = "<group>"; };
-		CC44B05B1FB4475B00C5326C /* LYSRuntimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSRuntimeManager.m; sourceTree = "<group>"; };
-		CC44B05C1FB4475B00C5326C /* LYSTupleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSTupleManager.h; sourceTree = "<group>"; };
-		CC44B05D1FB4475B00C5326C /* LYSTupleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSTupleManager.m; sourceTree = "<group>"; };
-		CC44B05E1FB4475B00C5326C /* LYSystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSystemManager.h; sourceTree = "<group>"; };
-		CC44B05F1FB4475B00C5326C /* LYSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSystemManager.m; sourceTree = "<group>"; };
-		CC44B0601FB4475B00C5326C /* NSDate+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B0611FB4475B00C5326C /* NSDate+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B0621FB4475B00C5326C /* NSDictionary+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B0631FB4475B00C5326C /* NSDictionary+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B0641FB4475B00C5326C /* NSString+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B0651FB4475B00C5326C /* NSString+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B0661FB4475B00C5326C /* UIColor+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B0671FB4475B00C5326C /* UIColor+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B0681FB4475B00C5326C /* UIImage+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B0691FB4475B00C5326C /* UIImage+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B06A1FB4475B00C5326C /* UINavigationBar+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B06B1FB4475B00C5326C /* UINavigationBar+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B06C1FB4475B00C5326C /* UITabBar+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B06D1FB4475B00C5326C /* UITabBar+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B06E1FB4475B00C5326C /* UIView+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B06F1FB4475B00C5326C /* UIView+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYSCategory.m"; sourceTree = "<group>"; };
-		CC44B0701FB4475B00C5326C /* UIViewController+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYSCategory.h"; sourceTree = "<group>"; };
-		CC44B0711FB4475B00C5326C /* UIViewController+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LYSCategory.m"; sourceTree = "<group>"; };
+		CC44B0CC1FB4550900C5326C /* LYS_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYS_Category.h; sourceTree = "<group>"; };
+		CC44B0CD1FB4550900C5326C /* LYS_Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYS_Category.m; sourceTree = "<group>"; };
+		CC44B0CF1FB45AEF00C5326C /* LYS_BaseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYS_BaseObj.h; sourceTree = "<group>"; };
+		CC44B0D01FB45AEF00C5326C /* LYS_BaseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYS_BaseObj.m; sourceTree = "<group>"; };
+		CC44B0D21FB45C2400C5326C /* LYS_Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYS_Manager.h; sourceTree = "<group>"; };
+		CC44B0D31FB45C2400C5326C /* LYS_Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYS_Manager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,61 +94,18 @@
 		CC44B0451FB4475B00C5326C /* LYSKit */ = {
 			isa = PBXGroup;
 			children = (
-				CC44B0CB1FB4500E00C5326C /* LYSBaseManager */,
-				CC44B0461FB4475B00C5326C /* LYSandboxManager.h */,
-				CC44B0471FB4475B00C5326C /* LYSandboxManager.m */,
-				CC44B0481FB4475B00C5326C /* LYSAPPDelegateManager.h */,
-				CC44B0491FB4475B00C5326C /* LYSAPPDelegateManager.m */,
-				CC44B04A1FB4475B00C5326C /* LYSDateManager.h */,
-				CC44B04B1FB4475B00C5326C /* LYSDateManager.m */,
-				CC44B04C1FB4475B00C5326C /* LYSDefineManager.h */,
-				CC44B04F1FB4475B00C5326C /* LYSKeyedArchiverManager.h */,
-				CC44B0501FB4475B00C5326C /* LYSKeyedArchiverManager.m */,
 				CC44B0511FB4475B00C5326C /* LYSKit.h */,
-				CC44B0541FB4475B00C5326C /* LYSLocationManager.h */,
-				CC44B0551FB4475B00C5326C /* LYSLocationManager.m */,
 				CC44B0561FB4475B00C5326C /* LYSReachability.h */,
 				CC44B0571FB4475B00C5326C /* LYSReachability.m */,
-				CC44B0581FB4475B00C5326C /* LYSReachabilityManager.h */,
-				CC44B0591FB4475B00C5326C /* LYSReachabilityManager.m */,
-				CC44B05C1FB4475B00C5326C /* LYSTupleManager.h */,
-				CC44B05D1FB4475B00C5326C /* LYSTupleManager.m */,
-				CC44B05E1FB4475B00C5326C /* LYSystemManager.h */,
-				CC44B05F1FB4475B00C5326C /* LYSystemManager.m */,
-				CC44B0601FB4475B00C5326C /* NSDate+LYSCategory.h */,
-				CC44B0611FB4475B00C5326C /* NSDate+LYSCategory.m */,
-				CC44B0621FB4475B00C5326C /* NSDictionary+LYSCategory.h */,
-				CC44B0631FB4475B00C5326C /* NSDictionary+LYSCategory.m */,
-				CC44B0641FB4475B00C5326C /* NSString+LYSCategory.h */,
-				CC44B0651FB4475B00C5326C /* NSString+LYSCategory.m */,
-				CC44B0661FB4475B00C5326C /* UIColor+LYSCategory.h */,
-				CC44B0671FB4475B00C5326C /* UIColor+LYSCategory.m */,
-				CC44B0681FB4475B00C5326C /* UIImage+LYSCategory.h */,
-				CC44B0691FB4475B00C5326C /* UIImage+LYSCategory.m */,
-				CC44B06A1FB4475B00C5326C /* UINavigationBar+LYSCategory.h */,
-				CC44B06B1FB4475B00C5326C /* UINavigationBar+LYSCategory.m */,
-				CC44B06C1FB4475B00C5326C /* UITabBar+LYSCategory.h */,
-				CC44B06D1FB4475B00C5326C /* UITabBar+LYSCategory.m */,
-				CC44B06E1FB4475B00C5326C /* UIView+LYSCategory.h */,
-				CC44B06F1FB4475B00C5326C /* UIView+LYSCategory.m */,
-				CC44B0701FB4475B00C5326C /* UIViewController+LYSCategory.h */,
-				CC44B0711FB4475B00C5326C /* UIViewController+LYSCategory.m */,
+				CC44B0D21FB45C2400C5326C /* LYS_Manager.h */,
+				CC44B0D31FB45C2400C5326C /* LYS_Manager.m */,
+				CC44B0CF1FB45AEF00C5326C /* LYS_BaseObj.h */,
+				CC44B0D01FB45AEF00C5326C /* LYS_BaseObj.m */,
+				CC44B0CC1FB4550900C5326C /* LYS_Category.h */,
+				CC44B0CD1FB4550900C5326C /* LYS_Category.m */,
 			);
 			name = LYSKit;
 			path = ../../LYSKit;
-			sourceTree = "<group>";
-		};
-		CC44B0CB1FB4500E00C5326C /* LYSBaseManager */ = {
-			isa = PBXGroup;
-			children = (
-				CC44B04D1FB4475B00C5326C /* LYSGCDManager.h */,
-				CC44B04E1FB4475B00C5326C /* LYSGCDManager.m */,
-				CC44B0521FB4475B00C5326C /* LYSKVOManager.h */,
-				CC44B0531FB4475B00C5326C /* LYSKVOManager.m */,
-				CC44B05A1FB4475B00C5326C /* LYSRuntimeManager.h */,
-				CC44B05B1FB4475B00C5326C /* LYSRuntimeManager.m */,
-			);
-			path = LYSBaseManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,30 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC44B0801FB4475B00C5326C /* NSString+LYSCategory.m in Sources */,
 				CC44B0791FB4475B00C5326C /* LYSReachability.m in Sources */,
-				CC44B0721FB4475B00C5326C /* LYSandboxManager.m in Sources */,
-				CC44B07B1FB4475B00C5326C /* LYSRuntimeManager.m in Sources */,
 				CC237D631FB03E330011C167 /* ViewController.m in Sources */,
-				CC44B0731FB4475B00C5326C /* LYSAPPDelegateManager.m in Sources */,
-				CC44B0821FB4475B00C5326C /* UIImage+LYSCategory.m in Sources */,
-				CC44B0781FB4475B00C5326C /* LYSLocationManager.m in Sources */,
-				CC44B0771FB4475B00C5326C /* LYSKVOManager.m in Sources */,
-				CC44B07C1FB4475B00C5326C /* LYSTupleManager.m in Sources */,
-				CC44B0751FB4475B00C5326C /* LYSGCDManager.m in Sources */,
-				CC44B07A1FB4475B00C5326C /* LYSReachabilityManager.m in Sources */,
+				CC44B0D11FB45AEF00C5326C /* LYS_BaseObj.m in Sources */,
 				CC237D6E1FB03E330011C167 /* main.m in Sources */,
-				CC44B07F1FB4475B00C5326C /* NSDictionary+LYSCategory.m in Sources */,
-				CC44B0761FB4475B00C5326C /* LYSKeyedArchiverManager.m in Sources */,
-				CC44B0741FB4475B00C5326C /* LYSDateManager.m in Sources */,
-				CC44B0811FB4475B00C5326C /* UIColor+LYSCategory.m in Sources */,
-				CC44B07D1FB4475B00C5326C /* LYSystemManager.m in Sources */,
-				CC44B0831FB4475B00C5326C /* UINavigationBar+LYSCategory.m in Sources */,
+				CC44B0CE1FB4550900C5326C /* LYS_Category.m in Sources */,
+				CC44B0D41FB45C2400C5326C /* LYS_Manager.m in Sources */,
 				CC237D601FB03E330011C167 /* AppDelegate.m in Sources */,
-				CC44B0851FB4475B00C5326C /* UIView+LYSCategory.m in Sources */,
-				CC44B0841FB4475B00C5326C /* UITabBar+LYSCategory.m in Sources */,
-				CC44B07E1FB4475B00C5326C /* NSDate+LYSCategory.m in Sources */,
-				CC44B0861FB4475B00C5326C /* UIViewController+LYSCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
