@@ -92,10 +92,10 @@ A very useful base framework that integrates some of the common code blocks in d
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LYSKit/**/*.{h,m}"
+  s.source_files  = "LYSKit/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "LYSKit/**/*.h"
+  # s.public_header_files = "LYSKit/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
