@@ -123,6 +123,9 @@
 #define LYStrikingFontColor LYSRGB(85,85,85)
 #define LYSExplainFontColor LYSRGB(170,170,170)
 #define LYSPartingLineColor LYSRGB(221,221,221)
+#define LYSNavigationColor LYSRGB(51,51,51)
+#define LYSOnlineFontColor LYSRGB(0,153,204)
+#define LYSBorderColor LYSRGB(187,187,187)
 
 #pragma mark - 改写打印函数,使其在特定的条件下执行 -
 #ifdef DEBUG
