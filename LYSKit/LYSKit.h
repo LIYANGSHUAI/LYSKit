@@ -118,6 +118,12 @@
 #pragma mark - 颜色字符串转换为对应的颜色 -
 #define LYSHEX(str)  [UIColor ly_hex:str]
 
+
+#define LYSCommonBackgroundColor LYSRGB(238,238,238)
+#define LYStrikingFontColor LYSRGB(85,85,85)
+#define LYSExplainFontColor LYSRGB(170,170,170)
+#define LYSPartingLineColor LYSRGB(221,221,221)
+
 #pragma mark - 改写打印函数,使其在特定的条件下执行 -
 #ifdef DEBUG
 #define LYSNSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
