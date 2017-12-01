@@ -34,7 +34,6 @@
 		CC237D6C1FB03E330011C167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC237D6D1FB03E330011C167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC237D741FB03E590011C167 /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../LYSKit.podspec; sourceTree = "<group>"; };
-		CC44B0511FB4475B00C5326C /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
 		CC44B0561FB4475B00C5326C /* LYSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSReachability.h; sourceTree = "<group>"; };
 		CC44B0571FB4475B00C5326C /* LYSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSReachability.m; sourceTree = "<group>"; };
 		CC44B0CC1FB4550900C5326C /* LYS_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYS_Category.h; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		CC44B0D01FB45AEF00C5326C /* LYS_BaseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYS_BaseObj.m; sourceTree = "<group>"; };
 		CC44B0D21FB45C2400C5326C /* LYS_Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYS_Manager.h; sourceTree = "<group>"; };
 		CC44B0D31FB45C2400C5326C /* LYS_Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYS_Manager.m; sourceTree = "<group>"; };
+		CC797EE51FD1422C00BF0EB1 /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +94,18 @@
 		CC44B0451FB4475B00C5326C /* LYSKit */ = {
 			isa = PBXGroup;
 			children = (
-				CC44B0511FB4475B00C5326C /* LYSKit.h */,
+				CC797EE61FD1423900BF0EB1 /* Manager */,
+				CC797EE51FD1422C00BF0EB1 /* LYSKit.h */,
 				CC44B0561FB4475B00C5326C /* LYSReachability.h */,
 				CC44B0571FB4475B00C5326C /* LYSReachability.m */,
+			);
+			name = LYSKit;
+			path = ../../LYSKit;
+			sourceTree = "<group>";
+		};
+		CC797EE61FD1423900BF0EB1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
 				CC44B0D21FB45C2400C5326C /* LYS_Manager.h */,
 				CC44B0D31FB45C2400C5326C /* LYS_Manager.m */,
 				CC44B0CF1FB45AEF00C5326C /* LYS_BaseObj.h */,
@@ -104,8 +113,7 @@
 				CC44B0CC1FB4550900C5326C /* LYS_Category.h */,
 				CC44B0CD1FB4550900C5326C /* LYS_Category.m */,
 			);
-			name = LYSKit;
-			path = ../../LYSKit;
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
