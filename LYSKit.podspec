@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LYSKit"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A very useful base framework that integrates some of the common code blocks in development with apis."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ A very useful base framework that integrates some of the common code blocks in d
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/LIYANGSHUAI/LYSKit.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/LIYANGSHUAI/LYSKit.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ A very useful base framework that integrates some of the common code blocks in d
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LYSKit/Bases/*.{h,m}"
+  s.source_files  = "LYSKit/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "LYSKit/**/*.h"
@@ -105,12 +105,16 @@ A very useful base framework that integrates some of the common code blocks in d
      ss.source_files = "LYSKit/Category/*.{h,m}"
   end
 
-#  s.subspec 'Manager' do |ss|
-#    ss.source_files = "LYSKit/Manager/*.{h,m}"
-# end
+  s.subspec 'Manager' do |ss|
+    ss.source_files = "LYSKit/Manager/*.{h,m}"
+  end
 
   s.subspec 'Tools' do |ss|
      ss.source_files = "LYSKit/Tools/*.{h,m}"
+  end
+
+  s.subspec 'Bases' do |ss|
+     ss.source_files = "LYSKit/Bases/*.{h,m}"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

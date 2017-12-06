@@ -10,7 +10,6 @@
 #define LYSManager_h
 
 #import "LYSyetemManager.h"
-#import "LYSKeyedArchiverManager.h"
 #import "LYSAPPDelegateManager.h"
 #import "LYSandboxManager.h"
 #import "LYSDateManager.h"
