@@ -11,7 +11,7 @@
 
 @implementation LYSystemManager
 
-+ (LYSTuple)deviceString
++ (NSString *)deviceString
 {
     
     struct utsname systemInfo;
@@ -132,7 +132,7 @@
                                    @"x86_64":@"Simulator",
                                    };
     
-    return [LYSTupleManager tupleWithOne:[[argumentsAry allKeys] containsObject:platform] ? argumentsAry[platform] : @"未知" two:platform];
+    return [[argumentsAry allKeys] containsObject:platform] ? argumentsAry[platform] : @"未知";
 }
 
 @end

@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "LYSTupleManager.h"
-
 @interface LYSystemManager : NSObject
 
 /**
@@ -17,6 +15,6 @@
  
  @return the LYSTuple class
  */
-+ (LYSTuple)deviceString;
++ (NSString *)deviceString;
 
 @end
