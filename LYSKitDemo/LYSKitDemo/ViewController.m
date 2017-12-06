@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "LYSKit.h"
 @interface ViewController ()
 
 @end
@@ -17,8 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self alertTitle:@"提示" message:@"你好" comfirmStr:@"确定" comfirmAction:^{
+        NSLog(@"w");
+    }];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
