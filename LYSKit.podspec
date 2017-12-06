@@ -97,12 +97,12 @@ A very useful base framework that integrates some of the common code blocks in d
 
   # s.public_header_files = "LYSKit/**/*.h"
 
-  s.subspec 'Tools' do |Tools|
-     Tools.source_files = "Tools/*.{h,m}"
+  s.subspec 'Tools' do |ss|
+     ss.source_files = "Tools/*.{h,m}"
   end
 
-  s.subspec 'Bases' do |Bases|
-     Bases.source_files = "Bases/*.{h,m}"
+  s.subspec 'Bases' do |ss|
+     ss.source_files = "Bases/*.{h,m}"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
