@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A02A485748AE4249665A4E42825131 /* LYS_Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CD783CD08057EC9177954DFB45C8BCE /* LYS_Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C74D33C22E90C3AF6F19EDA2B59736C /* LYSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E78BB933608B3B5EF7F830A412B747F /* LYSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C354C01550F50F9BDF7A7F3A973EB7 /* LYSKeyedArchiverManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5911A16582A55F9F833BD355EE86B019 /* LYSKeyedArchiverManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF7832323602DD210567C03D4CD404F /* LYSyetemManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC10F1AB78643B0E68FA99A1BD90D098 /* LYSyetemManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		306B4A71538455DF4DFA50D322E5AD6C /* LYSTupleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6445BB2A2258ABC88178140DD86DAB42 /* LYSTupleManager.m */; };
+		30A1F4162ABB8096F69355B87B433B88 /* LYSReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2343F88BE6FF7BB8A23E246CF0487D /* LYSReachabilityManager.m */; };
+		38B332B101E7788C1260C541BFC38F6C /* LYSKVOManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A93F492F72E241F09483A031C93676 /* LYSKVOManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AEC07F1497D877C5BBCA4D86BE93CB4 /* LYSGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AF4ACFC536F4DBF576314FDDFAD03D /* LYSGCDManager.m */; };
 		403849D64161E306A5F2D5113EC5AB1C /* Pods-LYSKitSDKTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 292DE1F59A67387065DE6F5041139A31 /* Pods-LYSKitSDKTest-dummy.m */; };
-		6141BFEBC818BCFC7ECDB0B3E8073FD3 /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B12044B1A2F10CF6AA4546E14A6659A2 /* LYS_Category.m */; };
-		67BD2019597724422D9A68869F8B19A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		687D833D1A6779F7C07E41D7D702D342 /* LYS_Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = D8863E9E5046A371858EA8A317D55A59 /* LYS_Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B30A248519939F20DEBC67CA28F4378 /* LYS_BaseObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 080D1E1C3E0C845CD700B34BF405C92B /* LYS_BaseObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F9729D11C6B1C2BDDE3D368A6167D0B /* LYSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B7478B9731915A21F79C519A654BC6 /* LYSReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427817C5DCC3FF1CF4318FB9DC0B4C75 /* LYSTupleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D89249C5E30BE11816FCBA02A176E54B /* LYSTupleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5221C4499A8F720BC126ED6359B17151 /* LYSReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0994906CBDE49FA81DC0EF232420F1 /* LYSReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FCA7F58350C7111BF4ACB1CB0D4484F /* LYS_Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF74C0924C6991AC582A6883619C374 /* LYS_Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E1EDA59E8EF558911CF5A4A6394E71 /* LYSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D4ED5CCD9F7B58A567DD1C5134C2CDEE /* LYSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4EBF586DBB1D873804557BF9F66FC2 /* LYSKeyedArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AF4C87D5593FDB52D764C4DB6D2FF4 /* LYSKeyedArchiverManager.m */; };
+		8045EB76E3117C7CE8478EF7DAACF237 /* LYSandboxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AE0697A584FB291422702EF6DE1FF /* LYSandboxManager.m */; };
+		84C984A6D156F7C3E111D87777BD4372 /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D881626A7C5B017E215C17E661BE4 /* LYS_Category.m */; };
 		89B050ADD5AD524140B6AB447795993C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DABC7422B414C771D4421A3FE2B681FB /* LYSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C63A69AC9C597B18902B952217133 /* LYSReachability.m */; };
-		DFC3C37A7D9B938BE03A51F71520AD4F /* LYSKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF69324C79EB9F1D3446806507C9AA65 /* LYSKit-dummy.m */; };
-		E56BD0A50081F5AE9A1C96B779FC6C24 /* LYS_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934899BDFE5D0EE61F4A27D1DECB827 /* LYS_Manager.m */; };
-		F8125C4D778BC8515DC688C31763D671 /* LYS_BaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A091199D8FABD4C0F679723DA48C67 /* LYS_BaseObj.m */; };
+		8E5F3CC3964932B06D077DF662BA84AE /* LYSRuntimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F00A27B945BFA334C0EE6A10731294 /* LYSRuntimeManager.m */; };
+		8E96BA8FB58FF4D8BC2B5CD0FB5FD478 /* LYSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4DF0C9D0B385520F8182E5410B5E05 /* LYSLocationManager.m */; };
+		95FCA89CC3ACD15A34FF775944067EA5 /* LYSRuntimeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F6B9CECA011864E6E03DFEF308613D /* LYSRuntimeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ADA630A7E48D59A7B93EA6F6D2F96F9 /* LYSGCDManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 422939E1680190B00A4A4ABF81CA9201 /* LYSGCDManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E4E4132287B7ECFB04FF2C52D440C39 /* LYSLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 63889D16107AD147D8ADC833636166F2 /* LYSLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2CCFFAA84EFA2116D00D0D62948D39C /* LYSDateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE21807C90EBAFE9BAD1DAD5046626B /* LYSDateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A52361FB57F3CF2DE522CC9E08C92D2F /* LYSKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 931F23AB6C5715314D5E628CE5BF24ED /* LYSKit-dummy.m */; };
+		B53C89431647AA928F2E9640A22DA818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BB502318A26E6F3074FBCA0F9CD91DBD /* LYSKVOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF52BB7CC4F1740EE2BE4EF69494AD /* LYSKVOManager.m */; };
+		C247AB622725972FF41E23BB3BB5D6C3 /* LYSyetemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B2B218D34777D37DDF917F7CD6F787 /* LYSyetemManager.m */; };
+		C73F18FC972C1D9A57845DBB02D2CC2F /* LYSAPPDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DACD590E736686C4446048638258BEC8 /* LYSAPPDelegateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D543145FB0F1051039A3AC46F6238A37 /* LYSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F99AE07BF2D7E28830D24435ECD9C /* LYSDateManager.m */; };
+		DDBA929598278786584DFDF44F5B0436 /* LYSandboxManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9085519EFCD8889E37E7014006DB9C /* LYSandboxManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F78DBDD7EA8EEA70A97491B7A12544D6 /* LYSAPPDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC8193ACD68ED8C9B2CFFA4DF854E20 /* LYSAPPDelegateManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,51 +43,67 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F95D77087A53CB51019126E980726F67;
+			remoteGlobalIDString = 102DD42A92C7876EBAC0E92C913740DE;
 			remoteInfo = LYSKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		080D1E1C3E0C845CD700B34BF405C92B /* LYS_BaseObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYS_BaseObj.h; path = LYSKit/LYS_BaseObj.h; sourceTree = "<group>"; };
+		13A93F492F72E241F09483A031C93676 /* LYSKVOManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSKVOManager.h; path = Bases/LYSKVOManager.h; sourceTree = "<group>"; };
+		1CEF52BB7CC4F1740EE2BE4EF69494AD /* LYSKVOManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSKVOManager.m; path = Bases/LYSKVOManager.m; sourceTree = "<group>"; };
+		1EF74C0924C6991AC582A6883619C374 /* LYS_Category.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYS_Category.h; path = LYSKit/LYS_Category.h; sourceTree = "<group>"; };
 		292DE1F59A67387065DE6F5041139A31 /* Pods-LYSKitSDKTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LYSKitSDKTest-dummy.m"; sourceTree = "<group>"; };
+		2C7AE0697A584FB291422702EF6DE1FF /* LYSandboxManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSandboxManager.m; path = LYSKit/LYSandboxManager.m; sourceTree = "<group>"; };
+		38B2B218D34777D37DDF917F7CD6F787 /* LYSyetemManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSyetemManager.m; path = LYSKit/LYSyetemManager.m; sourceTree = "<group>"; };
+		422939E1680190B00A4A4ABF81CA9201 /* LYSGCDManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSGCDManager.h; path = Bases/LYSGCDManager.h; sourceTree = "<group>"; };
+		50F00A27B945BFA334C0EE6A10731294 /* LYSRuntimeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSRuntimeManager.m; path = Bases/LYSRuntimeManager.m; sourceTree = "<group>"; };
+		5911A16582A55F9F833BD355EE86B019 /* LYSKeyedArchiverManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSKeyedArchiverManager.h; path = LYSKit/LYSKeyedArchiverManager.h; sourceTree = "<group>"; };
+		5A9085519EFCD8889E37E7014006DB9C /* LYSandboxManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSandboxManager.h; path = LYSKit/LYSandboxManager.h; sourceTree = "<group>"; };
+		63889D16107AD147D8ADC833636166F2 /* LYSLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSLocationManager.h; path = Tools/LYSLocationManager.h; sourceTree = "<group>"; };
+		6445BB2A2258ABC88178140DD86DAB42 /* LYSTupleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSTupleManager.m; path = Bases/LYSTupleManager.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6934899BDFE5D0EE61F4A27D1DECB827 /* LYS_Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYS_Manager.m; path = LYSKit/LYS_Manager.m; sourceTree = "<group>"; };
+		6EE21807C90EBAFE9BAD1DAD5046626B /* LYSDateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSDateManager.h; path = LYSKit/LYSDateManager.h; sourceTree = "<group>"; };
 		7A3AEF52A9017FC2C5920B5FD0D68BCD /* libLYSKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLYSKit.a; path = libLYSKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF17AED89BD529DF6F859194BCF07D7 /* Pods-LYSKitSDKTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYSKitSDKTest-resources.sh"; sourceTree = "<group>"; };
-		8E78BB933608B3B5EF7F830A412B747F /* LYSKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSKit.h; path = LYSKit/LYSKit.h; sourceTree = "<group>"; };
+		87AF4C87D5593FDB52D764C4DB6D2FF4 /* LYSKeyedArchiverManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSKeyedArchiverManager.m; path = LYSKit/LYSKeyedArchiverManager.m; sourceTree = "<group>"; };
+		931F23AB6C5715314D5E628CE5BF24ED /* LYSKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYSKit-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94F6B9CECA011864E6E03DFEF308613D /* LYSRuntimeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSRuntimeManager.h; path = Bases/LYSRuntimeManager.h; sourceTree = "<group>"; };
+		95AF4ACFC536F4DBF576314FDDFAD03D /* LYSGCDManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSGCDManager.m; path = Bases/LYSGCDManager.m; sourceTree = "<group>"; };
 		9BE139006137810AE1C4A1404501ACBD /* Pods-LYSKitSDKTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LYSKitSDKTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9CD783CD08057EC9177954DFB45C8BCE /* LYS_Category.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYS_Category.h; path = LYSKit/LYS_Category.h; sourceTree = "<group>"; };
-		A34C63A69AC9C597B18902B952217133 /* LYSReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSReachability.m; path = LYSKit/LYSReachability.m; sourceTree = "<group>"; };
-		A7A091199D8FABD4C0F679723DA48C67 /* LYS_BaseObj.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYS_BaseObj.m; path = LYSKit/LYS_BaseObj.m; sourceTree = "<group>"; };
-		A8B7478B9731915A21F79C519A654BC6 /* LYSReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSReachability.h; path = LYSKit/LYSReachability.h; sourceTree = "<group>"; };
+		9D46AA76D638B4B90C28A9AA8BAA7FE9 /* LYSKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYSKit-prefix.pch"; sourceTree = "<group>"; };
 		A9EA048B1533F5A015E22664E907AE5F /* Pods-LYSKitSDKTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYSKitSDKTest-frameworks.sh"; sourceTree = "<group>"; };
-		B12044B1A2F10CF6AA4546E14A6659A2 /* LYS_Category.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYS_Category.m; path = LYSKit/LYS_Category.m; sourceTree = "<group>"; };
-		B182A071841E338F2A4396E5A6309E67 /* LYSKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYSKit-prefix.pch"; sourceTree = "<group>"; };
 		B907266FFAFB0FDF31D2FCBCDCB128AD /* Pods-LYSKitSDKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYSKitSDKTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EA9AADA819AF1C3B1B1C171971A9F0 /* Pods-LYSKitSDKTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYSKitSDKTest-acknowledgements.plist"; sourceTree = "<group>"; };
 		C2CE1D20AE315317F2DA3320CE41942D /* Pods-LYSKitSDKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYSKitSDKTest.release.xcconfig"; sourceTree = "<group>"; };
-		D8863E9E5046A371858EA8A317D55A59 /* LYS_Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYS_Manager.h; path = LYSKit/LYS_Manager.h; sourceTree = "<group>"; };
-		DF69324C79EB9F1D3446806507C9AA65 /* LYSKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYSKit-dummy.m"; sourceTree = "<group>"; };
-		EB4D6C9BCD36E2513F4ACD9178E9786D /* LYSKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYSKit.xcconfig; sourceTree = "<group>"; };
+		D16A05CBE89D85F37FD4AD477CAD6EEF /* LYSKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYSKit.xcconfig; sourceTree = "<group>"; };
+		D26D881626A7C5B017E215C17E661BE4 /* LYS_Category.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYS_Category.m; path = LYSKit/LYS_Category.m; sourceTree = "<group>"; };
+		D35F99AE07BF2D7E28830D24435ECD9C /* LYSDateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSDateManager.m; path = LYSKit/LYSDateManager.m; sourceTree = "<group>"; };
+		D4ED5CCD9F7B58A567DD1C5134C2CDEE /* LYSKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSKit.h; path = LYSKit/LYSKit.h; sourceTree = "<group>"; };
+		D89249C5E30BE11816FCBA02A176E54B /* LYSTupleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSTupleManager.h; path = Bases/LYSTupleManager.h; sourceTree = "<group>"; };
+		DACD590E736686C4446048638258BEC8 /* LYSAPPDelegateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSAPPDelegateManager.h; path = LYSKit/LYSAPPDelegateManager.h; sourceTree = "<group>"; };
+		DE2343F88BE6FF7BB8A23E246CF0487D /* LYSReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSReachabilityManager.m; path = Tools/LYSReachabilityManager.m; sourceTree = "<group>"; };
+		EE0994906CBDE49FA81DC0EF232420F1 /* LYSReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSReachabilityManager.h; path = Tools/LYSReachabilityManager.h; sourceTree = "<group>"; };
+		FC10F1AB78643B0E68FA99A1BD90D098 /* LYSyetemManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYSyetemManager.h; path = LYSKit/LYSyetemManager.h; sourceTree = "<group>"; };
 		FE97B1AC8A3892F886801F733A8E135C /* libPods-LYSKitSDKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LYSKitSDKTest.a"; path = "libPods-LYSKitSDKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC8193ACD68ED8C9B2CFFA4DF854E20 /* LYSAPPDelegateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSAPPDelegateManager.m; path = LYSKit/LYSAPPDelegateManager.m; sourceTree = "<group>"; };
+		FF4DF0C9D0B385520F8182E5410B5E05 /* LYSLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYSLocationManager.m; path = Tools/LYSLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07D1FBE1D2F4D0907B05FFDC11AC8A10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67BD2019597724422D9A68869F8B19A2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		423A8D69AB587D123EC968D974B5ED8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				89B050ADD5AD524140B6AB447795993C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A0B94FE28DEBBA09219D5D502F67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53C89431647AA928F2E9640A22DA818 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,30 +118,49 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2BFFB0CB03E20981EB27E40D6E5DB81F /* LYSKit */ = {
+		17B325D2487D09311A1A9273ABD637B0 /* LYSKit */ = {
 			isa = PBXGroup;
 			children = (
-				080D1E1C3E0C845CD700B34BF405C92B /* LYS_BaseObj.h */,
-				A7A091199D8FABD4C0F679723DA48C67 /* LYS_BaseObj.m */,
-				9CD783CD08057EC9177954DFB45C8BCE /* LYS_Category.h */,
-				B12044B1A2F10CF6AA4546E14A6659A2 /* LYS_Category.m */,
-				D8863E9E5046A371858EA8A317D55A59 /* LYS_Manager.h */,
-				6934899BDFE5D0EE61F4A27D1DECB827 /* LYS_Manager.m */,
-				8E78BB933608B3B5EF7F830A412B747F /* LYSKit.h */,
-				A8B7478B9731915A21F79C519A654BC6 /* LYSReachability.h */,
-				A34C63A69AC9C597B18902B952217133 /* LYSReachability.m */,
-				B26A2D58E2DCDC1B9CD5176F6A13C92C /* Support Files */,
+				1EF74C0924C6991AC582A6883619C374 /* LYS_Category.h */,
+				D26D881626A7C5B017E215C17E661BE4 /* LYS_Category.m */,
+				5A9085519EFCD8889E37E7014006DB9C /* LYSandboxManager.h */,
+				2C7AE0697A584FB291422702EF6DE1FF /* LYSandboxManager.m */,
+				DACD590E736686C4446048638258BEC8 /* LYSAPPDelegateManager.h */,
+				FEC8193ACD68ED8C9B2CFFA4DF854E20 /* LYSAPPDelegateManager.m */,
+				6EE21807C90EBAFE9BAD1DAD5046626B /* LYSDateManager.h */,
+				D35F99AE07BF2D7E28830D24435ECD9C /* LYSDateManager.m */,
+				422939E1680190B00A4A4ABF81CA9201 /* LYSGCDManager.h */,
+				95AF4ACFC536F4DBF576314FDDFAD03D /* LYSGCDManager.m */,
+				5911A16582A55F9F833BD355EE86B019 /* LYSKeyedArchiverManager.h */,
+				87AF4C87D5593FDB52D764C4DB6D2FF4 /* LYSKeyedArchiverManager.m */,
+				D4ED5CCD9F7B58A567DD1C5134C2CDEE /* LYSKit.h */,
+				13A93F492F72E241F09483A031C93676 /* LYSKVOManager.h */,
+				1CEF52BB7CC4F1740EE2BE4EF69494AD /* LYSKVOManager.m */,
+				63889D16107AD147D8ADC833636166F2 /* LYSLocationManager.h */,
+				FF4DF0C9D0B385520F8182E5410B5E05 /* LYSLocationManager.m */,
+				EE0994906CBDE49FA81DC0EF232420F1 /* LYSReachabilityManager.h */,
+				DE2343F88BE6FF7BB8A23E246CF0487D /* LYSReachabilityManager.m */,
+				94F6B9CECA011864E6E03DFEF308613D /* LYSRuntimeManager.h */,
+				50F00A27B945BFA334C0EE6A10731294 /* LYSRuntimeManager.m */,
+				D89249C5E30BE11816FCBA02A176E54B /* LYSTupleManager.h */,
+				6445BB2A2258ABC88178140DD86DAB42 /* LYSTupleManager.m */,
+				FC10F1AB78643B0E68FA99A1BD90D098 /* LYSyetemManager.h */,
+				38B2B218D34777D37DDF917F7CD6F787 /* LYSyetemManager.m */,
+				5EEE7D3CA902989D6A78DC087238DB52 /* Support Files */,
 			);
 			name = LYSKit;
 			path = LYSKit;
 			sourceTree = "<group>";
 		};
-		5268EEFC4B3BC466907C86833BFBF1DD /* Pods */ = {
+		5EEE7D3CA902989D6A78DC087238DB52 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2BFFB0CB03E20981EB27E40D6E5DB81F /* LYSKit */,
+				D16A05CBE89D85F37FD4AD477CAD6EEF /* LYSKit.xcconfig */,
+				931F23AB6C5715314D5E628CE5BF24ED /* LYSKit-dummy.m */,
+				9D46AA76D638B4B90C28A9AA8BAA7FE9 /* LYSKit-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/LYSKit";
 			sourceTree = "<group>";
 		};
 		7A71BEC71CA495FD4010BC7E2F011013 /* Pods-LYSKitSDKTest */ = {
@@ -132,21 +183,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5268EEFC4B3BC466907C86833BFBF1DD /* Pods */,
+				817A64EC8F17FF51218735888AFDF05B /* Pods */,
 				C49947FDFDCE52AF611C83F2FB0311F2 /* Products */,
 				04BB00256193616D1455D739CBA13DD2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B26A2D58E2DCDC1B9CD5176F6A13C92C /* Support Files */ = {
+		817A64EC8F17FF51218735888AFDF05B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB4D6C9BCD36E2513F4ACD9178E9786D /* LYSKit.xcconfig */,
-				DF69324C79EB9F1D3446806507C9AA65 /* LYSKit-dummy.m */,
-				B182A071841E338F2A4396E5A6309E67 /* LYSKit-prefix.pch */,
+				17B325D2487D09311A1A9273ABD637B0 /* LYSKit */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/LYSKit";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -177,21 +225,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8B71F2CBA539394CA8E1D28D7B610AA4 /* Headers */ = {
+		44019D3B020D0B03868E4AC43D64AB03 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B30A248519939F20DEBC67CA28F4378 /* LYS_BaseObj.h in Headers */,
-				00A02A485748AE4249665A4E42825131 /* LYS_Category.h in Headers */,
-				687D833D1A6779F7C07E41D7D702D342 /* LYS_Manager.h in Headers */,
-				2C74D33C22E90C3AF6F19EDA2B59736C /* LYSKit.h in Headers */,
-				6F9729D11C6B1C2BDDE3D368A6167D0B /* LYSReachability.h in Headers */,
+				6FCA7F58350C7111BF4ACB1CB0D4484F /* LYS_Category.h in Headers */,
+				DDBA929598278786584DFDF44F5B0436 /* LYSandboxManager.h in Headers */,
+				C73F18FC972C1D9A57845DBB02D2CC2F /* LYSAPPDelegateManager.h in Headers */,
+				A2CCFFAA84EFA2116D00D0D62948D39C /* LYSDateManager.h in Headers */,
+				9ADA630A7E48D59A7B93EA6F6D2F96F9 /* LYSGCDManager.h in Headers */,
+				11C354C01550F50F9BDF7A7F3A973EB7 /* LYSKeyedArchiverManager.h in Headers */,
+				78E1EDA59E8EF558911CF5A4A6394E71 /* LYSKit.h in Headers */,
+				38B332B101E7788C1260C541BFC38F6C /* LYSKVOManager.h in Headers */,
+				9E4E4132287B7ECFB04FF2C52D440C39 /* LYSLocationManager.h in Headers */,
+				5221C4499A8F720BC126ED6359B17151 /* LYSReachabilityManager.h in Headers */,
+				95FCA89CC3ACD15A34FF775944067EA5 /* LYSRuntimeManager.h in Headers */,
+				427817C5DCC3FF1CF4318FB9DC0B4C75 /* LYSTupleManager.h in Headers */,
+				2CF7832323602DD210567C03D4CD404F /* LYSyetemManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		102DD42A92C7876EBAC0E92C913740DE /* LYSKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19357CA6C63D01CFA21319AEFB201CCC /* Build configuration list for PBXNativeTarget "LYSKit" */;
+			buildPhases = (
+				332D17F07E841B99CF3B0E8F41A79F2B /* Sources */,
+				BB5A0B94FE28DEBBA09219D5D502F67F /* Frameworks */,
+				44019D3B020D0B03868E4AC43D64AB03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYSKit;
+			productName = LYSKit;
+			productReference = 7A3AEF52A9017FC2C5920B5FD0D68BCD /* libLYSKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		167B26FEC6AC435F4AD8B083EC06E2AA /* Pods-LYSKitSDKTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D095C6CE3972CEFF56402CDF40929614 /* Build configuration list for PBXNativeTarget "Pods-LYSKitSDKTest" */;
@@ -207,23 +280,6 @@
 			name = "Pods-LYSKitSDKTest";
 			productName = "Pods-LYSKitSDKTest";
 			productReference = FE97B1AC8A3892F886801F733A8E135C /* libPods-LYSKitSDKTest.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F95D77087A53CB51019126E980726F67 /* LYSKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 16DD69552B612C7B8F9B3559C6C04D12 /* Build configuration list for PBXNativeTarget "LYSKit" */;
-			buildPhases = (
-				0E46C979F09D91BBD69FDE6DB9393224 /* Sources */,
-				07D1FBE1D2F4D0907B05FFDC11AC8A10 /* Frameworks */,
-				8B71F2CBA539394CA8E1D28D7B610AA4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LYSKit;
-			productName = LYSKit;
-			productReference = 7A3AEF52A9017FC2C5920B5FD0D68BCD /* libLYSKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -247,22 +303,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F95D77087A53CB51019126E980726F67 /* LYSKit */,
+				102DD42A92C7876EBAC0E92C913740DE /* LYSKit */,
 				167B26FEC6AC435F4AD8B083EC06E2AA /* Pods-LYSKitSDKTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E46C979F09D91BBD69FDE6DB9393224 /* Sources */ = {
+		332D17F07E841B99CF3B0E8F41A79F2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8125C4D778BC8515DC688C31763D671 /* LYS_BaseObj.m in Sources */,
-				6141BFEBC818BCFC7ECDB0B3E8073FD3 /* LYS_Category.m in Sources */,
-				E56BD0A50081F5AE9A1C96B779FC6C24 /* LYS_Manager.m in Sources */,
-				DFC3C37A7D9B938BE03A51F71520AD4F /* LYSKit-dummy.m in Sources */,
-				DABC7422B414C771D4421A3FE2B681FB /* LYSReachability.m in Sources */,
+				84C984A6D156F7C3E111D87777BD4372 /* LYS_Category.m in Sources */,
+				8045EB76E3117C7CE8478EF7DAACF237 /* LYSandboxManager.m in Sources */,
+				F78DBDD7EA8EEA70A97491B7A12544D6 /* LYSAPPDelegateManager.m in Sources */,
+				D543145FB0F1051039A3AC46F6238A37 /* LYSDateManager.m in Sources */,
+				3AEC07F1497D877C5BBCA4D86BE93CB4 /* LYSGCDManager.m in Sources */,
+				7B4EBF586DBB1D873804557BF9F66FC2 /* LYSKeyedArchiverManager.m in Sources */,
+				A52361FB57F3CF2DE522CC9E08C92D2F /* LYSKit-dummy.m in Sources */,
+				BB502318A26E6F3074FBCA0F9CD91DBD /* LYSKVOManager.m in Sources */,
+				8E96BA8FB58FF4D8BC2B5CD0FB5FD478 /* LYSLocationManager.m in Sources */,
+				30A1F4162ABB8096F69355B87B433B88 /* LYSReachabilityManager.m in Sources */,
+				8E5F3CC3964932B06D077DF662BA84AE /* LYSRuntimeManager.m in Sources */,
+				306B4A71538455DF4DFA50D322E5AD6C /* LYSTupleManager.m in Sources */,
+				C247AB622725972FF41E23BB3BB5D6C3 /* LYSyetemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,12 +344,33 @@
 		2CA932348C455FE1B73D5C2554DE4B6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LYSKit;
-			target = F95D77087A53CB51019126E980726F67 /* LYSKit */;
+			target = 102DD42A92C7876EBAC0E92C913740DE /* LYSKit */;
 			targetProxy = C3FED1E6B34A4A59F495D975666ECE9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1C831713A4AC6FDD4C7D57BDAC7D1140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16A05CBE89D85F37FD4AD477CAD6EEF /* LYSKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LYSKit/LYSKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		2EA7C10B49490A69B83527401D010881 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B907266FFAFB0FDF31D2FCBCDCB128AD /* Pods-LYSKitSDKTest.debug.xcconfig */;
@@ -305,6 +390,28 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		78408D1AF7198DC0E375498614F80A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16A05CBE89D85F37FD4AD477CAD6EEF /* LYSKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LYSKit/LYSKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		835302105CB1BB2BC30457FD5A39761A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -326,27 +433,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		84A41939F3EC1AA53C73DD14FEF49574 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB4D6C9BCD36E2513F4ACD9178E9786D /* LYSKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LYSKit/LYSKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -400,28 +486,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B514B5AEC1E204E7104E7FBF44AF3FE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB4D6C9BCD36E2513F4ACD9178E9786D /* LYSKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LYSKit/LYSKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -488,11 +552,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16DD69552B612C7B8F9B3559C6C04D12 /* Build configuration list for PBXNativeTarget "LYSKit" */ = {
+		19357CA6C63D01CFA21319AEFB201CCC /* Build configuration list for PBXNativeTarget "LYSKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84A41939F3EC1AA53C73DD14FEF49574 /* Debug */,
-				B514B5AEC1E204E7104E7FBF44AF3FE0 /* Release */,
+				1C831713A4AC6FDD4C7D57BDAC7D1140 /* Debug */,
+				78408D1AF7198DC0E375498614F80A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

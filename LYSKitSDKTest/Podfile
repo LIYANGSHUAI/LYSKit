@@ -6,5 +6,5 @@ target 'LYSKitSDKTest' do
   # use_frameworks!
 
   # Pods for LYSKitSDKTest
-pod 'ReactiveCocoa', '~> 7.0.1'
+pod 'LYSKit', '~> 0.0.8'
 end
