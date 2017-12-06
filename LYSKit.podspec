@@ -98,23 +98,23 @@ A very useful base framework that integrates some of the common code blocks in d
   # s.public_header_files = "LYSKit/**/*.h"
 
   s.subspec 'Define' do |ss|
-     ss.source_files = "Define/*.{h,m}"
+     ss.source_files = "LYSKit/Define/*.{h,m}"
   end
 
   s.subspec 'Category' do |ss|
-     ss.source_files = "Category/*.{h,m}"
+     ss.source_files = "LYSKit/Category/*.{h,m}"
   end
 
   s.subspec 'Manager' do |ss|
-     ss.source_files = "Manager/*.{h,m}"
+     ss.source_files = "LYSKit/Manager/*.{h,m}"
   end
 
   s.subspec 'Bases' do |ss|
-     ss.source_files = "Bases/*.{h,m}"
+     ss.source_files = "LYSKit/Bases/*.{h,m}"
   end
 
   s.subspec 'Tools' do |ss|
-     ss.source_files = "Tools/*.{h,m}"
+     ss.source_files = "LYSKit/Tools/*.{h,m}"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
