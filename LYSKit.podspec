@@ -105,9 +105,9 @@ A very useful base framework that integrates some of the common code blocks in d
      ss.source_files = "LYSKit/Category/*.{h,m}"
   end
 
-  s.subspec 'Manager' do |ss|
-     ss.source_files = "LYSKit/Manager/*.{h,m}"
-  end
+#  s.subspec 'Manager' do |ss|
+#    ss.source_files = "LYSKit/Manager/*.{h,m}"
+# end
 
   s.subspec 'Tools' do |ss|
      ss.source_files = "LYSKit/Tools/*.{h,m}"
