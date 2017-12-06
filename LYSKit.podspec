@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LYSKit"
-  s.version      = "0.0.9"
+  s.version      = "0.1.1"
   s.summary      = "A very useful base framework that integrates some of the common code blocks in development with apis."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ A very useful base framework that integrates some of the common code blocks in d
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/LIYANGSHUAI/LYSKit.git", :tag => "0.0.9" }
+  s.source       = { :git => "https://github.com/LIYANGSHUAI/LYSKit.git", :tag => "0.1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -97,12 +97,12 @@ A very useful base framework that integrates some of the common code blocks in d
 
   # s.public_header_files = "LYSKit/**/*.h"
 
-  s.subspec 'Tools' do |ss|
-     ss.source_files = "Tools/*.{h,m}"
+  s.subspec 'Location' do |ss|
+     ss.source_files = "Location/*.{h,m}"
   end
 
-  s.subspec 'Bases' do |ss|
-     ss.source_files = "Bases/*.{h,m}"
+  s.subspec 'Reachability' do |ss|
+     ss.source_files = "Reachability/*.{h,m}"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
