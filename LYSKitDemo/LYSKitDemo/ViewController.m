@@ -21,9 +21,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self alertTitle:@"提示" message:@"你好" comfirmStr:@"确定" comfirmAction:^{
-        NSLog(@"w");
-    }];
+   
 }
 
 - (void)didReceiveMemoryWarning {
