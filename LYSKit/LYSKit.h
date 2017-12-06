@@ -10,9 +10,6 @@
 #ifndef LYSKit_h
 #define LYSKit_h
 
-#import "LYSReachability.h"
-#import "LYS_BaseObj.h"
-#import "LYS_Manager.h"
 #import "LYS_Category.h"
 
 

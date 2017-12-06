@@ -8,44 +8,38 @@
 
 #import "ViewController.h"
 #import "LYSKit.h"
-@interface ViewController ()
+#import "LYSLocationManager.h"
+@interface ViewController ()<LYSLocationManagerDelegate>
 
 @end
 
 @implementation ViewController
-
+{
+    LYSLocationManager *manager;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+  
+    manager = [LYSLocationManager loactionWithDelegate:self];
+    [manager startLocation];
     
-    [self.view ly_tapGesture:^(UITapGestureRecognizer *sender, UIView *view) {
-        [self ly_alertTitle:@"提示" message:@"你好!!" comfirmStr:@"确定" comfirmAction:^{
-            NSLog(@"完成");
-            [LYSLocationManager ly_location:^(CLLocation *location) {
-                NSLog(@"%@",location);
-            } fail:^(NSString *state) {
-                NSLog(@"%@",state);
-            }];
-        }];
-    } tapNum:1 touchNum:1];
-    
-    NSArray *ary = @[[UIColor blueColor],
-                     [UIColor yellowColor],
-                     [UIColor redColor],
-                     [UIColor greenColor],
-                     [UIColor whiteColor],
-                     [UIColor orangeColor]
-    
-    ];
-    
-    [LYSReachabilityManager ly_notifitionReachability:^(LYSReachability *reachability) {
-        self.view.backgroundColor = ary[reachability.currentReachabilityStatus];
-    } reachability:[LYSReachability ly_reachabilityForInternetConnection] promptly:YES];
-    
-    NSLog(@"%@",LYSTuple(@14, @12).one);
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdate:) name:LYSLocationDidUpdateNotifition object:nil];
 }
-
+- (void)didUpdate:(NSNotification *)notifition
+{
+    CLLocation *location = notifition.userInfo[LYSLocationUserInfoKey];
+    NSLog(@"%@",location);
+        [manager geocoder:location success:^(CLPlacemark *placemark) {
+            NSLog(@"%@",placemark);
+        }];
+}
+//- (void)manager:(LYSLocationManager *)manager didUpdateLocation:(CLLocation *)location{
+//    NSLog(@"%@",location);
+//    [manager geocoder:location success:^(CLPlacemark *placemark) {
+//        NSLog(@"%@",placemark);
+//    }];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
