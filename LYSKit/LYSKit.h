@@ -10,10 +10,10 @@
 #ifndef LYSKit_h
 #define LYSKit_h
 
-#import "LYSDefine.h"
-#import "LYSCategory.h"
-#import "LYSManager.h"
-#import "LYSBases.h"
-#import "LYSTools.h"
+#import "Define/LYSDefine.h"
+#import "Category/LYSCategory.h"
+#import "Manager/LYSManager.h"
+#import "Bases/LYSBases.h"
+#import "Tools/LYSTools.h"
 
 #endif /* LYSKit_h */

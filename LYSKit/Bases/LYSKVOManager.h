@@ -17,6 +17,3 @@
 + (void)removeObserverToObject:(id)object forKeyPath:(NSString *)keyPath identifier:(NSString *)identifier;
 
 @end
-
-
-

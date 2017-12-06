@@ -26,3 +26,5 @@ typedef LYSTupleManager* LYSTuple;
 + (instancetype)tupleWithOne:(id)one two:(id)two;
 @end
 
+#pragma mark - 元组 -
+#define LYSTuple(ONE,TWO) [LYSTupleManager tupleWithOne:ONE two:TWO]

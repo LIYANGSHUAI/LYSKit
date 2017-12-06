@@ -127,9 +127,6 @@
 #define LYSNSLog(...)
 #endif
 
-#pragma mark - 元组 -
-#define LYSTuple(ONE,TWO) [LYSTupleManager ly_create:ONE two:TWO]
-
 #import <objc/runtime.h>
 #pragma mark - 屏幕旋转选择项 -
 typedef NS_ENUM(NSInteger,LYSupportedOrientation) {

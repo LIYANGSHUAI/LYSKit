@@ -7,10 +7,10 @@
 //
 
 #import "LYSKVOManager.h"
+#import "LYSRuntimeManager.h"
 
 #define LYActionDict @"LYActionDict"
 
-#import "LYSRuntimeManager.h"
 @implementation LYSKVOManager
 
 + (void)addObserverToObject:(id)object forKeyPath:(NSString *)keyPath action:(void(^)(id oldValue,id newValue))action identifier:(NSString *)identifier
