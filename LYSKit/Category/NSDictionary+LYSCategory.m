@@ -9,6 +9,12 @@
 #import "NSDictionary+LYSCategory.h"
 
 @implementation NSDictionary (LYSCategory)
+
+/**
+ 返回数据
+
+ @return 返回数据
+ */
 - (NSString *)toString
 {
     NSData *dictData = [NSJSONSerialization dataWithJSONObject:self options:(NSJSONWritingPrettyPrinted) error:nil];

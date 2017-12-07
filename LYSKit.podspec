@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LYSKit"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A very useful base framework that integrates some of the common code blocks in development with apis."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ A very useful base framework that integrates some of the common code blocks in d
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/LIYANGSHUAI/LYSKit.git", :tag => "1.0.3" }
+  s.source       = { :git => "https://github.com/LIYANGSHUAI/LYSKit.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -153,6 +153,6 @@ A very useful base framework that integrates some of the common code blocks in d
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-
+  s.dependency "LYSGPasswordView", "~> 0.0.3"
+  s.dependency "LYSChart", '~> 0.0.1'
 end

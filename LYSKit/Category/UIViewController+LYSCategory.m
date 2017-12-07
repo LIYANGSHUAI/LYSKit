@@ -10,6 +10,7 @@
 #import "UIView+LYSCategory.h"
 
 @implementation UIViewController (LYSCategory)
+
 + (UIViewController *)getOuterViewController
 {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;

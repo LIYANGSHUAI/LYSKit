@@ -9,32 +9,37 @@
 #import "NSString+LYSCategory.h"
 
 @implementation NSString (LYSCategory)
+
+/**
+ 转换成NSData 类型
+
+ @return 返回对应的NSData 数据
+ */
+- (NSData *)toData{return [self dataUsingEncoding:NSUTF8StringEncoding];}
 - (NSDictionary *)toDictionary
 {
-    return [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding]
-                                           options:(NSJSONReadingAllowFragments)
-                                             error:nil];
+    return [NSJSONSerialization JSONObjectWithData:[self toData] options:(NSJSONReadingAllowFragments) error:nil];
+}
+- (NSString *)toPinyin
+{
+    // 转成了可变字符串
+    NSMutableString *str = [NSMutableString stringWithString:self];
+    // 先转换为带声调的拼音
+    CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformMandarinLatin,NO);
+    // 再转换为不带声调的拼音
+    CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformStripDiacritics,NO);
+    return str;
 }
 - (NSString *)clearWhitespaceAndNewLine
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 - (CGRect)rectWithSize:(CGSize)size
-               attributes:(NSDictionary<NSString *,id> *)attributes
+            attributes:(NSDictionary<NSString *,id> *)attributes
 {
     return [self boundingRectWithSize:size
                               options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attributes
                               context:nil];
-}
-- (NSString *)toPinyin
-{
-    //转成了可变字符串
-    NSMutableString *str = [NSMutableString stringWithString:self];
-    //先转换为带声调的拼音
-    CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformMandarinLatin,NO);
-    //再转换为不带声调的拼音
-    CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformStripDiacritics,NO);
-    return str;
 }
 - (LYSTelephoneNumber)computeTelePhoneNumber
 {
