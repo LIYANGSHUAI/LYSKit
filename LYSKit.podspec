@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LYSKit"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "A very useful base framework that integrates some of the common code blocks in development with apis."
 
   # This description is used to generate tags and improve search results.
@@ -92,30 +92,12 @@ A very useful base framework that integrates some of the common code blocks in d
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LYSKit/*.{h,m}"
+
+  # s.source_files  = "LYSKit/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "LYSKit/**/*.h"
 
-  s.subspec 'Define' do |ss|
-     ss.source_files = "LYSKit/Define/*.{h,m}"
-  end
-
-  s.subspec 'Category' do |ss|
-     ss.source_files = "LYSKit/Category/*.{h,m}"
-  end
-
-  s.subspec 'Manager' do |ss|
-    ss.source_files = "LYSKit/Manager/*.{h,m}"
-  end
-
-  s.subspec 'Tools' do |ss|
-     ss.source_files = "LYSKit/Tools/*.{h,m}"
-  end
-
-  s.subspec 'Bases' do |ss|
-     ss.source_files = "LYSKit/Bases/*.{h,m}"
-  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -153,6 +135,9 @@ A very useful base framework that integrates some of the common code blocks in d
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "LYSGPasswordView", "~> 0.0.3"
-  s.dependency "LYSChart", '~> 0.0.1'
+  s.dependency "LYSManager"
+  s.dependency "LYSCategory"
+  s.dependency "LYSDefine"
+  s.dependency "LYSBases"
+  s.dependency "LYSTools"
 end
