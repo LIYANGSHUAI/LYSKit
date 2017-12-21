@@ -7,33 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC1C78CE1FB2FD38009ED677 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC1C78CD1FB2FD38009ED677 /* README.md */; };
-		CC237D601FB03E330011C167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D5F1FB03E330011C167 /* AppDelegate.m */; };
-		CC237D631FB03E330011C167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D621FB03E330011C167 /* ViewController.m */; };
-		CC237D661FB03E330011C167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC237D641FB03E330011C167 /* Main.storyboard */; };
-		CC237D681FB03E330011C167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC237D671FB03E330011C167 /* Assets.xcassets */; };
-		CC237D6B1FB03E330011C167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC237D691FB03E330011C167 /* LaunchScreen.storyboard */; };
-		CC237D6E1FB03E330011C167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC237D6D1FB03E330011C167 /* main.m */; };
-		CC237D751FB03E590011C167 /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC237D741FB03E590011C167 /* LYSKit.podspec */; };
+		CC5E9C671FEB787700557655 /* LYSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E9C611FEB787700557655 /* LYSReachability.m */; };
+		CC5E9C681FEB787700557655 /* LYS_BaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E9C641FEB787700557655 /* LYS_BaseObj.m */; };
+		CC5E9C691FEB787700557655 /* LYS_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E9C651FEB787700557655 /* LYS_Manager.m */; };
+		CC5E9C6A1FEB787700557655 /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5E9C661FEB787700557655 /* LYS_Category.m */; };
+		CC5E9C6C1FEB78A200557655 /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC5E9C6B1FEB78A200557655 /* LYSKit.podspec */; };
+		CCD707AA1FD90B77009B0919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD707A91FD90B77009B0919 /* AppDelegate.m */; };
+		CCD707AD1FD90B77009B0919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD707AC1FD90B77009B0919 /* ViewController.m */; };
+		CCD707B01FD90B77009B0919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD707AE1FD90B77009B0919 /* Main.storyboard */; };
+		CCD707B21FD90B77009B0919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD707B11FD90B77009B0919 /* Assets.xcassets */; };
+		CCD707B51FD90B77009B0919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD707B31FD90B77009B0919 /* LaunchScreen.storyboard */; };
+		CCD707B81FD90B77009B0919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD707B71FD90B77009B0919 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC1C78CD1FB2FD38009ED677 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		CC237D5B1FB03E330011C167 /* LYSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC237D5E1FB03E330011C167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CC237D5F1FB03E330011C167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC237D611FB03E330011C167 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC237D621FB03E330011C167 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CC237D651FB03E330011C167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC237D671FB03E330011C167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CC237D6A1FB03E330011C167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC237D6C1FB03E330011C167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC237D6D1FB03E330011C167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC237D741FB03E590011C167 /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../LYSKit.podspec; sourceTree = "<group>"; };
+		CC5E9C5E1FEB787700557655 /* LYS_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Category.h; sourceTree = "<group>"; };
+		CC5E9C5F1FEB787700557655 /* LYS_Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Manager.h; sourceTree = "<group>"; };
+		CC5E9C601FEB787700557655 /* LYS_BaseObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_BaseObj.h; sourceTree = "<group>"; };
+		CC5E9C611FEB787700557655 /* LYSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSReachability.m; sourceTree = "<group>"; };
+		CC5E9C621FEB787700557655 /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
+		CC5E9C631FEB787700557655 /* LYSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSReachability.h; sourceTree = "<group>"; };
+		CC5E9C641FEB787700557655 /* LYS_BaseObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_BaseObj.m; sourceTree = "<group>"; };
+		CC5E9C651FEB787700557655 /* LYS_Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Manager.m; sourceTree = "<group>"; };
+		CC5E9C661FEB787700557655 /* LYS_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Category.m; sourceTree = "<group>"; };
+		CC5E9C6B1FEB78A200557655 /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../LYSKit.podspec; sourceTree = "<group>"; };
+		CCD707A51FD90B77009B0919 /* LYSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD707A81FD90B77009B0919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCD707A91FD90B77009B0919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCD707AB1FD90B77009B0919 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCD707AC1FD90B77009B0919 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCD707AF1FD90B77009B0919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCD707B11FD90B77009B0919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD707B41FD90B77009B0919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCD707B61FD90B77009B0919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD707B71FD90B77009B0919 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC237D581FB03E330011C167 /* Frameworks */ = {
+		CCD707A21FD90B77009B0919 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,36 +54,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC237D521FB03E330011C167 = {
+		CC5E9C5D1FEB787700557655 /* LYSKit */ = {
 			isa = PBXGroup;
 			children = (
-				CC237D5D1FB03E330011C167 /* LYSKitDemo */,
-				CC237D5C1FB03E330011C167 /* Products */,
+				CC5E9C5E1FEB787700557655 /* LYS_Category.h */,
+				CC5E9C5F1FEB787700557655 /* LYS_Manager.h */,
+				CC5E9C601FEB787700557655 /* LYS_BaseObj.h */,
+				CC5E9C611FEB787700557655 /* LYSReachability.m */,
+				CC5E9C621FEB787700557655 /* LYSKit.h */,
+				CC5E9C631FEB787700557655 /* LYSReachability.h */,
+				CC5E9C641FEB787700557655 /* LYS_BaseObj.m */,
+				CC5E9C651FEB787700557655 /* LYS_Manager.m */,
+				CC5E9C661FEB787700557655 /* LYS_Category.m */,
+			);
+			name = LYSKit;
+			path = ../../LYSKit;
+			sourceTree = "<group>";
+		};
+		CCD7079C1FD90B77009B0919 = {
+			isa = PBXGroup;
+			children = (
+				CCD707A71FD90B77009B0919 /* LYSKitDemo */,
+				CCD707A61FD90B77009B0919 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC237D5C1FB03E330011C167 /* Products */ = {
+		CCD707A61FD90B77009B0919 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC237D5B1FB03E330011C167 /* LYSKitDemo.app */,
+				CCD707A51FD90B77009B0919 /* LYSKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC237D5D1FB03E330011C167 /* LYSKitDemo */ = {
+		CCD707A71FD90B77009B0919 /* LYSKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CC237D741FB03E590011C167 /* LYSKit.podspec */,
-				CC1C78CD1FB2FD38009ED677 /* README.md */,
-				CC237D5E1FB03E330011C167 /* AppDelegate.h */,
-				CC237D5F1FB03E330011C167 /* AppDelegate.m */,
-				CC237D611FB03E330011C167 /* ViewController.h */,
-				CC237D621FB03E330011C167 /* ViewController.m */,
-				CC237D641FB03E330011C167 /* Main.storyboard */,
-				CC237D671FB03E330011C167 /* Assets.xcassets */,
-				CC237D691FB03E330011C167 /* LaunchScreen.storyboard */,
-				CC237D6C1FB03E330011C167 /* Info.plist */,
-				CC237D6D1FB03E330011C167 /* main.m */,
+				CC5E9C6B1FEB78A200557655 /* LYSKit.podspec */,
+				CC5E9C5D1FEB787700557655 /* LYSKit */,
+				CCD707A81FD90B77009B0919 /* AppDelegate.h */,
+				CCD707A91FD90B77009B0919 /* AppDelegate.m */,
+				CCD707AB1FD90B77009B0919 /* ViewController.h */,
+				CCD707AC1FD90B77009B0919 /* ViewController.m */,
+				CCD707AE1FD90B77009B0919 /* Main.storyboard */,
+				CCD707B11FD90B77009B0919 /* Assets.xcassets */,
+				CCD707B31FD90B77009B0919 /* LaunchScreen.storyboard */,
+				CCD707B61FD90B77009B0919 /* Info.plist */,
+				CCD707B71FD90B77009B0919 /* main.m */,
 			);
 			path = LYSKitDemo;
 			sourceTree = "<group>";
@@ -80,13 +108,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC237D5A1FB03E330011C167 /* LYSKitDemo */ = {
+		CCD707A41FD90B77009B0919 /* LYSKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC237D711FB03E330011C167 /* Build configuration list for PBXNativeTarget "LYSKitDemo" */;
+			buildConfigurationList = CCD707BB1FD90B77009B0919 /* Build configuration list for PBXNativeTarget "LYSKitDemo" */;
 			buildPhases = (
-				CC237D571FB03E330011C167 /* Sources */,
-				CC237D581FB03E330011C167 /* Frameworks */,
-				CC237D591FB03E330011C167 /* Resources */,
+				CCD707A11FD90B77009B0919 /* Sources */,
+				CCD707A21FD90B77009B0919 /* Frameworks */,
+				CCD707A31FD90B77009B0919 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -94,25 +122,25 @@
 			);
 			name = LYSKitDemo;
 			productName = LYSKitDemo;
-			productReference = CC237D5B1FB03E330011C167 /* LYSKitDemo.app */;
+			productReference = CCD707A51FD90B77009B0919 /* LYSKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC237D531FB03E330011C167 /* Project object */ = {
+		CCD7079D1FD90B77009B0919 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = HENAN;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = liyangshuai;
 				TargetAttributes = {
-					CC237D5A1FB03E330011C167 = {
-						CreatedOnToolsVersion = 9.1;
+					CCD707A41FD90B77009B0919 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = CC237D561FB03E330011C167 /* Build configuration list for PBXProject "LYSKitDemo" */;
+			buildConfigurationList = CCD707A01FD90B77009B0919 /* Build configuration list for PBXProject "LYSKitDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,57 +148,60 @@
 				en,
 				Base,
 			);
-			mainGroup = CC237D521FB03E330011C167;
-			productRefGroup = CC237D5C1FB03E330011C167 /* Products */;
+			mainGroup = CCD7079C1FD90B77009B0919;
+			productRefGroup = CCD707A61FD90B77009B0919 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC237D5A1FB03E330011C167 /* LYSKitDemo */,
+				CCD707A41FD90B77009B0919 /* LYSKitDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CC237D591FB03E330011C167 /* Resources */ = {
+		CCD707A31FD90B77009B0919 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC237D6B1FB03E330011C167 /* LaunchScreen.storyboard in Resources */,
-				CC237D681FB03E330011C167 /* Assets.xcassets in Resources */,
-				CC1C78CE1FB2FD38009ED677 /* README.md in Resources */,
-				CC237D751FB03E590011C167 /* LYSKit.podspec in Resources */,
-				CC237D661FB03E330011C167 /* Main.storyboard in Resources */,
+				CCD707B51FD90B77009B0919 /* LaunchScreen.storyboard in Resources */,
+				CCD707B21FD90B77009B0919 /* Assets.xcassets in Resources */,
+				CC5E9C6C1FEB78A200557655 /* LYSKit.podspec in Resources */,
+				CCD707B01FD90B77009B0919 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC237D571FB03E330011C167 /* Sources */ = {
+		CCD707A11FD90B77009B0919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC237D631FB03E330011C167 /* ViewController.m in Sources */,
-				CC237D6E1FB03E330011C167 /* main.m in Sources */,
-				CC237D601FB03E330011C167 /* AppDelegate.m in Sources */,
+				CC5E9C681FEB787700557655 /* LYS_BaseObj.m in Sources */,
+				CCD707AD1FD90B77009B0919 /* ViewController.m in Sources */,
+				CC5E9C671FEB787700557655 /* LYSReachability.m in Sources */,
+				CC5E9C6A1FEB787700557655 /* LYS_Category.m in Sources */,
+				CCD707B81FD90B77009B0919 /* main.m in Sources */,
+				CC5E9C691FEB787700557655 /* LYS_Manager.m in Sources */,
+				CCD707AA1FD90B77009B0919 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC237D641FB03E330011C167 /* Main.storyboard */ = {
+		CCD707AE1FD90B77009B0919 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC237D651FB03E330011C167 /* Base */,
+				CCD707AF1FD90B77009B0919 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CC237D691FB03E330011C167 /* LaunchScreen.storyboard */ = {
+		CCD707B31FD90B77009B0919 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC237D6A1FB03E330011C167 /* Base */,
+				CCD707B41FD90B77009B0919 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +209,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CC237D6F1FB03E330011C167 /* Debug */ = {
+		CCD707B91FD90B77009B0919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,14 +257,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		CC237D701FB03E330011C167 /* Release */ = {
+		CCD707BA1FD90B77009B0919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,43 +306,39 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CC237D721FB03E330011C167 /* Debug */ = {
+		CCD707BC1FD90B77009B0919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9P4CA2L57Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LYSKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dx.zhenjiceshi;
+				PRODUCT_BUNDLE_IDENTIFIER = LYS.LYSKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f4493a39-e240-46c7-8c2c-a160344ebc16";
-				PROVISIONING_PROFILE_SPECIFIER = zhenjiceshi;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CC237D731FB03E330011C167 /* Release */ = {
+		CCD707BD1FD90B77009B0919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9P4CA2L57Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LYSKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dx.zhenjiceshi;
+				PRODUCT_BUNDLE_IDENTIFIER = LYS.LYSKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f4493a39-e240-46c7-8c2c-a160344ebc16";
-				PROVISIONING_PROFILE_SPECIFIER = zhenjiceshi;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -319,25 +346,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC237D561FB03E330011C167 /* Build configuration list for PBXProject "LYSKitDemo" */ = {
+		CCD707A01FD90B77009B0919 /* Build configuration list for PBXProject "LYSKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC237D6F1FB03E330011C167 /* Debug */,
-				CC237D701FB03E330011C167 /* Release */,
+				CCD707B91FD90B77009B0919 /* Debug */,
+				CCD707BA1FD90B77009B0919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC237D711FB03E330011C167 /* Build configuration list for PBXNativeTarget "LYSKitDemo" */ = {
+		CCD707BB1FD90B77009B0919 /* Build configuration list for PBXNativeTarget "LYSKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC237D721FB03E330011C167 /* Debug */,
-				CC237D731FB03E330011C167 /* Release */,
+				CCD707BC1FD90B77009B0919 /* Debug */,
+				CCD707BD1FD90B77009B0919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC237D531FB03E330011C167 /* Project object */;
+	rootObject = CCD7079D1FD90B77009B0919 /* Project object */;
 }

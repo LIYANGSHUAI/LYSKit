@@ -2,14 +2,14 @@
 //  ViewController.m
 //  LYSKitDemo
 //
-//  Created by HENAN on 2017/11/6.
-//  Copyright © 2017年 HENAN. All rights reserved.
+//  Created by HENAN on 2017/12/7.
+//  Copyright © 2017年 liyangshuai. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "LYSKit.h"
+\
 @interface ViewController ()
-
+@property (nonatomic,strong)NSString *name;
 @end
 
 @implementation ViewController
@@ -20,9 +20,6 @@
     
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-   
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
