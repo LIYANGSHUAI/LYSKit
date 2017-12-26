@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LYSKit"
-  s.version      = "1.0.6"
+  s.version      = "2.0.0"
   s.summary      = "A very useful base framework that integrates some of the common code blocks in development with apis."
 
   # This description is used to generate tags and improve search results.
@@ -93,11 +93,12 @@ A very useful base framework that integrates some of the common code blocks in d
   #
 
 
-  s.source_files  = "LYSKit/*.{h,m}"
+  # s.source_files  = "LYSKit/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "LYSKit/**/*.h"
 
+  s.vendored_frameworks = "LYSKit.framework"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

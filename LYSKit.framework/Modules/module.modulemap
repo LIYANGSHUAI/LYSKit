@@ -1,0 +1,6 @@
+framework module LYSKit {
+  umbrella header "LYSKit.h"
+
+  export *
+  module * { export * }
+}
