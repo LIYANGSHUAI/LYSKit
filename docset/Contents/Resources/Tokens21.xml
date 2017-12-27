@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIViewController+LYSCategory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(LYSCategory)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_getOuterViewController</TokenIdentifier>
+			<Abstract type="html">获取最外层的视图控制器</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (UIViewController *)ly_getOuterViewController</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回最外层的视图控制器</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getOuterViewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:itemTitles:itemActions:</TokenIdentifier>
+			<Abstract type="html">实例方法弹出窗口,窗口样式默认是UIAlertControllerStyleAlert类型</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message itemTitles:(NSArray&lt;NSString*&gt; *( ^ ) ( void ))itemTitles itemActions:(void ( ^ ) ( NSInteger index ))itemActions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">弹窗的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">弹窗的提示信息</Abstract>
+				</Parameter><Parameter>
+					<Name>itemTitles</Name>
+					<Abstract type="html">弹窗的按钮字符串数组</Abstract>
+				</Parameter><Parameter>
+					<Name>itemActions</Name>
+					<Abstract type="html">弹出的按钮事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:itemTitles:itemActions:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:</TokenIdentifier>
+			<Abstract type="html">实例方法弹出窗口,窗口样式默认是UIAlertControllerStyleAlert类型</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message leftStr:(NSString *)leftStr leftAction:(void ( ^ ) ( void ))leftAction rightStr:(NSString *)rightStr rightAction:(void ( ^ ) ( void ))rightAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">弹窗的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">弹窗的提示信息</Abstract>
+				</Parameter><Parameter>
+					<Name>leftStr</Name>
+					<Abstract type="html">弹窗的左边按钮标题</Abstract>
+				</Parameter><Parameter>
+					<Name>leftAction</Name>
+					<Abstract type="html">弹出的左边按钮点击事件</Abstract>
+				</Parameter><Parameter>
+					<Name>rightStr</Name>
+					<Abstract type="html">弹窗的右边按钮标题</Abstract>
+				</Parameter><Parameter>
+					<Name>rightAction</Name>
+					<Abstract type="html">弹出的右边按钮点击事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:textfieldPlaceholder:leftStr:leftAction:rightStr:rightAction:</TokenIdentifier>
+			<Abstract type="html">实例方法,带有输入框的弹窗</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message textfieldPlaceholder:(NSArray&lt;NSString*&gt; *)placeholders leftStr:(NSString *)leftStr leftAction:(void ( ^ ) ( NSArray&lt;UITextField*&gt; *textFields ))leftAction rightStr:(NSString *)rightStr rightAction:(void ( ^ ) ( NSArray&lt;UITextField*&gt; *textFields ))rightAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">弹窗的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">弹窗的提示信息</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholders</Name>
+					<Abstract type="html">输入的占位字符串,个数决定输入框的个数</Abstract>
+				</Parameter><Parameter>
+					<Name>leftStr</Name>
+					<Abstract type="html">弹窗的左边按钮标题</Abstract>
+				</Parameter><Parameter>
+					<Name>leftAction</Name>
+					<Abstract type="html">弹窗的左边按钮点击事件</Abstract>
+				</Parameter><Parameter>
+					<Name>rightStr</Name>
+					<Abstract type="html">弹窗的右边按钮标题</Abstract>
+				</Parameter><Parameter>
+					<Name>rightAction</Name>
+					<Abstract type="html">弹窗的右边按钮点击事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:textfieldPlaceholder:leftStr:leftAction:rightStr:rightAction:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:comfirmStr:comfirmAction:</TokenIdentifier>
+			<Abstract type="html">实例方法,只有一个按钮的弹窗</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message comfirmStr:(NSString *)comfirmStr comfirmAction:(void ( ^ ) ( void ))comfirmAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">弹窗的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">弹窗的提示信息</Abstract>
+				</Parameter><Parameter>
+					<Name>comfirmStr</Name>
+					<Abstract type="html">弹窗按钮标题</Abstract>
+				</Parameter><Parameter>
+					<Name>comfirmAction</Name>
+					<Abstract type="html">弹窗按钮点击事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</TokenIdentifier>
+			<Abstract type="html">实例方法,返回自定义条数弹窗</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle actionTitles:(NSArray&lt;NSString*&gt; *)actionTitles clickAction:(void ( ^ ) ( NSInteger index ))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void ( ^ ) ( void ))cancelAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">弹窗的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">弹窗的提示信息</Abstract>
+				</Parameter><Parameter>
+					<Name>preferredStyle</Name>
+					<Abstract type="html">弹窗的样式</Abstract>
+				</Parameter><Parameter>
+					<Name>actionTitles</Name>
+					<Abstract type="html">弹窗的条目标题</Abstract>
+				</Parameter><Parameter>
+					<Name>clickAction</Name>
+					<Abstract type="html">弹窗的点击事件</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelStr</Name>
+					<Abstract type="html">弹窗的取消按钮标题</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelAction</Name>
+					<Abstract type="html">弹窗的去掉点击事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_currentViewControllerVisible:</TokenIdentifier>
+			<Abstract type="html">判断一个控制器是否正在显示</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_currentViewControllerVisible:(UIViewController *)viewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">参数控制器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回BOOL类型</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_currentViewControllerVisible:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

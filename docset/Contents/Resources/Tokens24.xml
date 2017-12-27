@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/LYSTelephoneNumber.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/LYSTelephoneNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LYSTelephoneNumberYiDong</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LYSTelephoneNumberYiDong</Declaration>
+            
+            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MyEnumValueBLYSTelephoneNumberLiTong</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MyEnumValueBLYSTelephoneNumberLiTong</Declaration>
+            
+            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MyEnumValueCLYSTelephoneNumberGuHua</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MyEnumValueCLYSTelephoneNumberGuHua</Declaration>
+            
+            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LYSTelephoneNumberUnKnow</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LYSTelephoneNumberUnKnow</Declaration>
+            
+            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

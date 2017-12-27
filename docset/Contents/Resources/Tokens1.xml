@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/LYSAPPDelegateManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSAPPDelegateManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSAPPDelegateManager/ly_createWindowAndSetRootViewController:</TokenIdentifier>
+			<Abstract type="html">创建并设置window的跟视图控制器</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_createWindowAndSetRootViewController:(UIViewController *)rootViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rootViewController</Name>
+					<Abstract type="html">要设置的跟视图控制器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_createWindowAndSetRootViewController:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSAPPDelegateManager/ly_setWindowRootViewController:</TokenIdentifier>
+			<Abstract type="html">设置window的跟视图控制器</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_setWindowRootViewController:(UIViewController *)rootViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rootViewController</Name>
+					<Abstract type="html">根视图控制器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_setWindowRootViewController:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSAPPDelegateManager/ly_if:showViewController:elseShowViewController:</TokenIdentifier>
+			<Abstract type="html">根据返回条件分别显示不同的视图控制器</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_if:(BOOL ( ^ ) ( void ))ispermit showViewController:(UIViewController *)firstViewController elseShowViewController:(UIViewController *)secoundViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ispermit</Name>
+					<Abstract type="html">判断条件</Abstract>
+				</Parameter><Parameter>
+					<Name>firstViewController</Name>
+					<Abstract type="html">如果判断条件:YES,显示这个控制器</Abstract>
+				</Parameter><Parameter>
+					<Name>secoundViewController</Name>
+					<Abstract type="html">如果判断条件:NO,显示这个控制器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_if:showViewController:elseShowViewController:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSAPPDelegateManager/ly_createWindowAndloadStartInterface:mainInterface:delay:durtion:</TokenIdentifier>
+			<Abstract type="html">设置启动动画</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_createWindowAndloadStartInterface:(UIViewController *)startInterface mainInterface:(UIViewController *)mainInterface delay:(NSTimeInterval)interval durtion:(NSTimeInterval)durtion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>startInterface</Name>
+					<Abstract type="html">启动界面</Abstract>
+				</Parameter><Parameter>
+					<Name>mainInterface</Name>
+					<Abstract type="html">应用主界面</Abstract>
+				</Parameter><Parameter>
+					<Name>interval</Name>
+					<Abstract type="html">启动动画的显示时间</Abstract>
+				</Parameter><Parameter>
+					<Name>durtion</Name>
+					<Abstract type="html">动画消失的动画时间</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_createWindowAndloadStartInterface:mainInterface:delay:durtion:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSAPPDelegateManager/pushFrom:toViewController:completion:</TokenIdentifier>
+			<Abstract type="html">模仿导航进入下一级页面</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (void)pushFrom:(UIViewController *)fromVC toViewController:(UIViewController *)toVC completion:(void ( ^ ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fromVC</Name>
+					<Abstract type="html">上一级页面</Abstract>
+				</Parameter><Parameter>
+					<Name>toVC</Name>
+					<Abstract type="html">下一级页面</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pushFrom:toViewController:completion:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSAPPDelegateManager/popFrom:toViewController:completion:</TokenIdentifier>
+			<Abstract type="html">模仿导航退回上一级页面</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (void)popFrom:(UIViewController *)fromVC toViewController:(UIViewController *)toVC completion:(void ( ^ ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fromVC</Name>
+					<Abstract type="html">下一级页面</Abstract>
+				</Parameter><Parameter>
+					<Name>toVC</Name>
+					<Abstract type="html">上一级页面</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">完成回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popFrom:toViewController:completion:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

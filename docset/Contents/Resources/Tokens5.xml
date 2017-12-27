@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/LYSKeyedArchiverManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSKeyedArchiverManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSKeyedArchiverManager/ly_addNSCodingProtocolForClass:</TokenIdentifier>
+			<Abstract type="html">给一个类添加NSCoding协议</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_addNSCodingProtocolForClass:(Class)objcClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objcClass</Name>
+					<Abstract type="html">需要被添加协议的类</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_addNSCodingProtocolForClass:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

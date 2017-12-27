@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/LYSystemManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSystemManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSystemManager/ly_deviceString</TokenIdentifier>
+			<Abstract type="html">获取设备型号信息</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (LYSTuple)ly_deviceString</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回型号</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_deviceString</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

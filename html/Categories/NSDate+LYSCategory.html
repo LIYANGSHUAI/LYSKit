@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NSDate(LYSCategory) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">LYSKitDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">lys</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/ly_compareCurrentTime:">+ ly_compareCurrentTime:</option>
+		
+		<option value="//api/name/ly_dateSincleNow:">+ ly_dateSincleNow:</option>
+		
+		<option value="//api/name/ly_dateTomorrow">+ ly_dateTomorrow</option>
+		
+		<option value="//api/name/ly_dateWithString:formatter:">+ ly_dateWithString:formatter:</option>
+		
+		<option value="//api/name/ly_dateYesterday">+ ly_dateYesterday</option>
+		
+		<option value="//api/name/ly_stringWithCurrentDateFormatter:">+ ly_stringWithCurrentDateFormatter:</option>
+		
+		<option value="//api/name/ly_stringWithDate:formatter:">+ ly_stringWithDate:formatter:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/ly_stringWithFormatter:">- ly_stringWithFormatter:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NSDate(LYSCategory) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>LYS_Category.h<br />LYS_Category.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ly_stringWithDate:formatter:" title="ly_stringWithDate:formatter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_stringWithDate:formatter:">+&nbsp;ly_stringWithDate:formatter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>类方法,将给定的日期转换成对应格式的字符串形式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)ly_stringWithDate:(NSDate *)<em>date</em> formatter:(NSString *)<em>formatStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>date</code></th>
+						<td><p>待转换的日期</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>formatStr</code></th>
+						<td><p>需要转换成的格式</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>最终转换后的字符串</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_stringWithCurrentDateFormatter:" title="ly_stringWithCurrentDateFormatter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_stringWithCurrentDateFormatter:">+&nbsp;ly_stringWithCurrentDateFormatter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注意</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)ly_stringWithCurrentDateFormatter:(NSString *)<em>formatStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>formatStr</code></th>
+						<td><p>需要转换成的格式</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>最终转换后的字符串</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_stringWithFormatter:" title="ly_stringWithFormatter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_stringWithFormatter:">&ndash;&nbsp;ly_stringWithFormatter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>实例方法,将日期转换成对应格式的字符串形式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)ly_stringWithFormatter:(NSString *)<em>formatStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>formatStr</code></th>
+						<td><p>需要转换成的格式</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>最终转换后的字符串</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_dateWithString:formatter:" title="ly_dateWithString:formatter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_dateWithString:formatter:">+&nbsp;ly_dateWithString:formatter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将给定格式的日期字符串转成对应的NSDate对象(此时,要保证日期字符串格式和传入对应的格式一致)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDate *)ly_dateWithString:(NSString *)<em>dateStr</em> formatter:(NSString *)<em>formatStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dateStr</code></th>
+						<td><p>时间字符串形式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>formatStr</code></th>
+						<td><p>时间格式</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回对应的时间对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_compareCurrentTime:" title="ly_compareCurrentTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_compareCurrentTime:">+&nbsp;ly_compareCurrentTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将给定的NSDate对象和当前时间的NSDate比较,获取比较结果</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)ly_compareCurrentTime:(NSDate *)<em>compareDate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>compareDate</code></th>
+						<td><p>和当前时间做比较的时间</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回比较的结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_dateSincleNow:" title="ly_dateSincleNow:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_dateSincleNow:">+&nbsp;ly_dateSincleNow:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取n个24小时之后的NSDate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDate *)ly_dateSincleNow:(NSInteger)<em>num</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>num</code></th>
+						<td><p>小时的个数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回预订的日期</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_dateTomorrow" title="ly_dateTomorrow"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_dateTomorrow">+&nbsp;ly_dateTomorrow</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取明天的这个时间点的NSDate,使用+ ly_dateSincleNow方法实现</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDate *)ly_dateTomorrow</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回预订的日期</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_dateYesterday" title="ly_dateYesterday"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_dateYesterday">+&nbsp;ly_dateYesterday</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取昨天的这个时间点的NSDate,使用+ ly_dateSincleNow方法实现</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDate *)ly_dateYesterday</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回预订的日期</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 lys. All rights reserved. Updated: 2017-12-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

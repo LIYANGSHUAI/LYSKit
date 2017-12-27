@@ -15,8 +15,8 @@ typedef LYSTupleManager* LYSTuple;
 @interface LYSTupleManager : NSObject
 
 // 用于存放要存储的对象
-@property (nonatomic,strong)id one;
-@property (nonatomic,strong)id two;
+@property (nonatomic,strong,readonly)id one;
+@property (nonatomic,strong,readonly)id two;
 
 // 创建方法
 + (instancetype)ly_create:(id)one two:(id)two;

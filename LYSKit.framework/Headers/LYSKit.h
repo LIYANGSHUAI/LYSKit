@@ -2,7 +2,7 @@
 //  LYSKit.h
 //  LYSKit
 //
-//  Created by HENAN on 2017/12/26.
+//  Created by HENAN on 2017/12/27.
 //  Copyright © 2017年 LYS. All rights reserved.
 //
 
@@ -19,5 +19,5 @@ FOUNDATION_EXPORT const unsigned char LYSKitVersionString[];
 #import <LYSKit/LYS_Category.h>
 #import <LYSKit/LYS_Manager.h>
 #import <LYSKit/LYS_BaseObj.h>
-#import <LYSKit/LYSReachability.h>
 #import <LYSKit/LYSDefine.h>
+#import <LYSKit/LYSReachability.m>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/LYSDateManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSDateManager</TokenIdentifier>
+			<Abstract type="html">定义一个结构体,用来存储一个特定日期的年月日时分秒</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_Today</TokenIdentifier>
+			<Abstract type="html">获取今天的LYDate格式</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (LYDate)ly_Today</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回LYDate类型</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_Today</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_LYDateFromDate:</TokenIdentifier>
+			<Abstract type="html">将某一日期转换为LYDate格式</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (LYDate)ly_LYDateFromDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">转换日期</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回LYDate类型</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_LYDateFromDate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_WeekDayForDate:</TokenIdentifier>
+			<Abstract type="html">获取给定日期是星期几</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)ly_WeekDayForDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">传入日期</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回星期几</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_WeekDayForDate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_DayNumForDate:</TokenIdentifier>
+			<Abstract type="html">获取这个月有多少天</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)ly_DayNumForDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">传入日期</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回这个月有多少天</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_DayNumForDate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_WeekDayForFirstDate:</TokenIdentifier>
+			<Abstract type="html">获取这个月的第一天星期几</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)ly_WeekDayForFirstDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">传入日期</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回这个月的第一天星期几</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_WeekDayForFirstDate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_DayForDate:</TokenIdentifier>
+			<Abstract type="html">获取给定日期是几号</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)ly_DayForDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">传入日期</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回给定日期是星期几</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_DayForDate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_DayForToday</TokenIdentifier>
+			<Abstract type="html">获取今天是几号</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)ly_DayForToday</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回今天是几号</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_DayForToday</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSDateManager/ly_DateFromLYDate:</TokenIdentifier>
+			<Abstract type="html">将LYDate转为NSDate</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			
+			<Declaration>+ (NSDate *)ly_DateFromLYDate:(LYDate)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">传入日期</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回NSDate类型</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_DateFromLYDate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

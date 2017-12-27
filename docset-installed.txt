@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/henandongxin/Library/Developer/Shared/Documentation/DocSets/com.liyangshuai.LYSKitDemo.docset
+Time: 2017-12-27 08:02:11 +0000
