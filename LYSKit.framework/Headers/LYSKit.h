@@ -20,4 +20,4 @@ FOUNDATION_EXPORT const unsigned char LYSKitVersionString[];
 #import <LYSKit/LYS_Manager.h>
 #import <LYSKit/LYS_BaseObj.h>
 #import <LYSKit/LYSDefine.h>
-#import <LYSKit/LYSReachability.m>
+#import <LYSKit/LYSReachability.h>
