@@ -14,18 +14,8 @@
 
 @end
 
-@class LYSReachability;
-
-typedef void(^MonitorNetworkChangeAction)(LYSReachability *reachability);
-
-@interface LYSReachabilityManager : NSObject
-
-// 注册网络监听
-+ (void)ly_notifitionReachability:(MonitorNetworkChangeAction)action reachability:(LYSReachability *)reachability promptly:(BOOL)promptly;
-// 移除网络监听
-+ (void)ly_stopNotifitionReachability:(LYSReachability *)reachability;
-
-@end
+#pragma mark - 元组 -
+#define LYSTuple(ONE,TWO) [LYSTupleManager ly_create:ONE two:TWO]
 
 @class CLLocation;
 

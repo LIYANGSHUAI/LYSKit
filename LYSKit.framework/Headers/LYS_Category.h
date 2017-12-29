@@ -181,9 +181,9 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 + (UIViewController *)ly_getOuterViewController;
 
 // 自定义弹窗
-- (void)ly_alertTitle:(NSString *)title message:(NSString *)message itemTitles:(NSArray<NSString *> *(^)(void))itemTitles itemActions:(void(^)(NSInteger index))itemActions;
+- (void)ly_alertTitle:(NSString *)title message:(NSString *)message itemTitles:(NSArray<NSString *> *(^)(void))itemTitles itemActions:(void(^)(NSInteger index))itemActions NS_AVAILABLE_IOS(8.0);
 
-+ (void)ly_alertTitle:(NSString *)title message:(NSString *)message itemTitles:(NSArray<NSString *> *(^)(void))itemTitles itemActions:(void(^)(NSInteger index))itemActions;
++ (void)ly_alertTitle:(NSString *)title message:(NSString *)message itemTitles:(NSArray<NSString *> *(^)(void))itemTitles itemActions:(void(^)(NSInteger index))itemActions NS_AVAILABLE_IOS(8.0);
 
 - (void)ly_alertTitle:(NSString *)title message:(NSString *)message leftStr:(NSString *)leftStr leftAction:(void(^)(void))leftAction rightStr:(NSString *)rightStr rightAction:(void(^)(void))rightAction NS_AVAILABLE_IOS(8.0);
 

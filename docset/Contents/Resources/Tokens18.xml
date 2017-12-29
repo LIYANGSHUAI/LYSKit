@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UINavigationBar+LYSCategory.html">
+	<File path="Categories/UITabBar+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UINavigationBar(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/UITabBar(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -13,19 +13,7 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_navigationBarBottomLine</TokenIdentifier>
-			<Abstract type="html">获取导航底部细线</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (UIView *)ly_navigationBarBottomLine</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回细线视图</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_navigationBarBottomLine</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenBackgroundImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_hiddenBackgroundImage</TokenIdentifier>
 			<Abstract type="html">隐藏导航条背景图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
@@ -37,15 +25,15 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_setBackgroundImage:</TokenIdentifier>
-			<Abstract type="html">设置导航背景图片</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_setBackgroundImage:</TokenIdentifier>
+			<Abstract type="html">设置背景图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
 			<Declaration>- (void)ly_setBackgroundImage:(UIImage *)image</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>image</Name>
-					<Abstract type="html">背景图片</Abstract>
+					<Abstract type="html">设置背景图片</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -54,7 +42,27 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenAndSetBackgroundImageColor:alpha:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_setBarButtonLineColor:alpha:</TokenIdentifier>
+			<Abstract type="html">设置导航条顶部线的alpha</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_setBarButtonLineColor:(UIColor *)color alpha:(CGFloat)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">颜色</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">透明度</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_setBarButtonLineColor:alpha:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_hiddenAndSetBackgroundImageColor:alpha:</TokenIdentifier>
 			<Abstract type="html">隐藏背景图片,并给一个给定alpha的图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
@@ -62,10 +70,10 @@
 			<Parameters>
 				<Parameter>
 					<Name>color</Name>
-					<Abstract type="html">背景图片的颜色</Abstract>
+					<Abstract type="html">颜色</Abstract>
 				</Parameter><Parameter>
 					<Name>alpha</Name>
-					<Abstract type="html">背景图片的透明度</Abstract>
+					<Abstract type="html">透明度</Abstract>
 				</Parameter>
 			</Parameters>
 			

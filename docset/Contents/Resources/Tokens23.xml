@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/LYSQHLDirection.html">
+	<File path="Constants/LYSTelephoneNumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/LYSQHLDirection</TokenIdentifier>
-			<Abstract type="html">控件振动的方向</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/LYSTelephoneNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSQHLDirectionHorizontal</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LYSTelephoneNumberYiDong</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LYSQHLDirectionHorizontal</Declaration>
+            <Declaration>LYSTelephoneNumberYiDong</Declaration>
             
             <DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -24,9 +24,29 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSQHLDirectionVertical</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MyEnumValueBLYSTelephoneNumberLiTong</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LYSQHLDirectionVertical</Declaration>
+            <Declaration>MyEnumValueBLYSTelephoneNumberLiTong</Declaration>
+            
+            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MyEnumValueCLYSTelephoneNumberGuHua</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MyEnumValueCLYSTelephoneNumberGuHua</Declaration>
+            
+            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LYSTelephoneNumberUnKnow</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LYSTelephoneNumberUnKnow</Declaration>
             
             <DeclaredIn>LYS_Category.h</DeclaredIn>
             
