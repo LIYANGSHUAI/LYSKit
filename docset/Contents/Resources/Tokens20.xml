@@ -25,6 +25,23 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_currentViewControllerVisible:</TokenIdentifier>
+			<Abstract type="html">判断一个控制器是否正在显示</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_currentViewControllerVisible:(UIViewController *)viewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">参数控制器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回BOOL类型</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_currentViewControllerVisible:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:itemTitles:itemActions:</TokenIdentifier>
 			<Abstract type="html">实例方法弹出窗口,窗口样式默认是UIAlertControllerStyleAlert类型</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
@@ -175,23 +192,6 @@
 			</Parameters>
 			
 			<Anchor>//api/name/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_currentViewControllerVisible:</TokenIdentifier>
-			<Abstract type="html">判断一个控制器是否正在显示</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>+ (BOOL)ly_currentViewControllerVisible:(UIViewController *)viewController</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>viewController</Name>
-					<Abstract type="html">参数控制器</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">返回BOOL类型</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_currentViewControllerVisible:</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		

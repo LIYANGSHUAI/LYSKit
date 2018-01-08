@@ -13,14 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_navigationBarBottomLine</TokenIdentifier>
-			<Abstract type="html">获取导航底部细线</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenNavigationBarBottomLine</TokenIdentifier>
+			<Abstract type="html">隐藏导航底部细线</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Declaration>- (UIView *)ly_navigationBarBottomLine</Declaration>
+			<Declaration>- (void)ly_hiddenNavigationBarBottomLine</Declaration>
 			
-			<ReturnValue><Abstract type="html">返回细线视图</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_navigationBarBottomLine</Anchor>
+			
+			<Anchor>//api/name/ly_hiddenNavigationBarBottomLine</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
@@ -50,26 +50,6 @@
 			</Parameters>
 			
 			<Anchor>//api/name/ly_setBackgroundImage:</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenAndSetBackgroundImageColor:alpha:</TokenIdentifier>
-			<Abstract type="html">隐藏背景图片,并给一个给定alpha的图片</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_hiddenAndSetBackgroundImageColor:(UIColor *)color alpha:(CGFloat)alpha</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>color</Name>
-					<Abstract type="html">背景图片的颜色</Abstract>
-				</Parameter><Parameter>
-					<Name>alpha</Name>
-					<Abstract type="html">背景图片的透明度</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/ly_hiddenAndSetBackgroundImageColor:alpha:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		

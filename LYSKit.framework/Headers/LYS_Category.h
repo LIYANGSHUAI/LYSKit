@@ -1,8 +1,3 @@
-//
-//  LYSKit 总结了本人日常开发中,经常使用的一些方法和技巧,目的是为了加快开发效率,减少不必要的和重复的查询那些常用的代码块,去浪费时间
-//  由于技术能力有限,有个API可以存在问题,大家可以联系我:
-//  QQ邮箱: 337953482@qq.com
-//  Github地址:https://github.com/LIYANGSHUAI/LYSKit
 
 #import <UIKit/UIKit.h>
 
@@ -114,29 +109,23 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @interface UINavigationBar (LYSCategory)
 
-// 获取导航底部细线
-- (UIView *)ly_navigationBarBottomLine;
+// 隐藏导航底部细线
+- (void)ly_hiddenNavigationBarBottomLine;
 
 // 导航条背景图片
 - (void)ly_hiddenBackgroundImage;
 - (void)ly_setBackgroundImage:(UIImage *)image;
-
-//  隐藏背景图片,并给一个给定alpha的图片
-- (void)ly_hiddenAndSetBackgroundImageColor:(UIColor *)color alpha:(CGFloat)alpha;
 
 @end
 
 @interface UITabBar (LYSCategory)
 
+// 隐藏导航条顶部细线
+- (void)ly_hiddenTabbarBottomLine;
+
 // 导航条背景图片
 - (void)ly_hiddenBackgroundImage;
 - (void)ly_setBackgroundImage:(UIImage *)image;
-
-// 设置导航条顶部线的alpha
-- (void)ly_setBarButtonLineColor:(UIColor *)color alpha:(CGFloat)alpha;
-
-// 隐藏背景图片,并给一个给定alpha的图片
-- (void)ly_hiddenAndSetBackgroundImageColor:(UIColor *)color alpha:(CGFloat)alpha;
 
 @end
 
@@ -180,6 +169,10 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 // 获取最外层的视图控制器
 + (UIViewController *)ly_getOuterViewController;
 
+// 判断一个控制器是否正在显示
++ (BOOL)ly_currentViewControllerVisible:(UIViewController *)viewController;
+
+
 // 自定义弹窗
 - (void)ly_alertTitle:(NSString *)title message:(NSString *)message itemTitles:(NSArray<NSString *> *(^)(void))itemTitles itemActions:(void(^)(NSInteger index))itemActions NS_AVAILABLE_IOS(8.0);
 
@@ -200,8 +193,5 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 - (void)ly_alertTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle actionTitles:(NSArray<NSString *> *)actionTitles clickAction:(void(^)(NSInteger index))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void(^)(void))cancelAction NS_AVAILABLE_IOS(8.0);
 
 + (void)ly_alertTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle actionTitles:(NSArray<NSString *> *)actionTitles clickAction:(void(^)(NSInteger index))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void(^)(void))cancelAction NS_AVAILABLE_IOS(8.0);
-
-// 判断一个控制器是否正在显示
-+ (BOOL)ly_currentViewControllerVisible:(UIViewController *)viewController;
 
 @end
