@@ -1,8 +1,3 @@
-//
-//  LYSKit 总结了本人日常开发中,经常使用的一些方法和技巧,目的是为了加快开发效率,减少不必要的和重复的查询那些常用的代码块,去浪费时间
-//  由于技术能力有限,有个API可以存在问题,大家可以联系我:
-//  QQ邮箱: 337953482@qq.com
-//  Github地址:https://github.com/LIYANGSHUAI/LYSKit
 
 #pragma mark - 获取当前设备型号 -
 #define LYSDeviceString [LYSystemManager ly_deviceString]

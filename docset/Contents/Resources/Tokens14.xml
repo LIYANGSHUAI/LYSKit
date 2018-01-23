@@ -104,6 +104,57 @@
             <NodeRef refid="14"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_splitWithString:</TokenIdentifier>
+			<Abstract type="html">用一个参照字符串,把另外一个字符串,拆分成数组</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;NSString*&gt; *)ly_splitWithString:(NSString *)separator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>separator</Name>
+					<Abstract type="html">参照字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">拆分后的数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_splitWithString:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_hasPrefix:</TokenIdentifier>
+			<Abstract type="html">判断一个字符串是否以另外一个字符串开头</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)ly_hasPrefix:(NSString *)str</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>str</Name>
+					<Abstract type="html">开头字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回计算结果</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_hasPrefix:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_hasSuffix:</TokenIdentifier>
+			<Abstract type="html">判断一个字符串是否以另外一个字符串结尾</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)ly_hasSuffix:(NSString *)str</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>str</Name>
+					<Abstract type="html">结尾字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回计算结果</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_hasSuffix:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
         
         
 	</File>

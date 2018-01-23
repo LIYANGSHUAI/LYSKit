@@ -1,10 +1,8 @@
-//
-//  LYSKit 总结了本人日常开发中,经常使用的一些方法和技巧,目的是为了加快开发效率,减少不必要的和重复的查询那些常用的代码块,去浪费时间
-//  由于技术能力有限,有个API可以存在问题,大家可以联系我:
-//  QQ邮箱: 337953482@qq.com
-//  Github地址:https://github.com/LIYANGSHUAI/LYSKit
 
 #import <Foundation/Foundation.h>
+
+#pragma mark - 元组 -
+#define LYSTuple(ONE,TWO) [LYSTupleManager ly_create:ONE two:TWO]
 
 /**
  LYSTupleManager 类,主要是模仿swift中的元组类,实现一个对象可以同时存储两个任意对象的效果
@@ -12,6 +10,7 @@
 
 @class LYSTupleManager;
 typedef LYSTupleManager* LYSTuple;
+
 @interface LYSTupleManager : NSObject
 
 // 用于存放要存储的对象
@@ -22,6 +21,7 @@ typedef LYSTupleManager* LYSTuple;
 + (instancetype)ly_create:(id)one two:(id)two;
 
 @end
+
 
 @interface LYSRuntimeManager : NSObject
 

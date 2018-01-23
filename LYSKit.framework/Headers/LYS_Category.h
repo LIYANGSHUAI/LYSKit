@@ -82,6 +82,13 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 // 判断是不是手机号
 - (LYSTelephoneNumber)ly_telePhoneNumBer;
 
+// 用一个参照字符串,把另外一个字符串,拆分成数组
+- (NSArray<NSString *> *)ly_splitWithString:(NSString *)separator;
+
+// 判断字符串是否以固定字符串开头或者结尾
+- (BOOL)ly_hasPrefix:(NSString *)str;
+- (BOOL)ly_hasSuffix:(NSString *)str;
+
 @end
 
 @interface UIColor (LYSCategory)

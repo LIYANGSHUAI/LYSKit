@@ -4,10 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cat/UIColor(LYSCategory)</TokenIdentifier>
-			<Abstract type="html">     25         * 大陆地区固话及小灵通
-     26         * 区号：010,020,021,022,023,024,025,027,028,029
-     27         * 号码：七位或八位
-     28         </Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
 			

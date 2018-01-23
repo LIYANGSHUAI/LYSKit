@@ -62,7 +62,13 @@
 		
 		<option value="//api/name/ly_firstLatter">- ly_firstLatter</option>
 		
+		<option value="//api/name/ly_hasPrefix:">- ly_hasPrefix:</option>
+		
+		<option value="//api/name/ly_hasSuffix:">- ly_hasSuffix:</option>
+		
 		<option value="//api/name/ly_rectWithSize:attributes:">- ly_rectWithSize:attributes:</option>
+		
+		<option value="//api/name/ly_splitWithString:">- ly_splitWithString:</option>
 		
 		<option value="//api/name/ly_stringClearWhitespaceAndNewLine">- ly_stringClearWhitespaceAndNewLine</option>
 		
@@ -449,6 +455,204 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_splitWithString:" title="ly_splitWithString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_splitWithString:">&ndash;&nbsp;ly_splitWithString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用一个参照字符串,把另外一个字符串,拆分成数组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSString*&gt; *)ly_splitWithString:(NSString *)<em>separator</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>separator</code></th>
+						<td><p>参照字符串</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>拆分后的数组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>(NSArray<NSString *> <em>)componentsSeparatedByString:(NSString </em>)separator;</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_hasPrefix:" title="ly_hasPrefix:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_hasPrefix:">&ndash;&nbsp;ly_hasPrefix:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断一个字符串是否以另外一个字符串开头</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)ly_hasPrefix:(NSString *)<em>str</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>str</code></th>
+						<td><p>开头字符串</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回计算结果</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>(BOOL)hasPrefix:(NSString *)str;</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_hasSuffix:" title="ly_hasSuffix:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_hasSuffix:">&ndash;&nbsp;ly_hasSuffix:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断一个字符串是否以另外一个字符串结尾</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)ly_hasSuffix:(NSString *)<em>str</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>str</code></th>
+						<td><p>结尾字符串</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回计算结果</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>(BOOL)hasSuffix:(NSString *)str;</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -464,7 +668,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 lys. All rights reserved. Updated: 2018-01-17</p>
+						<p class="copyright">Copyright &copy; 2018 lys. All rights reserved. Updated: 2018-01-23</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
