@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIColor+LYSCategory.html">
+	<File path="Categories/UIImage+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIColor(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -13,19 +13,79 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIColor/ly_hex:</TokenIdentifier>
-			<Abstract type="html">十六进制转color</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_imageWithColor:alpha:</TokenIdentifier>
+			<Abstract type="html">创建一个给定透明度的图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Declaration>+ (UIColor *)ly_hex:(NSString *)hexStr</Declaration>
+			<Declaration>+ (UIImage *)ly_imageWithColor:(UIColor *)color alpha:(CGFloat)alpha</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>hexStr</Name>
-					<Abstract type="html">颜色十六进制</Abstract>
+					<Name>color</Name>
+					<Abstract type="html">颜色</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">透明度</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">对应的color</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_hex:</Anchor>
+			<ReturnValue><Abstract type="html">返回图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_imageWithColor:alpha:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_screenShot:withTargetView:</TokenIdentifier>
+			<Abstract type="html">截图功能</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (UIImage *)ly_screenShot:(CGSize)size withTargetView:(UIView *)targetView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">截图出来的视图大小</Abstract>
+				</Parameter><Parameter>
+					<Name>targetView</Name>
+					<Abstract type="html">要截的视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回image图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_screenShot:withTargetView:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_downloadNetworkImageURL:</TokenIdentifier>
+			<Abstract type="html">下载图片(使用UIImage自带的一种加载网络图片的方法实现下载功能)</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (UIImage *)ly_downloadNetworkImageURL:(NSString *)urlStr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlStr</Name>
+					<Abstract type="html">图片的地址</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回的图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_downloadNetworkImageURL:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_compressionImageWithMaxWidth:limitSize:</TokenIdentifier>
+			<Abstract type="html">循环压缩图片</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)ly_compressionImageWithMaxWidth:(CGFloat)maxWidth limitSize:(NSInteger)limitSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>maxWidth</Name>
+					<Abstract type="html">图片的宽度</Abstract>
+				</Parameter><Parameter>
+					<Name>limitSize</Name>
+					<Abstract type="html">图片的大小</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">压缩后的图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_compressionImageWithMaxWidth:limitSize:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

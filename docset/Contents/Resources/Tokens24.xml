@@ -1,57 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/LYSupportedOrientation.html">
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/LYSupportedOrientation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LYSDefine.h</DeclaredIn>
-            
-			
-			<NodeRef refid="24"/>
-		</Token>
+	<File path="">
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskPortrait</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSupportedOrientationMaskPortrait</Declaration>
-            
-            <DeclaredIn>LYSDefine.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskLandscapeLeft</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSupportedOrientationMaskLandscapeLeft</Declaration>
-            
-            <DeclaredIn>LYSDefine.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskLandscapeRight</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSupportedOrientationMaskLandscapeRight</Declaration>
-            
-            <DeclaredIn>LYSDefine.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskAll</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSupportedOrientationMaskAll</Declaration>
-            
-            <DeclaredIn>LYSDefine.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
         
         
 	</File>

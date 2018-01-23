@@ -1,5 +1,6 @@
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <objc/runtime.h>
 
 #pragma mark - 元组 -
 #define LYSTuple(ONE,TWO) [LYSTupleManager ly_create:ONE two:TWO]
@@ -21,7 +22,6 @@ typedef LYSTupleManager* LYSTuple;
 + (instancetype)ly_create:(id)one two:(id)two;
 
 @end
-
 
 @interface LYSRuntimeManager : NSObject
 

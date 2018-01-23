@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/LYSTupleManager.html">
+	<File path="Classes/LYSandboxManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/LYSTupleManager</TokenIdentifier>
-			<Abstract type="html">LYSTupleManager 类,主要是模仿swift中的元组类,实现一个对象可以同时存储两个任意对象的效果</Abstract>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSandboxManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
             
 			
@@ -13,22 +13,312 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/LYSTupleManager/ly_create:two:</TokenIdentifier>
-			<Abstract type="html">创建方法</Abstract>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_sandboxPathForHomeDirectory</TokenIdentifier>
+			<Abstract type="html">获取沙盒路径</Abstract>
 			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)ly_create:(id)one two:(id)two</Declaration>
+			<Declaration>+ (NSString *)ly_sandboxPathForHomeDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回沙盒路径</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_sandboxPathForHomeDirectory</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_sandboxPathForDocument</TokenIdentifier>
+			<Abstract type="html">获取沙盒Documents路径</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)ly_sandboxPathForDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回路径字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_sandboxPathForDocument</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_sandboxPathForLibrary</TokenIdentifier>
+			<Abstract type="html">获取沙盒Library</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)ly_sandboxPathForLibrary</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回路径字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_sandboxPathForLibrary</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_sandboxPathForCaches</TokenIdentifier>
+			<Abstract type="html">获取沙盒Caches路径</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)ly_sandboxPathForCaches</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回路径字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_sandboxPathForCaches</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_jointPathComponent:path:</TokenIdentifier>
+			<Abstract type="html">拼接路径(以&quot;/&quot;拼接)</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)ly_jointPathComponent:(NSString *)filePathA path:(NSString *)filePathB</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>one</Name>
-					<Abstract type="html">对象一</Abstract>
+					<Name>filePathA</Name>
+					<Abstract type="html">用于拼接的路径字符串</Abstract>
 				</Parameter><Parameter>
-					<Name>two</Name>
-					<Abstract type="html">对象二</Abstract>
+					<Name>filePathB</Name>
+					<Abstract type="html">用于拼接的路径</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">模拟元组对象</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_create:two:</Anchor>
+			<ReturnValue><Abstract type="html">返回拼接后的路径</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_jointPathComponent:path:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_jointPathExtension:path:</TokenIdentifier>
+			<Abstract type="html">拼接路径(以&quot;.&quot;拼接)</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)ly_jointPathExtension:(NSString *)filePathA path:(NSString *)filePathB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePathA</Name>
+					<Abstract type="html">用于拼接的路径字符串</Abstract>
+				</Parameter><Parameter>
+					<Name>filePathB</Name>
+					<Abstract type="html">用于拼接的路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回拼接后的路径</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_jointPathExtension:path:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_createDirectoryFile:</TokenIdentifier>
+			<Abstract type="html">创建目录</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_createDirectoryFile:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">目录路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否创建成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_createDirectoryFile:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_createFile:fileContent:</TokenIdentifier>
+			<Abstract type="html">创建文件</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_createFile:(NSString *)filePath fileContent:(NSData *)fileData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">目录文件</Abstract>
+				</Parameter><Parameter>
+					<Name>fileData</Name>
+					<Abstract type="html">文件内容</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否创建成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_createFile:fileContent:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_removeFilePath:</TokenIdentifier>
+			<Abstract type="html">移除文件</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_removeFilePath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">需要移除的文件</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否移除成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_removeFilePath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_moveFilePath:toFilePath:</TokenIdentifier>
+			<Abstract type="html">移动文件</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_moveFilePath:(NSString *)filePathA toFilePath:(NSString *)filePathB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePathA</Name>
+					<Abstract type="html">需要被移动的文件</Abstract>
+				</Parameter><Parameter>
+					<Name>filePathB</Name>
+					<Abstract type="html">要移动到的文件</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否移动成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_moveFilePath:toFilePath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_copyFilePath:toFilePath:</TokenIdentifier>
+			<Abstract type="html">复制文件</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_copyFilePath:(NSString *)fielPathA toFilePath:(NSString *)filePathB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fielPathA</Name>
+					<Abstract type="html">需要被复制的文件</Abstract>
+				</Parameter><Parameter>
+					<Name>filePathB</Name>
+					<Abstract type="html">要复制到的文件</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否复制成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_copyFilePath:toFilePath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_isExistAtPath:</TokenIdentifier>
+			<Abstract type="html">判断文件是否存在</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_isExistAtPath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否存在</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_isExistAtPath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_attributesForFilePath:</TokenIdentifier>
+			<Abstract type="html">获取文件属性</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSDictionary *)ly_attributesForFilePath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回文件属性信息</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_attributesForFilePath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_fileCreateDateForFilePath:</TokenIdentifier>
+			<Abstract type="html">获取文件大小</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)ly_fileCreateDateForFilePath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回文件信息</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_fileCreateDateForFilePath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_writeToFilePath:fileData:</TokenIdentifier>
+			<Abstract type="html">对文件进行写入操作</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_writeToFilePath:(NSString *)filePath fileData:(NSData *)fileData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">需要写入的文件</Abstract>
+				</Parameter><Parameter>
+					<Name>fileData</Name>
+					<Abstract type="html">需要写入的内容</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回是否操作成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_writeToFilePath:fileData:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_readFilePath:</TokenIdentifier>
+			<Abstract type="html">对文件进行读操作,获取文件内容</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)ly_readFilePath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回文件内容数据</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_readFilePath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_keyedArchiver:keyPath:</TokenIdentifier>
+			<Abstract type="html">归档文件</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)ly_keyedArchiver:(id&lt;NSCopying&gt;)obj keyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>obj</Name>
+					<Abstract type="html">文件对象</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">文件的标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">文件数据</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_keyedArchiver:keyPath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSandboxManager/ly_keyedUnarchiverData:keyPath:</TokenIdentifier>
+			<Abstract type="html">反归档文件</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (id&lt;NSCopying&gt;)ly_keyedUnarchiverData:(NSData *)mData keyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mData</Name>
+					<Abstract type="html">文件数据</Abstract>
+				</Parameter><Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">文件的标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">文件对象</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_keyedUnarchiverData:keyPath:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/LYSTelephoneNumber.html">
+	<File path="Constants/LYSupportedOrientation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/LYSTelephoneNumber</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/LYSupportedOrientation</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			<DeclaredIn>LYSDefine.h</DeclaredIn>
             
 			
 			<NodeRef refid="23"/>
@@ -14,41 +14,41 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSTelephoneNumberYiDong</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskPortrait</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LYSTelephoneNumberYiDong</Declaration>
+            <Declaration>LYSupportedOrientationMaskPortrait</Declaration>
             
-            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            <DeclaredIn>LYSDefine.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MyEnumValueBLYSTelephoneNumberLiTong</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskLandscapeLeft</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MyEnumValueBLYSTelephoneNumberLiTong</Declaration>
+            <Declaration>LYSupportedOrientationMaskLandscapeLeft</Declaration>
             
-            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            <DeclaredIn>LYSDefine.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MyEnumValueCLYSTelephoneNumberGuHua</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskLandscapeRight</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MyEnumValueCLYSTelephoneNumberGuHua</Declaration>
+            <Declaration>LYSupportedOrientationMaskLandscapeRight</Declaration>
             
-            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            <DeclaredIn>LYSDefine.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSTelephoneNumberUnKnow</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LYSupportedOrientationMaskAll</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LYSTelephoneNumberUnKnow</Declaration>
+            <Declaration>LYSupportedOrientationMaskAll</Declaration>
             
-            <DeclaredIn>LYS_Category.h</DeclaredIn>
+            <DeclaredIn>LYSDefine.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>

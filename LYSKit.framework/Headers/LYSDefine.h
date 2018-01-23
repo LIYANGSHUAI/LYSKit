@@ -117,7 +117,6 @@
 #define LYSNSLog(...)
 #endif
 
-#import <objc/runtime.h>
 #pragma mark - 屏幕旋转选择项 -
 typedef NS_ENUM(NSInteger,LYSupportedOrientation) {
     LYSupportedOrientationMaskPortrait,      // 只允许home在下,即不支持旋转

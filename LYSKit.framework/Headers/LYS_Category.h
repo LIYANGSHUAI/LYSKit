@@ -1,7 +1,8 @@
 
-#import <UIKit/UIKit.h>
+#import "LYS_BaseObj.h"
 
-// 常用的一些日期拼接格式
+#pragma mark - 常用的一些日期拼接格式 -
+
 extern NSString *const LYSDateFormatterStandardDateFormatBar;     // YYYY-MM-dd HH:mm:ss
 extern NSString *const LYSDateFormatterStandardDateFormatSlash;   // YYYY/MM/dd HH:mm:ss
 extern NSString *const LYSDateFormatterGregorianCalendarBar;      // YYYY-MM-dd
@@ -20,6 +21,8 @@ extern NSString *const LYSDateFormatterTime;                      // HH:mm:ss
  *  m:      0~59 分
  *  s:      0~59 秒
  */
+
+#pragma mark - 常用日期NSDate方法 -
 
 @interface NSDate (LYSCategory)
 
@@ -43,6 +46,8 @@ extern NSString *const LYSDateFormatterTime;                      // HH:mm:ss
 
 @end
 
+#pragma mark - 常用字典类型NSDictionary方法 -
+
 @interface NSDictionary (LYSCategory)
 
 // 把字典转换成字符串格式(与NSString+LYCategory.h中ly_toDictionary方法对应)
@@ -53,13 +58,16 @@ extern NSString *const LYSDateFormatterTime;                      // HH:mm:ss
 
 @end
 
-// 区分电话号码类型
+#pragma mark - 常用手机运营商枚举值 区分电话号码类型-
+
 typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
     LYSTelephoneNumberYiDong,                                 // 移动
-    MyEnumValueBLYSTelephoneNumberLiTong,                     // 联通
-    MyEnumValueCLYSTelephoneNumberGuHua,                      // 固话
+    LYSTelephoneNumberLiTong,                                 // 联通
+    LYSTelephoneNumberGuHua,                                  // 固话
     LYSTelephoneNumberUnKnow                                  // 未知
 };
+
+#pragma mark - 常用字符串NSString方法 -
 
 @interface NSString (LYSCategory)
 
@@ -91,12 +99,16 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
+#pragma mark - 常用颜色UIColor方法 -
+
 @interface UIColor (LYSCategory)
 
 // 十六进制转color
 + (UIColor *)ly_hex:(NSString *)hexStr;
 
 @end
+
+#pragma mark - 常用图片UIImage方法 -
 
 @interface UIImage (LYSCategory)
 
@@ -114,6 +126,8 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
+#pragma mark - 常用导航UINavigationBar方法 -
+
 @interface UINavigationBar (LYSCategory)
 
 // 隐藏导航底部细线
@@ -125,16 +139,20 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
+#pragma mark - 常用底部导航UITabBar方法 -
+
 @interface UITabBar (LYSCategory)
 
 // 隐藏导航条顶部细线
-- (void)ly_hiddenTabbarBottomLine;
+- (void)ly_hiddenTabbarTopLine;
 
 // 导航条背景图片
 - (void)ly_hiddenBackgroundImage;
 - (void)ly_setBackgroundImage:(UIImage *)image;
 
 @end
+
+#pragma mark - UIView视图振动方向枚举值 -
 
 /**
  控件振动的方向
@@ -147,6 +165,8 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
     LYSQHLDirectionHorizontal,
     LYSQHLDirectionVertical
 };
+
+#pragma mark - 常用视图UIView方法 -
 
 @interface UIView (LYSCategory)
 
@@ -170,6 +190,8 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 - (void)ly_tapGesture:(void(^)(UITapGestureRecognizer *sender,UIView *view))tapGesture tapNum:(NSInteger)tapNum touchNum:(NSInteger)touchNum;
 
 @end
+
+#pragma mark - 常用控制器UIViewController方法 -
 
 @interface UIViewController (LYSCategory)
 

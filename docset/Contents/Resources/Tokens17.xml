@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UINavigationBar+LYSCategory.html">
+	<File path="Categories/UITabBar+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UINavigationBar(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/UITabBar(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -13,19 +13,19 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenNavigationBarBottomLine</TokenIdentifier>
-			<Abstract type="html">隐藏导航底部细线</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_hiddenTabbarTopLine</TokenIdentifier>
+			<Abstract type="html">隐藏导航条顶部线的alpha</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Declaration>- (void)ly_hiddenNavigationBarBottomLine</Declaration>
+			<Declaration>- (void)ly_hiddenTabbarTopLine</Declaration>
 			
 			
-			<Anchor>//api/name/ly_hiddenNavigationBarBottomLine</Anchor>
+			<Anchor>//api/name/ly_hiddenTabbarTopLine</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenBackgroundImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_hiddenBackgroundImage</TokenIdentifier>
 			<Abstract type="html">隐藏导航条背景图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
@@ -37,15 +37,15 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_setBackgroundImage:</TokenIdentifier>
-			<Abstract type="html">设置导航背景图片</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_setBackgroundImage:</TokenIdentifier>
+			<Abstract type="html">设置背景图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
 			<Declaration>- (void)ly_setBackgroundImage:(UIImage *)image</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>image</Name>
-					<Abstract type="html">背景图片</Abstract>
+					<Abstract type="html">设置背景图片</Abstract>
 				</Parameter>
 			</Parameters>
 			

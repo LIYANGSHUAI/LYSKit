@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/LYSReachability.html">
+	<File path="Classes/LYSRuntimeManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/LYSReachability</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSRuntimeManager</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
             
 			
 			<NodeRef refid="7"/>
@@ -13,62 +13,452 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/LYSReachability/ly_reachabilityWithHostName:</TokenIdentifier>
-			<Abstract type="html">Use to check the reachability of a given host name.</Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_getPropertyListForClass:</TokenIdentifier>
+			<Abstract type="html">获取对象的property属性列表,其中包括传入类的扩展中设置的属性</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)ly_reachabilityWithHostName:(NSString *)hostName</Declaration>
-			
-			
-			<Anchor>//api/name/ly_reachabilityWithHostName:</Anchor>
+			<Declaration>+ (NSArray *)ly_getPropertyListForClass:(Class)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">要获取属性列表的对象的class</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象class的属性列表数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getPropertyListForClass:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/LYSReachability/ly_reachabilityWithAddress:</TokenIdentifier>
-			<Abstract type="html">Use to check the reachability of a given IP address.</Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_getMethodListForClass:</TokenIdentifier>
+			<Abstract type="html">获取对象的Method方法列表</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)ly_reachabilityWithAddress:(const struct sockaddr *)hostAddress</Declaration>
-			
-			
-			<Anchor>//api/name/ly_reachabilityWithAddress:</Anchor>
+			<Declaration>+ (NSArray *)ly_getMethodListForClass:(Class)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">要获取方法列表的对象的class</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象class的方法列表数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getMethodListForClass:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/LYSReachability/ly_reachabilityForInternetConnection</TokenIdentifier>
-			<Abstract type="html">Checks whether the default route is available. Should be used by applications that do not connect to a particular host.</Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_getIvarListForClass:</TokenIdentifier>
+			<Abstract type="html">获取Ivar成员变量列表</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)ly_reachabilityForInternetConnection</Declaration>
-			
-			
-			<Anchor>//api/name/ly_reachabilityForInternetConnection</Anchor>
+			<Declaration>+ (NSArray *)ly_getIvarListForClass:(Class)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">要获取成员变量列表的对象的class</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象class的成员变量列表数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getIvarListForClass:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LYSReachability/startNotifier</TokenIdentifier>
-			<Abstract type="html">Start listening for reachability notifications on the current run loop.</Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_getProtocolListForClass:</TokenIdentifier>
+			<Abstract type="html">获取Protocol协议列表</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)startNotifier</Declaration>
-			
-			
-			<Anchor>//api/name/startNotifier</Anchor>
+			<Declaration>+ (NSArray *)ly_getProtocolListForClass:(Class)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">要获取协议列表的对象的class</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象class的协议列表数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getProtocolListForClass:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LYSReachability/connectionRequired</TokenIdentifier>
-			<Abstract type="html">WWAN may be available, but not active until a connection has been established. WiFi may require a connection for VPN on Demand.</Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_associationPropertyName:value:toObject:</TokenIdentifier>
+			<Abstract type="html">简单的为一个对象添加关联属性</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)connectionRequired</Declaration>
+			<Declaration>+ (void)ly_associationPropertyName:(NSString *)name value:(id)value toObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">属性的名称</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">属性的值</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">所要关联的对象</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/ly_associationPropertyName:value:toObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_associationPropertyName:toObject:</TokenIdentifier>
+			<Abstract type="html">简单的获取一个对象的关联属性</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
 			
-			<Anchor>//api/name/connectionRequired</Anchor>
+			<Declaration>+ (id)ly_associationPropertyName:(NSString *)name toObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">属性的名称</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">被关联的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">关联属性的值</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_associationPropertyName:toObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_removeAssociationPropertyToObject:</TokenIdentifier>
+			<Abstract type="html">移除对象的所有关联属性(慎用!这个方法一旦调用,这个对象所以的关联属性都被删除)</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_removeAssociationPropertyToObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">需要被移除对象的关联属性</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_removeAssociationPropertyToObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_setAssociationPropertyName:value:toObject:</TokenIdentifier>
+			<Abstract type="html">添加关联对象</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_setAssociationPropertyName:(NSString *)name value:(id)value toObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">要添加的属性名称</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">要添加的属性的值</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">需要关联的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_setAssociationPropertyName:value:toObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_setAssociationPropertyMonitorName:monitorAction:toObject:identifier:</TokenIdentifier>
+			<Abstract type="html">监测关联对象变化回调</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_setAssociationPropertyMonitorName:(NSString *)name monitorAction:(BOOL ( ^ ) ( NSString *name , id oldValue , id newValue ))action toObject:(id)object identifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">要监测的属性名</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">监测的事件</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">监测的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">监测事件的唯一标识(如果两个事件的标识一样,则后者会替代前者,不能为nil,可用于监测事件的删除)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_setAssociationPropertyMonitorName:monitorAction:toObject:identifier:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_getAssociationPropertyName:toObject:</TokenIdentifier>
+			<Abstract type="html">获取关联对象值</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (id)ly_getAssociationPropertyName:(NSString *)name toObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">获取关联对象的属性</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">要获取属性值的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回关联属性值</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getAssociationPropertyName:toObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_removeAllAssociationPropertyForObject:</TokenIdentifier>
+			<Abstract type="html">移除关联对象</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_removeAllAssociationPropertyForObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">所要移除的关联属性的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_removeAllAssociationPropertyForObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_removeAssociationPropertyName:toObject:</TokenIdentifier>
+			<Abstract type="html">移除某一关联属性</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_removeAssociationPropertyName:(NSString *)name toObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">移除关联对象的属性</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">关联的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_removeAssociationPropertyName:toObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_removeAssociationPropertyName:identifier:toObject:</TokenIdentifier>
+			<Abstract type="html">移除某一关联属性的关联监测方法</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_removeAssociationPropertyName:(NSString *)name identifier:(NSString *)identifier toObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">要移除的关联对象的属性</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">要移除监测方法的唯一标识</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">关联的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_removeAssociationPropertyName:identifier:toObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_getAssociationPropertyListForObject:</TokenIdentifier>
+			<Abstract type="html">获取对象的所有关联对象列表</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)ly_getAssociationPropertyListForObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">要获取关联属性的对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回对象的所有关联对象列表</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getAssociationPropertyListForObject:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_replaceMethodForClass:forInstanceMethod:fromClass:fromInstanceMethod:</TokenIdentifier>
+			<Abstract type="html">用一个实例方法实现部分去替换或者创建被替换对象的实例方法(默认的实例对象才会被被替换,类对象默认是不存在的,就会去创建一个和被替换方法名一样的实例方法)</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_replaceMethodForClass:(Class)forClass forInstanceMethod:(SEL)forInstanceMethod fromClass:(Class)fromClass fromInstanceMethod:(SEL)fromInstanceMethod</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>forInstanceMethod</Name>
+					<Abstract type="html">需要被替换的方法(只能替换实例方法)</Abstract>
+				</Parameter><Parameter>
+					<Name>fromClass</Name>
+					<Abstract type="html">来替换的方法所在的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>fromInstanceMethod</Name>
+					<Abstract type="html">用来替换的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回替换操作是否成功,YES为成功,NO方法不存在</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_replaceMethodForClass:forInstanceMethod:fromClass:fromInstanceMethod:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_replaceMethodForClass:forInstanceMethod:fromClass:fromClassMethod:</TokenIdentifier>
+			<Abstract type="html">用一个类方法实现部分去替换或者创建被替换对象的实例方法(默认的实例对象才会被被替换,类对象默认是不存在的,就会去创建一个和被替换方法名一样的实例方法)</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_replaceMethodForClass:(Class)forClass forInstanceMethod:(SEL)forInstanceMethod fromClass:(Class)fromClass fromClassMethod:(SEL)fromClassMethod</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>forInstanceMethod</Name>
+					<Abstract type="html">需要被替换的方法(只能替换实例方法)</Abstract>
+				</Parameter><Parameter>
+					<Name>fromClass</Name>
+					<Abstract type="html">用来替换的方法所在的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>fromClassMethod</Name>
+					<Abstract type="html">用来替换的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回替换操作是否成功,YES为成功,NO方法不存在</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_replaceMethodForClass:forInstanceMethod:fromClass:fromClassMethod:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_exchangeMethodFirstClass:firstInstanceMethod:secondClass:secondInstanceMethod:</TokenIdentifier>
+			<Abstract type="html">交换两个对象的某一Instance方法</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_exchangeMethodFirstClass:(Class)firstClass firstInstanceMethod:(SEL)firstInstanceMethod secondClass:(Class)secondClass secondInstanceMethod:(SEL)secondInstanceMethod</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>firstClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>firstInstanceMethod</Name>
+					<Abstract type="html">需要被交换的方法</Abstract>
+				</Parameter><Parameter>
+					<Name>secondClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>secondInstanceMethod</Name>
+					<Abstract type="html">需要被交换的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_exchangeMethodFirstClass:firstInstanceMethod:secondClass:secondInstanceMethod:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_exchangeMethodFirstClass:firstClassMethod:secondClass:secondClassMethod:</TokenIdentifier>
+			<Abstract type="html">交换某一对象的某一Class方法</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_exchangeMethodFirstClass:(Class)firstClass firstClassMethod:(SEL)firstClassMethod secondClass:(Class)secondClass secondClassMethod:(SEL)secondClassMethod</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>firstClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>firstClassMethod</Name>
+					<Abstract type="html">需要被交换的方法</Abstract>
+				</Parameter><Parameter>
+					<Name>secondClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>secondClassMethod</Name>
+					<Abstract type="html">需要被交换的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_exchangeMethodFirstClass:firstClassMethod:secondClass:secondClassMethod:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_exchangeMethodFirstClass:firstClassMethod:secondClass:secondInstanceMethod:</TokenIdentifier>
+			<Abstract type="html">交换第一个对象的类方法和第二个对象的实例方法</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_exchangeMethodFirstClass:(Class)firstClass firstClassMethod:(SEL)firstClassMethod secondClass:(Class)secondClass secondInstanceMethod:(SEL)secondInstanceMethod</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>firstClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>firstClassMethod</Name>
+					<Abstract type="html">需要被交换的方法</Abstract>
+				</Parameter><Parameter>
+					<Name>secondClass</Name>
+					<Abstract type="html">需要被替换方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>secondInstanceMethod</Name>
+					<Abstract type="html">需要被交换的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_exchangeMethodFirstClass:firstClassMethod:secondClass:secondInstanceMethod:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_addMethodForClass:fromClass:instanceSel:</TokenIdentifier>
+			<Abstract type="html">给某一对象添加实例方法</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_addMethodForClass:(Class)forClass fromClass:(Class)fromClass instanceSel:(SEL)instanceSel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forClass</Name>
+					<Abstract type="html">需要添加方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>fromClass</Name>
+					<Abstract type="html">方法所在的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>instanceSel</Name>
+					<Abstract type="html">需要添加的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回添加操作是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_addMethodForClass:fromClass:instanceSel:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSRuntimeManager/ly_addMethodForClass:fromClass:classSel:</TokenIdentifier>
+			<Abstract type="html">给某一对象添加类方法</Abstract>
+			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_addMethodForClass:(Class)forClass fromClass:(Class)fromClass classSel:(SEL)classSel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forClass</Name>
+					<Abstract type="html">需要添加方法的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>fromClass</Name>
+					<Abstract type="html">方法所在的对象</Abstract>
+				</Parameter><Parameter>
+					<Name>classSel</Name>
+					<Abstract type="html">需要添加的方法</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回添加操作是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_addMethodForClass:fromClass:classSel:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

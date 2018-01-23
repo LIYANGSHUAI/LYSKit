@@ -1,5 +1,4 @@
 
-#import <UIKit/UIKit.h>
 #import "LYS_BaseObj.h"
 
 @interface LYSystemManager : NSObject
