@@ -25,6 +25,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_showNavigationBarBottomLine</TokenIdentifier>
+			<Abstract type="html">显示导航底部细线</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_showNavigationBarBottomLine</Declaration>
+			
+			
+			<Anchor>//api/name/ly_showNavigationBarBottomLine</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenBackgroundImage</TokenIdentifier>
 			<Abstract type="html">隐藏导航条背景图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>

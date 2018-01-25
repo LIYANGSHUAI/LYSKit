@@ -130,8 +130,9 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @interface UINavigationBar (LYSCategory)
 
-// 隐藏导航底部细线
+// 隐藏和显示导航底部细线
 - (void)ly_hiddenNavigationBarBottomLine;
+- (void)ly_showNavigationBarBottomLine;
 
 // 导航条背景图片
 - (void)ly_hiddenBackgroundImage;
@@ -143,8 +144,9 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @interface UITabBar (LYSCategory)
 
-// 隐藏导航条顶部细线
+// 隐藏和显示导航条顶部细线
 - (void)ly_hiddenTabbarTopLine;
+- (void)ly_showTabbarTopLine;
 
 // 导航条背景图片
 - (void)ly_hiddenBackgroundImage;
