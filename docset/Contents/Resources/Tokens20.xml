@@ -1,77 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/LYSNetworkStatus.html">
+	<File path="Categories/UIViewController+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/LYSNetworkStatus</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LYSReachability.h</DeclaredIn>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSNetworkStatusNotReachable</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSNetworkStatusNotReachable</Declaration>
-            
-            <DeclaredIn>LYSReachability.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_getOuterViewController</TokenIdentifier>
+			<Abstract type="html">获取最外层控制器</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (UIViewController *)ly_getOuterViewController</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回控制器</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getOuterViewController</Anchor>
             <NodeRef refid="20"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSNetworkStatusReachableVia2G</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSNetworkStatusReachableVia2G</Declaration>
-            
-            <DeclaredIn>LYSReachability.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_currentViewControllerVisible:</TokenIdentifier>
+			<Abstract type="html">判断这个控制器是否正在显示</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)ly_currentViewControllerVisible:(UIViewController *)viewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">需要判断的控制器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回判断结果</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_currentViewControllerVisible:</Anchor>
             <NodeRef refid="20"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSNetworkStatusReachableVia3G</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSNetworkStatusReachableVia3G</Declaration>
-            
-            <DeclaredIn>LYSReachability.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:</TokenIdentifier>
+			<Abstract type="html">弹出一个左右按钮的弹窗</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message leftStr:(NSString *)leftStr leftAction:(void ( ^ ) ( void ))leftAction rightStr:(NSString *)rightStr rightAction:(void ( ^ ) ( void ))rightAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">副标题</Abstract>
+				</Parameter><Parameter>
+					<Name>leftStr</Name>
+					<Abstract type="html">左按钮</Abstract>
+				</Parameter><Parameter>
+					<Name>leftAction</Name>
+					<Abstract type="html">左按钮事件</Abstract>
+				</Parameter><Parameter>
+					<Name>rightStr</Name>
+					<Abstract type="html">右按钮</Abstract>
+				</Parameter><Parameter>
+					<Name>rightAction</Name>
+					<Abstract type="html">右按钮事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:</Anchor>
             <NodeRef refid="20"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSNetworkStatusRaeachableVia4G</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSNetworkStatusRaeachableVia4G</Declaration>
-            
-            <DeclaredIn>LYSReachability.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:comfirmStr:comfirmAction:</TokenIdentifier>
+			<Abstract type="html">弹出一个只有一个按钮的弹窗</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message comfirmStr:(NSString *)comfirmStr comfirmAction:(void ( ^ ) ( void ))comfirmAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">副标题</Abstract>
+				</Parameter><Parameter>
+					<Name>comfirmStr</Name>
+					<Abstract type="html">按钮</Abstract>
+				</Parameter><Parameter>
+					<Name>comfirmAction</Name>
+					<Abstract type="html">按钮事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:</Anchor>
             <NodeRef refid="20"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSNetworkStatusReachableViaWWAN</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSNetworkStatusReachableViaWWAN</Declaration>
-            
-            <DeclaredIn>LYSReachability.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</TokenIdentifier>
+			<Abstract type="html">弹出一个多个按钮的弹窗,并且附带取消按钮</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle actionTitles:(NSArray&lt;NSString*&gt; *)actionTitles clickAction:(void ( ^ ) ( NSInteger index ))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void ( ^ ) ( void ))cancelAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">副标题</Abstract>
+				</Parameter><Parameter>
+					<Name>preferredStyle</Name>
+					<Abstract type="html">弹窗样式</Abstract>
+				</Parameter><Parameter>
+					<Name>actionTitles</Name>
+					<Abstract type="html">按钮</Abstract>
+				</Parameter><Parameter>
+					<Name>clickAction</Name>
+					<Abstract type="html">按钮事件</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelStr</Name>
+					<Abstract type="html">取消</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelAction</Name>
+					<Abstract type="html">取消事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</Anchor>
             <NodeRef refid="20"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSNetworkStatusReachableViaWiFi</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSNetworkStatusReachableViaWiFi</Declaration>
-            
-            <DeclaredIn>LYSReachability.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:</TokenIdentifier>
+			<Abstract type="html">弹出一个多个按钮的弹窗,并且附带取消按钮</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_alertTitle:(NSString *)title message:(NSString *)message textfieldPlaceholder:(NSArray&lt;NSString*&gt; *)placeholders actionTitles:(NSArray&lt;NSString*&gt; *)actionTitles clickAction:(void ( ^ ) ( NSInteger index ))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void ( ^ ) ( void ))cancelAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">副标题</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholders</Name>
+					<Abstract type="html">输入框</Abstract>
+				</Parameter><Parameter>
+					<Name>actionTitles</Name>
+					<Abstract type="html">按钮</Abstract>
+				</Parameter><Parameter>
+					<Name>clickAction</Name>
+					<Abstract type="html">按钮事件</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelStr</Name>
+					<Abstract type="html">取消</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelAction</Name>
+					<Abstract type="html">取消事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:</Anchor>
             <NodeRef refid="20"/>
-        </Token>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:</TokenIdentifier>
+			<Abstract type="html">弹出一个多个按钮的弹窗,并且附带取消按钮</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (void)ly_alertTitle:(NSString *)title message:(NSString *)message textfieldPlaceholder:(NSArray&lt;NSString*&gt; *)placeholders actionTitles:(NSArray&lt;NSString*&gt; *)actionTitles clickAction:(void ( ^ ) ( NSInteger index ))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void ( ^ ) ( void ))cancelAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">副标题</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholders</Name>
+					<Abstract type="html">输入框</Abstract>
+				</Parameter><Parameter>
+					<Name>actionTitles</Name>
+					<Abstract type="html">按钮</Abstract>
+				</Parameter><Parameter>
+					<Name>clickAction</Name>
+					<Abstract type="html">按钮事件</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelStr</Name>
+					<Abstract type="html">取消</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelAction</Name>
+					<Abstract type="html">取消事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
         
         
 	</File>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIView+LYSCategory.html">
+	<File path="Categories/UITabBar+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIView(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/UITabBar(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -13,164 +13,55 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_shakeWithShakeDirection:</TokenIdentifier>
-			<Abstract type="html">传一个振动的方向</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_hiddenTabbarTopLine</TokenIdentifier>
+			<Abstract type="html">隐藏导航条顶部线的alpha</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Declaration>- (void)ly_shakeWithShakeDirection:(LYSQHLDirection)shakeDirection</Declaration>
+			<Declaration>- (void)ly_hiddenTabbarTopLine</Declaration>
+			
+			
+			<Anchor>//api/name/ly_hiddenTabbarTopLine</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_showTabbarTopLine</TokenIdentifier>
+			<Abstract type="html">显示导航条顶部线的alpha</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_showTabbarTopLine</Declaration>
+			
+			
+			<Anchor>//api/name/ly_showTabbarTopLine</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_hiddenBackgroundImage</TokenIdentifier>
+			<Abstract type="html">隐藏导航条背景图片</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_hiddenBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/ly_hiddenBackgroundImage</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UITabBar/ly_setBackgroundImage:</TokenIdentifier>
+			<Abstract type="html">设置背景图片</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (void)ly_setBackgroundImage:(UIImage *)image</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>shakeDirection</Name>
-					<Abstract type="html">振动的方向</Abstract>
+					<Name>image</Name>
+					<Abstract type="html">设置背景图片</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/ly_shakeWithShakeDirection:</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_shakeWithTimes:shakeDirection:</TokenIdentifier>
-			<Abstract type="html">传一个振动的次数和振动的方向</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_shakeWithTimes:(NSInteger)times shakeDirection:(LYSQHLDirection)shakeDirection</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>times</Name>
-					<Abstract type="html">振动的次数</Abstract>
-				</Parameter><Parameter>
-					<Name>shakeDirection</Name>
-					<Abstract type="html">振动的方向</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/ly_shakeWithTimes:shakeDirection:</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_shakeWithTimes:speed:shakeDirection:</TokenIdentifier>
-			<Abstract type="html">传一个振动的次数,振动的速度和振动的方向</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_shakeWithTimes:(NSInteger)times speed:(CGFloat)speed shakeDirection:(LYSQHLDirection)shakeDirection</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>times</Name>
-					<Abstract type="html">振动的次数</Abstract>
-				</Parameter><Parameter>
-					<Name>speed</Name>
-					<Abstract type="html">振动的速度</Abstract>
-				</Parameter><Parameter>
-					<Name>shakeDirection</Name>
-					<Abstract type="html">振动的方向</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/ly_shakeWithTimes:speed:shakeDirection:</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_shakeWithTimes:speed:range:shakeDirection:</TokenIdentifier>
-			<Abstract type="html">传一个振动的次数,振动的速度,振动的幅度和振动的方向</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_shakeWithTimes:(NSInteger)times speed:(CGFloat)speed range:(CGFloat)range shakeDirection:(LYSQHLDirection)shakeDirection</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>times</Name>
-					<Abstract type="html">振动的次数</Abstract>
-				</Parameter><Parameter>
-					<Name>speed</Name>
-					<Abstract type="html">振动的速度</Abstract>
-				</Parameter><Parameter>
-					<Name>range</Name>
-					<Abstract type="html">振动的幅度</Abstract>
-				</Parameter><Parameter>
-					<Name>shakeDirection</Name>
-					<Abstract type="html">振动的方向</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/ly_shakeWithTimes:speed:range:shakeDirection:</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_getTopSubViews</TokenIdentifier>
-			<Abstract type="html">获取某个view的叶子View(一般为Window)</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (NSMutableArray *)ly_getTopSubViews</Declaration>
-			
-			<ReturnValue><Abstract type="html">叶子view数组</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_getTopSubViews</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_getRootViewController</TokenIdentifier>
-			<Abstract type="html">获取当前视图所在的根视图控制器</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (UIViewController *)ly_getRootViewController</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回跟视图控制器</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_getRootViewController</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_showLoadingWithColor:</TokenIdentifier>
-			<Abstract type="html">添加加载圈</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_showLoadingWithColor:(UIColor *)color</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>color</Name>
-					<Abstract type="html">加载圈的颜色</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/ly_showLoadingWithColor:</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_hiddenLoadingView</TokenIdentifier>
-			<Abstract type="html">隐藏加载圈</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_hiddenLoadingView</Declaration>
-			
-			
-			<Anchor>//api/name/ly_hiddenLoadingView</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_tapGesture:tapNum:touchNum:</TokenIdentifier>
-			<Abstract type="html">给一个视图控件添加点击手势</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_tapGesture:(void ( ^ ) ( UITapGestureRecognizer *sender , UIView *view ))tapGesture tapNum:(NSInteger)tapNum touchNum:(NSInteger)touchNum</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tapGesture</Name>
-					<Abstract type="html">手势回调</Abstract>
-				</Parameter><Parameter>
-					<Name>tapNum</Name>
-					<Abstract type="html">触发回调的点击次数</Abstract>
-				</Parameter><Parameter>
-					<Name>touchNum</Name>
-					<Abstract type="html">触发回调的手指个数</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/ly_tapGesture:tapNum:touchNum:</Anchor>
+			<Anchor>//api/name/ly_setBackgroundImage:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

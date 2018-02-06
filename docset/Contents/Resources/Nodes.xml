@@ -21,6 +21,7 @@
 						<NodeRef refid="8"/>
 						<NodeRef refid="9"/>
 						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -30,7 +31,6 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="11"/>
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
 						<NodeRef refid="14"/>
@@ -39,20 +39,31 @@
 						<NodeRef refid="17"/>
 						<NodeRef refid="18"/>
 						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
 						
 					</Subnodes>
 				</Node>
 				
                 
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="21"/>
+						
+					</Subnodes>
+				</Node>
+				
                 
 				<Node>
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="20"/>
-						<NodeRef refid="21"/>
 						<NodeRef refid="22"/>
 						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
 						
 					</Subnodes>
 				</Node>
@@ -62,8 +73,8 @@
                     <Name>Blocks</Name>
                     <Path>index.html</Path>
                     <Subnodes>
-                        <NodeRef refid="24"/>
-                        <NodeRef refid="25"/>
+                        <NodeRef refid="27"/>
+                        <NodeRef refid="28"/>
                         
                     </Subnodes>
                 </Node>
@@ -209,33 +220,72 @@
             
         </Node>
 		<Node id="6" type="file" documentType="reference">
-            <Name>LYSLocationManager</Name>
-            <Path>Classes/LYSLocationManager.html</Path>
+            <Name>LYSLocation</Name>
+            <Path>Classes/LYSLocation.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Classes/LYSLocationManager.html</Path>
+                    <Path>Classes/LYSLocation.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Classes/LYSLocationManager.html</Path>
+                    <Path>Classes/LYSLocation.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
                 
                 
-                <Node type="section">
-                    <Path>Classes/LYSLocationManager.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
                 
+                <Node type="section">
+                    <Path>Classes/LYSLocation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
                 
             </Subnodes>
             
         </Node>
 		<Node id="7" type="file" documentType="reference">
+            <Name>LYSReachability</Name>
+            <Path>Classes/LYSReachability.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/LYSReachability.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/LYSReachability.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/LYSReachability.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/LYSReachability.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/LYSReachability.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
             <Name>LYSRuntimeManager</Name>
             <Path>Classes/LYSRuntimeManager.html</Path>
             
@@ -262,7 +312,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="9" type="file" documentType="reference">
             <Name>LYSTupleManager</Name>
             <Path>Classes/LYSTupleManager.html</Path>
             
@@ -289,7 +339,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="10" type="file" documentType="reference">
             <Name>LYSandboxManager</Name>
             <Path>Classes/LYSandboxManager.html</Path>
             
@@ -316,7 +366,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="10" type="file" documentType="reference">
+		<Node id="11" type="file" documentType="reference">
             <Name>LYSystemManager</Name>
             <Path>Classes/LYSystemManager.html</Path>
             
@@ -344,7 +394,7 @@
             
         </Node>
 		
-		<Node id="11" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
             <Name>NSDate(LYSCategory)</Name>
             <Path>Categories/NSDate+LYSCategory.html</Path>
             
@@ -377,7 +427,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>NSDictionary(LYSCategory)</Name>
             <Path>Categories/NSDictionary+LYSCategory.html</Path>
             
@@ -410,7 +460,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>NSString(LYSCategory)</Name>
             <Path>Categories/NSString+LYSCategory.html</Path>
             
@@ -437,7 +487,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>UIColor(LYSCategory)</Name>
             <Path>Categories/UIColor+LYSCategory.html</Path>
             
@@ -464,7 +514,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="16" type="file" documentType="reference">
             <Name>UIImage(LYSCategory)</Name>
             <Path>Categories/UIImage+LYSCategory.html</Path>
             
@@ -497,7 +547,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>UINavigationBar(LYSCategory)</Name>
             <Path>Categories/UINavigationBar+LYSCategory.html</Path>
             
@@ -524,7 +574,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="17" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>UITabBar(LYSCategory)</Name>
             <Path>Categories/UITabBar+LYSCategory.html</Path>
             
@@ -551,7 +601,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="18" type="file" documentType="reference">
+		<Node id="19" type="file" documentType="reference">
             <Name>UIView(LYSCategory)</Name>
             <Path>Categories/UIView+LYSCategory.html</Path>
             
@@ -578,7 +628,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>UIViewController(LYSCategory)</Name>
             <Path>Categories/UIViewController+LYSCategory.html</Path>
             
@@ -612,34 +662,66 @@
             
         </Node>
 		
-        
-        <Node id="20" type="file" documentType="reference">
+        <Node id="21" type="file" documentType="reference">
+            <Name>LYSLocationDelegate</Name>
+            <Path>Protocols/LYSLocationDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/LYSLocationDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/LYSLocationDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/LYSLocationDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="22" type="file" documentType="reference">
+            <Name>LYSLocationRequestType</Name>
+            <Path>Constants/LYSLocationRequestType.html</Path>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
             <Name>LYSNetworkStatus</Name>
             <Path>Constants/LYSNetworkStatus.html</Path>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>LYSQHLDirection</Name>
             <Path>Constants/LYSQHLDirection.html</Path>
             
         </Node>
-		<Node id="22" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>LYSTelephoneNumber</Name>
             <Path>Constants/LYSTelephoneNumber.html</Path>
             
         </Node>
-		<Node id="23" type="file" documentType="reference">
+		<Node id="26" type="file" documentType="reference">
             <Name>LYSupportedOrientation</Name>
             <Path>Constants/LYSupportedOrientation.html</Path>
             
         </Node>
 		
-        <Node id="24" type="file" documentType="reference">
+        <Node id="27" type="file" documentType="reference">
             <Name>LYSGCDAction</Name>
             <Path>Blocks/LYSGCDAction.html</Path>
             
         </Node>
-        <Node id="25" type="file" documentType="reference">
+        <Node id="28" type="file" documentType="reference">
             <Name>LYSGCDActionQueue</Name>
             <Path>Blocks/LYSGCDActionQueue.html</Path>
             

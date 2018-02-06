@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSDate+LYSCategory.html">
+	<File path="Classes/LYSystemManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSDate(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSystemManager</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -13,134 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_stringWithDate:formatter:</TokenIdentifier>
-			<Abstract type="html">类方法,将给定的日期转换成对应格式的字符串形式</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/LYSystemManager/ly_deviceString</TokenIdentifier>
+			<Abstract type="html">获取设备型号信息</Abstract>
+			<DeclaredIn>LYS_Manager.h</DeclaredIn>
 			
-			<Declaration>+ (NSString *)ly_stringWithDate:(NSDate *)date formatter:(NSString *)formatStr</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>date</Name>
-					<Abstract type="html">待转换的日期</Abstract>
-				</Parameter><Parameter>
-					<Name>formatStr</Name>
-					<Abstract type="html">需要转换成的格式</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">最终转换后的字符串</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_stringWithDate:formatter:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_stringWithCurrentDateFormatter:</TokenIdentifier>
-			<Abstract type="html">注意</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			<Declaration>+ (LYSTuple)ly_deviceString</Declaration>
 			
-			<Declaration>+ (NSString *)ly_stringWithCurrentDateFormatter:(NSString *)formatStr</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>formatStr</Name>
-					<Abstract type="html">需要转换成的格式</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">最终转换后的字符串</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_stringWithCurrentDateFormatter:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_stringWithFormatter:</TokenIdentifier>
-			<Abstract type="html">实例方法,将日期转换成对应格式的字符串形式</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)ly_stringWithFormatter:(NSString *)formatStr</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>formatStr</Name>
-					<Abstract type="html">需要转换成的格式</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">最终转换后的字符串</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_stringWithFormatter:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_dateWithString:formatter:</TokenIdentifier>
-			<Abstract type="html">将给定格式的日期字符串转成对应的NSDate对象(此时,要保证日期字符串格式和传入对应的格式一致)</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>+ (NSDate *)ly_dateWithString:(NSString *)dateStr formatter:(NSString *)formatStr</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>dateStr</Name>
-					<Abstract type="html">时间字符串形式</Abstract>
-				</Parameter><Parameter>
-					<Name>formatStr</Name>
-					<Abstract type="html">时间格式</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">返回对应的时间对象</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_dateWithString:formatter:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_compareCurrentTime:</TokenIdentifier>
-			<Abstract type="html">将给定的NSDate对象和当前时间的NSDate比较,获取比较结果</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>+ (NSString *)ly_compareCurrentTime:(NSDate *)compareDate</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>compareDate</Name>
-					<Abstract type="html">和当前时间做比较的时间</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">返回比较的结果</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_compareCurrentTime:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_dateSincleNow:</TokenIdentifier>
-			<Abstract type="html">获取n个24小时之后的NSDate</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>+ (NSDate *)ly_dateSincleNow:(NSInteger)num</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>num</Name>
-					<Abstract type="html">小时的个数</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">返回预订的日期</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_dateSincleNow:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_dateTomorrow</TokenIdentifier>
-			<Abstract type="html">获取明天的这个时间点的NSDate,使用+ ly_dateSincleNow方法实现</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>+ (NSDate *)ly_dateTomorrow</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回预订的日期</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_dateTomorrow</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDate/ly_dateYesterday</TokenIdentifier>
-			<Abstract type="html">获取昨天的这个时间点的NSDate,使用+ ly_dateSincleNow方法实现</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>+ (NSDate *)ly_dateYesterday</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回预订的日期</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_dateYesterday</Anchor>
+			<ReturnValue><Abstract type="html">返回型号</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_deviceString</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

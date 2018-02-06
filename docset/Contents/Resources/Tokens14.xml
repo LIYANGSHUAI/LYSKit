@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIColor+LYSCategory.html">
+	<File path="Categories/NSString+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIColor(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -13,19 +13,145 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIColor/ly_hex:</TokenIdentifier>
-			<Abstract type="html">十六进制转color</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_toData</TokenIdentifier>
+			<Abstract type="html">将字符串转换成NSData</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Declaration>+ (UIColor *)ly_hex:(NSString *)hexStr</Declaration>
+			<Declaration>- (NSData *)ly_toData</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回NSData对象</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_toData</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_toDictionary</TokenIdentifier>
+			<Abstract type="html">将字符串转换为字典</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)ly_toDictionary</Declaration>
+			
+			<ReturnValue><Abstract type="html">字典格式</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_toDictionary</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_stringClearWhitespaceAndNewLine</TokenIdentifier>
+			<Abstract type="html">去掉字符串结尾换行和空格</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)ly_stringClearWhitespaceAndNewLine</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回转换后的字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_stringClearWhitespaceAndNewLine</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_rectWithSize:attributes:</TokenIdentifier>
+			<Abstract type="html">获取字符串在指定区域的预计占用Rect</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (CGRect)ly_rectWithSize:(CGSize)size attributes:(NSDictionary&lt;NSString*,id&gt; *)attributes</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>hexStr</Name>
-					<Abstract type="html">颜色十六进制</Abstract>
+					<Name>size</Name>
+					<Abstract type="html">指定区域</Abstract>
+				</Parameter><Parameter>
+					<Name>attributes</Name>
+					<Abstract type="html">预计字符串参数</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">对应的color</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_hex:</Anchor>
+			<ReturnValue><Abstract type="html">返回预计Rect</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_rectWithSize:attributes:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_firstLatter</TokenIdentifier>
+			<Abstract type="html">获取首字母</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)ly_firstLatter</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回字符串的首字母</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_firstLatter</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_telePhoneNumBer</TokenIdentifier>
+			<Abstract type="html">判断是不是手机号,以及手机号运营商名称,具体类型可查看LYSTelephoneNumber类型</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (LYSTelephoneNumber)ly_telePhoneNumBer</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回手机号的类别</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_telePhoneNumBer</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_splitWithString:</TokenIdentifier>
+			<Abstract type="html">用一个参照字符串,把另外一个字符串,拆分成数组</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;NSString*&gt; *)ly_splitWithString:(NSString *)separator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>separator</Name>
+					<Abstract type="html">参照字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">拆分后的数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_splitWithString:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_hasPrefix:</TokenIdentifier>
+			<Abstract type="html">判断一个字符串是否以另外一个字符串开头</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)ly_hasPrefix:(NSString *)str</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>str</Name>
+					<Abstract type="html">开头字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回计算结果</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_hasPrefix:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_hasSuffix:</TokenIdentifier>
+			<Abstract type="html">判断一个字符串是否以另外一个字符串结尾</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)ly_hasSuffix:(NSString *)str</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>str</Name>
+					<Abstract type="html">结尾字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回计算结果</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_hasSuffix:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_toPinyin</TokenIdentifier>
+			<Abstract type="html">获取字符串拼音</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)ly_toPinyin</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回字符串的拼音</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_toPinyin</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

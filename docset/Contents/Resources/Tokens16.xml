@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UINavigationBar+LYSCategory.html">
+	<File path="Categories/UIImage+LYSCategory.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UINavigationBar(LYSCategory)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(LYSCategory)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
             
@@ -13,55 +13,79 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenNavigationBarBottomLine</TokenIdentifier>
-			<Abstract type="html">隐藏导航底部细线</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_imageWithColor:alpha:</TokenIdentifier>
+			<Abstract type="html">创建一个给定透明度的图片</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Declaration>- (void)ly_hiddenNavigationBarBottomLine</Declaration>
-			
-			
-			<Anchor>//api/name/ly_hiddenNavigationBarBottomLine</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_showNavigationBarBottomLine</TokenIdentifier>
-			<Abstract type="html">显示导航底部细线</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_showNavigationBarBottomLine</Declaration>
-			
-			
-			<Anchor>//api/name/ly_showNavigationBarBottomLine</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_hiddenBackgroundImage</TokenIdentifier>
-			<Abstract type="html">隐藏导航条背景图片</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_hiddenBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/ly_hiddenBackgroundImage</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UINavigationBar/ly_setBackgroundImage:</TokenIdentifier>
-			<Abstract type="html">设置导航背景图片</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (void)ly_setBackgroundImage:(UIImage *)image</Declaration>
+			<Declaration>+ (UIImage *)ly_imageWithColor:(UIColor *)color alpha:(CGFloat)alpha</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">背景图片</Abstract>
+					<Name>color</Name>
+					<Abstract type="html">颜色</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">透明度</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">返回图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_imageWithColor:alpha:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_screenShot:withTargetView:</TokenIdentifier>
+			<Abstract type="html">截图功能</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
 			
-			<Anchor>//api/name/ly_setBackgroundImage:</Anchor>
+			<Declaration>+ (UIImage *)ly_screenShot:(CGSize)size withTargetView:(UIView *)targetView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">截图出来的视图大小</Abstract>
+				</Parameter><Parameter>
+					<Name>targetView</Name>
+					<Abstract type="html">要截的视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回image图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_screenShot:withTargetView:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_downloadNetworkImageURL:</TokenIdentifier>
+			<Abstract type="html">下载图片</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>+ (UIImage *)ly_downloadNetworkImageURL:(NSString *)urlStr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlStr</Name>
+					<Abstract type="html">图片的地址</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回的图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_downloadNetworkImageURL:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/ly_compressionImageWithMaxWidth:limitSize:</TokenIdentifier>
+			<Abstract type="html">循环压缩图片</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)ly_compressionImageWithMaxWidth:(CGFloat)maxWidth limitSize:(NSInteger)limitSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>maxWidth</Name>
+					<Abstract type="html">图片的宽度</Abstract>
+				</Parameter><Parameter>
+					<Name>limitSize</Name>
+					<Abstract type="html">图片的大小</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">压缩后的图片</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_compressionImageWithMaxWidth:limitSize:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		

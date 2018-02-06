@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/LYSQHLDirection.html">
+	<File path="Protocols/LYSLocationDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/LYSQHLDirection</TokenIdentifier>
-			<Abstract type="html">控件振动的方向</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/LYSLocationDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
             
 			
 			<NodeRef refid="21"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSQHLDirectionHorizontal</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSQHLDirectionHorizontal</Declaration>
-            
-            <DeclaredIn>LYS_Category.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/LYSLocationDelegate/location:didUpdateLocation:</TokenIdentifier>
+			<Abstract type="html">位置信息发生改变时代理方法</Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
+			
+			<Declaration>- (void)location:(LYSLocation *)mlocation didUpdateLocation:(CLLocation *)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mlocation</Name>
+					<Abstract type="html">实例</Abstract>
+				</Parameter><Parameter>
+					<Name>location</Name>
+					<Abstract type="html">新的位置信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/location:didUpdateLocation:</Anchor>
             <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LYSQHLDirectionVertical</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LYSQHLDirectionVertical</Declaration>
-            
-            <DeclaredIn>LYS_Category.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/LYSLocationDelegate/location:didFaileLocation:</TokenIdentifier>
+			<Abstract type="html">定位失败时代理方法</Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
+			
+			<Declaration>- (void)location:(LYSLocation *)mlocation didFaileLocation:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mlocation</Name>
+					<Abstract type="html">实例</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">错误类</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/location:didFaileLocation:</Anchor>
             <NodeRef refid="21"/>
-        </Token>
+		</Token>
+		
         
         
 	</File>

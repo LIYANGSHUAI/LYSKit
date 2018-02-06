@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/LYSLocationManager.html">
+	<File path="Classes/LYSLocation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/LYSLocationManager</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/LYSLocation</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,42 +13,26 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/LYSLocationManager/ly_location:fail:</TokenIdentifier>
-			<Abstract type="html">获取位置信息(如果此方法调用多次,那么下次的回调函数会覆盖上次的回调,前提时此时还没有定位成功)</Abstract>
-			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/LYSLocation/startLocation</TokenIdentifier>
+			<Abstract type="html">开启定位</Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
 			
-			<Declaration>+ (void)ly_location:(void ( ^ ) ( CLLocation *location ))success fail:(void ( ^ ) ( NSString *state ))fail</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>success</Name>
-					<Abstract type="html">成功定位回调</Abstract>
-				</Parameter><Parameter>
-					<Name>fail</Name>
-					<Abstract type="html">失败定位回调</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)startLocation</Declaration>
 			
-			<Anchor>//api/name/ly_location:fail:</Anchor>
+			
+			<Anchor>//api/name/startLocation</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/LYSLocationManager/ly_geocoder:success:</TokenIdentifier>
-			<Abstract type="html">对定位信息进行反编码</Abstract>
-			<DeclaredIn>LYS_Manager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/LYSLocation/stopLocation</TokenIdentifier>
+			<Abstract type="html">关闭定位</Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
 			
-			<Declaration>+ (void)ly_geocoder:(CLLocation *)location success:(void ( ^ ) ( CLPlacemark *placemark ))success</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>location</Name>
-					<Abstract type="html">定位信息</Abstract>
-				</Parameter><Parameter>
-					<Name>success</Name>
-					<Abstract type="html">反编码成功回调</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)stopLocation</Declaration>
 			
-			<Anchor>//api/name/ly_geocoder:success:</Anchor>
+			
+			<Anchor>//api/name/stopLocation</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
