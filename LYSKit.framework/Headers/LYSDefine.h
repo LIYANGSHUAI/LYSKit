@@ -101,13 +101,23 @@
 #pragma mark - 颜色字符串转换为对应的颜色 -
 #define LYSHEX(str)  [UIColor ly_hex:str]
 
-
+#pragma mark - 默认背景颜色 -
 #define LYSCommonBackgroundColor LYSRGB(238,238,238)
-#define LYStrikingFontColor LYSRGB(85,85,85)
-#define LYSExplainFontColor LYSRGB(170,170,170)
 #define LYSPartingLineColor LYSRGB(221,221,221)
+
+#pragma mark - 默认主标题字体颜色 -
+#define LYStrikingFontColor LYSRGB(85,85,85)
+
+#pragma mark - 默认副标题字体颜色 -
+#define LYSExplainFontColor LYSRGB(170,170,170)
+
+#pragma mark - 默认导航背景颜色 -
 #define LYSNavigationColor LYSRGB(51,51,51)
+
+#pragma mark - 默认点击链接颜色 -
 #define LYSOnlineFontColor LYSRGB(0,153,204)
+
+#pragma mark - 默认边框颜色 -
 #define LYSBorderColor LYSRGB(187,187,187)
 
 #pragma mark - 改写打印函数,使其在特定的条件下执行 -

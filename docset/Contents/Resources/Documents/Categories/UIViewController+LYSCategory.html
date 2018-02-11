@@ -56,6 +56,12 @@
 	
 	<optgroup label="Class Methods">
 		
+		<option value="//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:">+ ly_alertTitle:message:comfirmStr:comfirmAction:</option>
+		
+		<option value="//api/name/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:">+ ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:</option>
+		
+		<option value="//api/name/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:">+ ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</option>
+		
 		<option value="//api/name/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:">+ ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:</option>
 		
 		<option value="//api/name/ly_currentViewControllerVisible:">+ ly_currentViewControllerVisible:</option>
@@ -111,7 +117,7 @@
 						
 
 						
-						<h2 class="task-title">Other Methods</h2>
+						
 
 						<div class="task-list">
 							<div class="section-method">
@@ -297,6 +303,84 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:" title="ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:">+&nbsp;ly_alertTitle:message:leftStr:leftAction:rightStr:rightAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个左右按钮的弹窗</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ly_alertTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> leftStr:(NSString *)<em>leftStr</em> leftAction:(void ( ^ ) ( void ))<em>leftAction</em> rightStr:(NSString *)<em>rightStr</em> rightAction:(void ( ^ ) ( void ))<em>rightAction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>副标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>leftStr</code></th>
+						<td><p>左按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>leftAction</code></th>
+						<td><p>左按钮事件</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rightStr</code></th>
+						<td><p>右按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rightAction</code></th>
+						<td><p>右按钮事件</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:" title="ly_alertTitle:message:comfirmStr:comfirmAction:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:">&ndash;&nbsp;ly_alertTitle:message:comfirmStr:comfirmAction:</a></code>
 </h3>
@@ -314,6 +398,74 @@
 		    
 
 			<div class="method-subsection method-declaration"><code>- (void)ly_alertTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> comfirmStr:(NSString *)<em>comfirmStr</em> comfirmAction:(void ( ^ ) ( void ))<em>comfirmAction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>副标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>comfirmStr</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>comfirmAction</code></th>
+						<td><p>按钮事件</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:" title="ly_alertTitle:message:comfirmStr:comfirmAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_alertTitle:message:comfirmStr:comfirmAction:">+&nbsp;ly_alertTitle:message:comfirmStr:comfirmAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个只有一个按钮的弹窗</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ly_alertTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> comfirmStr:(NSString *)<em>comfirmStr</em> comfirmAction:(void ( ^ ) ( void ))<em>comfirmAction</em></code></div>
 
 		    
 			
@@ -447,15 +599,90 @@
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
+</div><div class="section-method">
+	<a name="//api/name/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:" title="ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:">+&nbsp;ly_alertTitle:message:preferredStyle:actionTitles:clickAction:cancelStr:cancelAction:</a></code>
+</h3>
 
-						
-						<h2 class="task-title">Other Methods</h2>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-						<div class="task-list">
-							<div class="section-method">
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个多个按钮的弹窗,并且附带取消按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ly_alertTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> preferredStyle:(UIAlertControllerStyle)<em>preferredStyle</em> actionTitles:(NSArray&lt;NSString*&gt; *)<em>actionTitles</em> clickAction:(void ( ^ ) ( NSInteger index ))<em>clickAction</em> cancelStr:(NSString *)<em>cancelStr</em> cancelAction:(void ( ^ ) ( void ))<em>cancelAction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>副标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preferredStyle</code></th>
+						<td><p>弹窗样式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actionTitles</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>clickAction</code></th>
+						<td><p>按钮事件</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelStr</code></th>
+						<td><p>取消</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelAction</code></th>
+						<td><p>取消事件</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LYS_Category.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:" title="ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:">&ndash;&nbsp;ly_alertTitle:message:textfieldPlaceholder:actionTitles:clickAction:cancelStr:cancelAction:</a></code>
 </h3>
@@ -636,7 +863,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 lys. All rights reserved. Updated: 2018-02-06</p>
+						<p class="copyright">Copyright &copy; 2018 lys. All rights reserved. Updated: 2018-02-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -320,7 +320,6 @@ typedef void(^LYSGCDActionQueue)(dispatch_queue_t queue);
  */
 + (void)ly_add_Barrier_Async:(LYSGCDActionQueue)firstAction barrierAction:(LYSGCDAction)actionBarrier lastAction:(LYSGCDAction)completeAction;
 
-
 /**
  添加障碍任务,配合上面的方法
  
@@ -372,7 +371,7 @@ typedef void(^LYSGCDActionQueue)(dispatch_queue_t queue);
 @interface LYSKVOManager : NSObject
 
 /**
- 添加观察者,实现原理是实现 observeValueForKeyPath: ofObject: change: context:方法,一次使用该方法进行属性监测时,不要重新这个系统方法,否则会失效
+ 添加观察者,实现原理是实现 observeValueForKeyPath: ofObject: change: context:方法,一次使用该方法进行属性监测时,不要重写这个系统方法,否则会失效
  
  @param object                              需要被观察的对象
  @param keyPath                             需要被观察的属性

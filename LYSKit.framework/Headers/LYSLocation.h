@@ -11,7 +11,6 @@ typedef NS_ENUM(NSUInteger, LYSLocationRequestType) {
 
 extern NSString *const LYSLocationDidUpdateNotifition;
 
-
 @protocol LYSLocationDelegate <NSObject>
 
 /**
@@ -28,7 +27,7 @@ extern NSString *const LYSLocationDidUpdateNotifition;
  @param mlocation 实例
  @param error 错误类
  */
-- (void)location:(LYSLocation *)mlocation didFaileLocation:(NSError *)error;
+- (void)location:(LYSLocation *)mlocation didFailLocation:(NSError *)error;
 
 @end
 
@@ -52,4 +51,12 @@ extern NSString *const LYSLocationDidUpdateNotifition;
  关闭定位
  */
 - (void)stopLocation;
+
+/**
+ 对地理位置进行反编译
+
+ @param location 地理对象
+ @param success 反编译成功回调
+ */
+- (void)geocoder:(CLLocation *)location success:(void(^)(CLPlacemark *placemark))success;
 @end

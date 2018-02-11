@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/LYSTupleManager</TokenIdentifier>
-			<Abstract type="html">LYSTupleManager 类,主要是模仿swift中的元组类,实现一个对象可以同时存储两个任意对象的效果</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>LYS_BaseObj.h</DeclaredIn>
             
 			

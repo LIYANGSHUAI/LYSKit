@@ -81,6 +81,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_toPinyin</TokenIdentifier>
+			<Abstract type="html">获取字符串拼音</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)ly_toPinyin</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回字符串的拼音</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_toPinyin</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_telePhoneNumBer</TokenIdentifier>
 			<Abstract type="html">判断是不是手机号,以及手机号运营商名称,具体类型可查看LYSTelephoneNumber类型</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
@@ -140,18 +152,6 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">返回计算结果</Abstract></ReturnValue>
 			<Anchor>//api/name/ly_hasSuffix:</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSString/ly_toPinyin</TokenIdentifier>
-			<Abstract type="html">获取字符串拼音</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)ly_toPinyin</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回字符串的拼音</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_toPinyin</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

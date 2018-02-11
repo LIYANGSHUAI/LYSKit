@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/LYSDateManager</TokenIdentifier>
-			<Abstract type="html">定义一个结构体,用来存储一个特定日期的年月日时分秒</Abstract>
+			<Abstract type="html">比较两个日期返回(1, 0, -1)对应(date1比date2晚,date1和date2一样,date1比date2晚),最小比较到日,如果具体到时分秒,则不能区分</Abstract>
 			<DeclaredIn>LYS_Manager.h</DeclaredIn>
             
 			

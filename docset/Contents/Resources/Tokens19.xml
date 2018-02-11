@@ -13,6 +13,30 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_getTopSubViews</TokenIdentifier>
+			<Abstract type="html">获取某个view的叶子View(一般为Window)</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)ly_getTopSubViews</Declaration>
+			
+			<ReturnValue><Abstract type="html">叶子view数组</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getTopSubViews</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_getRootViewController</TokenIdentifier>
+			<Abstract type="html">获取当前视图所在的根视图控制器</Abstract>
+			<DeclaredIn>LYS_Category.h</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)ly_getRootViewController</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回跟视图控制器</Abstract></ReturnValue>
+			<Anchor>//api/name/ly_getRootViewController</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_shakeWithShakeDirection:</TokenIdentifier>
 			<Abstract type="html">传一个振动的方向,具体方向可查看LYSQHLDirection类型</Abstract>
 			<DeclaredIn>LYS_Category.h</DeclaredIn>
@@ -95,30 +119,6 @@
 			</Parameters>
 			
 			<Anchor>//api/name/ly_shakeWithTimes:speed:range:shakeDirection:</Anchor>
-            <NodeRef refid="19"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_getTopSubViews</TokenIdentifier>
-			<Abstract type="html">获取某个view的叶子View(一般为Window)</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (NSMutableArray *)ly_getTopSubViews</Declaration>
-			
-			<ReturnValue><Abstract type="html">叶子view数组</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_getTopSubViews</Anchor>
-            <NodeRef refid="19"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIView/ly_getRootViewController</TokenIdentifier>
-			<Abstract type="html">获取当前视图所在的根视图控制器</Abstract>
-			<DeclaredIn>LYS_Category.h</DeclaredIn>
-			
-			<Declaration>- (UIViewController *)ly_getRootViewController</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回跟视图控制器</Abstract></ReturnValue>
-			<Anchor>//api/name/ly_getRootViewController</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		

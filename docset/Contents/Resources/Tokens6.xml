@@ -36,6 +36,26 @@
             <NodeRef refid="6"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LYSLocation/geocoder:success:</TokenIdentifier>
+			<Abstract type="html">对地理位置进行反编译</Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
+			
+			<Declaration>- (void)geocoder:(CLLocation *)location success:(void ( ^ ) ( CLPlacemark *placemark ))success</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">地理对象</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">反编译成功回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/geocoder:success:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
         
         
 	</File>

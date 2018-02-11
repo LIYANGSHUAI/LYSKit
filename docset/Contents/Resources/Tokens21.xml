@@ -52,6 +52,26 @@
             <NodeRef refid="21"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/LYSLocationDelegate/location:didFailLocation:</TokenIdentifier>
+			<Abstract type="html">定位失败时代理方法</Abstract>
+			<DeclaredIn>LYSLocation.h</DeclaredIn>
+			
+			<Declaration>- (void)location:(LYSLocation *)mlocation didFailLocation:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mlocation</Name>
+					<Abstract type="html">实例</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">错误类</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/location:didFailLocation:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
         
         
 	</File>

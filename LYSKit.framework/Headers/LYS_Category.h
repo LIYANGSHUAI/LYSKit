@@ -92,15 +92,13 @@ extern NSString *const LYSDateFormatterTime;                      // HH:mm:ss
 
 @end
 
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用字典类型NSDictionary方法 -
 
 @interface NSDictionary (LYSCategory)
 
 /**
  把字典转换成二进制
-
+ 
  @return                                    返回对应二进制数据
  */
 - (NSData *)ly_toData;
@@ -122,9 +120,6 @@ extern NSString *const LYSDateFormatterTime;                      // HH:mm:ss
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用手机运营商枚举值 区分电话号码类型-
 
 typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
@@ -215,9 +210,6 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用颜色UIColor方法 -
 
 @interface UIColor (LYSCategory)
@@ -232,9 +224,6 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用图片UIImage方法 -
 
 @interface UIImage (LYSCategory)
@@ -276,9 +265,6 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用导航UINavigationBar方法 -
 
 @interface UINavigationBar (LYSCategory)
@@ -307,9 +293,6 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用底部导航UITabBar方法 -
 
 @interface UITabBar (LYSCategory)
@@ -338,9 +321,6 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - UIView视图振动方向枚举值 -
 
 /**
@@ -430,23 +410,20 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 
 @end
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - 常用控制器UIViewController方法 -
 
 @interface UIViewController (LYSCategory)
 
 /**
  获取最外层控制器
-
+ 
  @return                                    返回控制器
  */
 + (UIViewController *)ly_getOuterViewController;
 
 /**
  判断这个控制器是否正在显示
-
+ 
  @param viewController                      需要判断的控制器
  @return                                    返回判断结果
  */
@@ -454,7 +431,7 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 
 /**
  弹出一个左右按钮的弹窗
-
+ 
  @param title                               标题
  @param message                             副标题
  @param leftStr                             左按钮
@@ -478,7 +455,7 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 
 /**
  弹出一个只有一个按钮的弹窗
-
+ 
  @param title                               标题
  @param message                             副标题
  @param comfirmStr                          按钮
@@ -498,7 +475,7 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
 
 /**
  弹出一个多个按钮的弹窗,并且附带取消按钮
-
+ 
  @param title                               标题
  @param message                             副标题
  @param preferredStyle                      弹窗样式
