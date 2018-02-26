@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LYSKit"
-  s.version      = "2.1.1"
+  s.version      = "0.0.1"
   s.summary      = "A very useful base framework that integrates some of the common code blocks in development with apis."
 
   # This description is used to generate tags and improve search results.
@@ -93,12 +93,12 @@ A very useful base framework that integrates some of the common code blocks in d
   #
 
 
-  # s.source_files  = "LYSKit/*.{h,m}"
+  s.source_files  = "LYSKit/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "LYSKit/**/*.h"
 
-  s.vendored_frameworks = "SDK/LYSKit.framework"
+  # s.vendored_frameworks = "SDK/LYSKit.framework"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -136,4 +136,6 @@ A very useful base framework that integrates some of the common code blocks in d
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+
+  s.dependency "LYSCategory"
 end
