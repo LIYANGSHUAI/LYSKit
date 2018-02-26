@@ -18,6 +18,7 @@
 		CC3D5C482043F21700C1486C /* LYSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D5C422043F21700C1486C /* LYSLocation.m */; };
 		CC3D5C492043F21700C1486C /* LYS_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D5C432043F21700C1486C /* LYS_Manager.m */; };
 		CC3D5C4A2043F21700C1486C /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D5C442043F21700C1486C /* LYS_Category.m */; };
+		CC3D5C4D2043F62C00C1486C /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC3D5C4C2043F62B00C1486C /* LYSKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		CC3D5C432043F21700C1486C /* LYS_Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Manager.m; sourceTree = "<group>"; };
 		CC3D5C442043F21700C1486C /* LYS_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Category.m; sourceTree = "<group>"; };
 		CC3D5C452043F21700C1486C /* LYSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSLocation.h; sourceTree = "<group>"; };
+		CC3D5C4B2043F4E500C1486C /* LYSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
+		CC3D5C4C2043F62B00C1486C /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../LYSKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 		CC3D5C132043F1DF00C1486C /* LYSKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CC3D5C4C2043F62B00C1486C /* LYSKit.podspec */,
 				CC3D5C2A2043F1EE00C1486C /* LYSKit */,
 				CC3D5C142043F1DF00C1486C /* AppDelegate.h */,
 				CC3D5C152043F1DF00C1486C /* AppDelegate.m */,
@@ -102,6 +106,7 @@
 				CC3D5C422043F21700C1486C /* LYSLocation.m */,
 				CC3D5C3C2043F21700C1486C /* LYSReachability.h */,
 				CC3D5C3B2043F21700C1486C /* LYSReachability.m */,
+				CC3D5C4B2043F4E500C1486C /* LYSKit.h */,
 			);
 			name = LYSKit;
 			path = ../../LYSKit;
@@ -167,6 +172,7 @@
 			files = (
 				CC3D5C212043F1DF00C1486C /* LaunchScreen.storyboard in Resources */,
 				CC3D5C1E2043F1DF00C1486C /* Assets.xcassets in Resources */,
+				CC3D5C4D2043F62C00C1486C /* LYSKit.podspec in Resources */,
 				CC3D5C1C2043F1DF00C1486C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
