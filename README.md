@@ -1,19 +1,11 @@
 # LYSKit
-A very useful base framework that integrates some of the common code blocks in development with apis
+
+主要总结了日常开发中经常使用的方法,避免不必要的代码复制,进而提高工作效率
 
 使用方法:
 
 方法一:
 
-pod 'LYSKit', '~> 2.1.1'
+pod 'LYSKit', '~> 最新版版本号'
 
-方法二:
-
-直接辅助LYSKit.framework到项目即可
-
-
-
-![image](https://github.com/LIYANGSHUAI/LYSKit/blob/master/123.png)
-
-![image](https://github.com/LIYANGSHUAI/LYSKit/blob/master/image.png)
 

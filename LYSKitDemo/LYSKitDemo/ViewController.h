@@ -1,14 +1,15 @@
 //
-//  LYSKit.h
+//  ViewController.h
 //  LYSKitDemo
 //
 //  Created by HENAN on 2018/2/26.
 //  Copyright © 2018年 liyangshuai. All rights reserved.
 //
 
-#ifndef LYSKit_h
-#define LYSKit_h
+#import <UIKit/UIKit.h>
 
-#import <LYSCategory/LYSCategory.h>
+@interface ViewController : UIViewController
 
-#endif /* LYSKit_h */
+
+@end
+
