@@ -137,5 +137,5 @@ A very useful base framework that integrates some of the common code blocks in d
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  s.dependency "LYSCategory"
+  s.dependency "LYSCategory", "~> 0.0.2"
 end
