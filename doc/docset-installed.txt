@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/henandongxin/Library/Developer/Shared/Documentation/DocSets/com.liyangshuai.LYSKitDemo.docset
-Time: 2018-02-11 02:15:38 +0000
