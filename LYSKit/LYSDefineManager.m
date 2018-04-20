@@ -336,11 +336,11 @@
 {
     return (3.14159265359 * degrees)/ 180;
 }
-+ (NSInteger)ly_randomA:(uint32_t)A B:(uint32_t)B
++ (uint32_t)ly_randomA:(uint32_t)A B:(uint32_t)B
 {
     return arc4random() % (B - A) + A;
 }
-+ (NSInteger)ly_random_uniformA:(uint32_t)A B:(uint32_t)B
++ (uint32_t)ly_random_uniformA:(uint32_t)A B:(uint32_t)B
 {
     return arc4random_uniform(B - A) + A;
 }

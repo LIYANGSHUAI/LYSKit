@@ -32,7 +32,7 @@
     }
     
     {
-        NSDate *date = [NSDate ly_dateSincleNow:30600];
+        NSDate *date = [NSDate ly_dateSincleNow:2];
         NSLog(@"%@",[NSDate ly_compareCurrentTime:date]);
     }
     
@@ -62,11 +62,11 @@
     NSLog(@"%d",[@"xxx" ly_containsString:@"x"]);
     
     
-    NSLog(@"%ld",[LYSDefineManager ly_randomA:0 B:10]);
-    NSLog(@"%ld",[LYSDefineManager ly_random_uniformA:0 B:10]);
+    NSLog(@"%d",[LYSDefineManager ly_randomA:0 B:10]);
+    NSLog(@"%d",[LYSDefineManager ly_random_uniformA:0 B:10]);
     
-    NSLog(@"%ld",LYSRandom(0, 10));
-    NSLog(@"%ld",LYSRandom_uniform(10, 20));
+    NSLog(@"%d",LYSRandom(0, 10));
+    NSLog(@"%d",LYSRandom_uniform(10, 20));
 }
 
 - (void)didReceiveMemoryWarning {

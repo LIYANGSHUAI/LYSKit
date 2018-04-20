@@ -233,8 +233,8 @@ break;\
 + (CGFloat)ly_degreesToRadians:(CGFloat)degrees;
 
 // 随机数
-+ (NSInteger)ly_randomA:(uint32_t)A B:(uint32_t)B;
-+ (NSInteger)ly_random_uniformA:(uint32_t)A B:(uint32_t)B;
++ (uint32_t)ly_randomA:(uint32_t)A B:(uint32_t)B;
++ (uint32_t)ly_random_uniformA:(uint32_t)A B:(uint32_t)B;
 
 // 字体
 + (UIFont *)ly_font:(CGFloat)font auto:(BOOL)adaptation;
