@@ -54,11 +54,11 @@ formatter;\
     long temp = 0;
     NSString *result = nil;
     if (time >= 0) {
-        if (time < 60)
+        if ((temp = time) < 60)
         {
             result = @"刚刚";
         } else
-            if((temp = time / 60) <60)
+            if((temp = temp / 60) <60)
             {
                 result = FORMAT(@"%ld分前",temp);
             } else
@@ -79,12 +79,11 @@ formatter;\
                         }
     } else {
         time = -time;
-        if (time < 60)
+        if ((temp = time) < 60)
         {
-            temp = time;
             result = FORMAT(@"%ld秒后",temp);
         } else
-            if((temp = time / 60) <60)
+            if((temp = temp / 60) <60)
             {
                 result = FORMAT(@"%ld分后",temp);
             } else
