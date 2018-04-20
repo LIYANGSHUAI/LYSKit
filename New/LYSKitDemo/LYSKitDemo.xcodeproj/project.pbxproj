@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC622923208A27B3000D9E1A /* NSDate+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622903208A27B3000D9E1A /* NSDate+LYSCategory.m */; };
-		CC622924208A27B3000D9E1A /* UIImage+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622904208A27B3000D9E1A /* UIImage+LYSCategory.m */; };
-		CC622925208A27B3000D9E1A /* LYSAPPDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622905208A27B3000D9E1A /* LYSAPPDelegateManager.m */; };
-		CC622926208A27B3000D9E1A /* LYSGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62290A208A27B3000D9E1A /* LYSGCDManager.m */; };
-		CC622927208A27B3000D9E1A /* UITabBar+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62290B208A27B3000D9E1A /* UITabBar+LYSCategory.m */; };
-		CC622928208A27B3000D9E1A /* LYSRuntimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622910208A27B3000D9E1A /* LYSRuntimeManager.m */; };
-		CC622929208A27B3000D9E1A /* LYSKeyedArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622915208A27B3000D9E1A /* LYSKeyedArchiverManager.m */; };
-		CC62292A208A27B3000D9E1A /* LYSandboxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622916208A27B3000D9E1A /* LYSandboxManager.m */; };
-		CC62292B208A27B3000D9E1A /* UIViewController+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622918208A27B3000D9E1A /* UIViewController+LYSCategory.m */; };
-		CC62292C208A27B3000D9E1A /* NSString+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622919208A27B3000D9E1A /* NSString+LYSCategory.m */; };
-		CC62292D208A27B3000D9E1A /* LYSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62291A208A27B3000D9E1A /* LYSDateManager.m */; };
-		CC62292E208A27B3000D9E1A /* UINavigationBar+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62291B208A27B3000D9E1A /* UINavigationBar+LYSCategory.m */; };
-		CC62292F208A27B3000D9E1A /* LYSDefineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62291E208A27B3000D9E1A /* LYSDefineManager.m */; };
-		CC622930208A27B3000D9E1A /* NSDictionary+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62291F208A27B3000D9E1A /* NSDictionary+LYSCategory.m */; };
-		CC622931208A27B3000D9E1A /* UIView+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622921208A27B3000D9E1A /* UIView+LYSCategory.m */; };
-		CC622932208A27B3000D9E1A /* LYSKVOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622922208A27B3000D9E1A /* LYSKVOManager.m */; };
 		CC622946208A27F5000D9E1A /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC622945208A27F4000D9E1A /* LYSKit.podspec */; };
+		CC622968208A29AF000D9E1A /* LYSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62294A208A29AD000D9E1A /* LYSDateManager.m */; };
+		CC622969208A29AF000D9E1A /* LYSKeyedArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62294C208A29AD000D9E1A /* LYSKeyedArchiverManager.m */; };
+		CC62296A208A29AF000D9E1A /* UIViewController+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62294E208A29AD000D9E1A /* UIViewController+LYSCategory.m */; };
+		CC62296B208A29AF000D9E1A /* LYSDefineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62294F208A29AD000D9E1A /* LYSDefineManager.m */; };
+		CC62296C208A29AF000D9E1A /* LYSandboxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622953208A29AD000D9E1A /* LYSandboxManager.m */; };
+		CC62296D208A29AF000D9E1A /* UIView+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622956208A29AE000D9E1A /* UIView+LYSCategory.m */; };
+		CC62296E208A29AF000D9E1A /* UIImage+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622958208A29AE000D9E1A /* UIImage+LYSCategory.m */; };
+		CC62296F208A29AF000D9E1A /* LYSAPPDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622959208A29AE000D9E1A /* LYSAPPDelegateManager.m */; };
+		CC622970208A29AF000D9E1A /* NSDictionary+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62295A208A29AE000D9E1A /* NSDictionary+LYSCategory.m */; };
+		CC622971208A29AF000D9E1A /* LYSKVOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62295F208A29AE000D9E1A /* LYSKVOManager.m */; };
+		CC622972208A29AF000D9E1A /* UINavigationBar+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622961208A29AF000D9E1A /* UINavigationBar+LYSCategory.m */; };
+		CC622973208A29AF000D9E1A /* LYSGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622962208A29AF000D9E1A /* LYSGCDManager.m */; };
+		CC622974208A29AF000D9E1A /* NSDate+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622964208A29AF000D9E1A /* NSDate+LYSCategory.m */; };
+		CC622975208A29AF000D9E1A /* NSString+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622965208A29AF000D9E1A /* NSString+LYSCategory.m */; };
+		CC622976208A29AF000D9E1A /* UITabBar+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622966208A29AF000D9E1A /* UITabBar+LYSCategory.m */; };
+		CC622977208A29AF000D9E1A /* LYSRuntimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622967208A29AF000D9E1A /* LYSRuntimeManager.m */; };
 		CCC90D912089B0BF00CA4F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC90D902089B0BF00CA4F8E /* AppDelegate.m */; };
 		CCC90D942089B0BF00CA4F8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC90D932089B0BF00CA4F8E /* ViewController.m */; };
 		CCC90D972089B0BF00CA4F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC90D952089B0BF00CA4F8E /* Main.storyboard */; };
@@ -52,40 +52,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC622902208A27B3000D9E1A /* LYSKeyedArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKeyedArchiverManager.h; sourceTree = "<group>"; };
-		CC622903208A27B3000D9E1A /* NSDate+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LYSCategory.m"; sourceTree = "<group>"; };
-		CC622904208A27B3000D9E1A /* UIImage+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LYSCategory.m"; sourceTree = "<group>"; };
-		CC622905208A27B3000D9E1A /* LYSAPPDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSAPPDelegateManager.m; sourceTree = "<group>"; };
-		CC622906208A27B3000D9E1A /* NSString+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYSCategory.h"; sourceTree = "<group>"; };
-		CC622907208A27B3000D9E1A /* UIViewController+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYSCategory.h"; sourceTree = "<group>"; };
-		CC622908208A27B3000D9E1A /* LYSandboxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSandboxManager.h; sourceTree = "<group>"; };
-		CC622909208A27B3000D9E1A /* LYSDefineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDefineManager.h; sourceTree = "<group>"; };
-		CC62290A208A27B3000D9E1A /* LYSGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSGCDManager.m; sourceTree = "<group>"; };
-		CC62290B208A27B3000D9E1A /* UITabBar+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+LYSCategory.m"; sourceTree = "<group>"; };
-		CC62290C208A27B3000D9E1A /* UINavigationBar+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+LYSCategory.h"; sourceTree = "<group>"; };
-		CC62290D208A27B3000D9E1A /* LYSDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDateManager.h; sourceTree = "<group>"; };
-		CC62290E208A27B3000D9E1A /* LYSKVOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKVOManager.h; sourceTree = "<group>"; };
-		CC62290F208A27B3000D9E1A /* UIView+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYSCategory.h"; sourceTree = "<group>"; };
-		CC622910208A27B3000D9E1A /* LYSRuntimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSRuntimeManager.m; sourceTree = "<group>"; };
-		CC622911208A27B3000D9E1A /* NSDictionary+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LYSCategory.h"; sourceTree = "<group>"; };
-		CC622912208A27B3000D9E1A /* LYSAPPDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSAPPDelegateManager.h; sourceTree = "<group>"; };
-		CC622913208A27B3000D9E1A /* UIImage+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LYSCategory.h"; sourceTree = "<group>"; };
-		CC622914208A27B3000D9E1A /* NSDate+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LYSCategory.h"; sourceTree = "<group>"; };
-		CC622915208A27B3000D9E1A /* LYSKeyedArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSKeyedArchiverManager.m; sourceTree = "<group>"; };
-		CC622916208A27B3000D9E1A /* LYSandboxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSandboxManager.m; sourceTree = "<group>"; };
-		CC622917208A27B3000D9E1A /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
-		CC622918208A27B3000D9E1A /* UIViewController+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LYSCategory.m"; sourceTree = "<group>"; };
-		CC622919208A27B3000D9E1A /* NSString+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYSCategory.m"; sourceTree = "<group>"; };
-		CC62291A208A27B3000D9E1A /* LYSDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSDateManager.m; sourceTree = "<group>"; };
-		CC62291B208A27B3000D9E1A /* UINavigationBar+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+LYSCategory.m"; sourceTree = "<group>"; };
-		CC62291C208A27B3000D9E1A /* UITabBar+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+LYSCategory.h"; sourceTree = "<group>"; };
-		CC62291D208A27B3000D9E1A /* LYSGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSGCDManager.h; sourceTree = "<group>"; };
-		CC62291E208A27B3000D9E1A /* LYSDefineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSDefineManager.m; sourceTree = "<group>"; };
-		CC62291F208A27B3000D9E1A /* NSDictionary+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LYSCategory.m"; sourceTree = "<group>"; };
-		CC622920208A27B3000D9E1A /* LYSRuntimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSRuntimeManager.h; sourceTree = "<group>"; };
-		CC622921208A27B3000D9E1A /* UIView+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYSCategory.m"; sourceTree = "<group>"; };
-		CC622922208A27B3000D9E1A /* LYSKVOManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSKVOManager.m; sourceTree = "<group>"; };
 		CC622945208A27F4000D9E1A /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../../LYSKit.podspec; sourceTree = "<group>"; };
+		CC622947208A29AD000D9E1A /* LYSAPPDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSAPPDelegateManager.h; sourceTree = "<group>"; };
+		CC622948208A29AD000D9E1A /* LYSDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDateManager.h; sourceTree = "<group>"; };
+		CC622949208A29AD000D9E1A /* LYSRuntimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSRuntimeManager.h; sourceTree = "<group>"; };
+		CC62294A208A29AD000D9E1A /* LYSDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSDateManager.m; sourceTree = "<group>"; };
+		CC62294B208A29AD000D9E1A /* NSDate+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LYSCategory.h"; sourceTree = "<group>"; };
+		CC62294C208A29AD000D9E1A /* LYSKeyedArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSKeyedArchiverManager.m; sourceTree = "<group>"; };
+		CC62294D208A29AD000D9E1A /* UIView+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYSCategory.h"; sourceTree = "<group>"; };
+		CC62294E208A29AD000D9E1A /* UIViewController+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LYSCategory.m"; sourceTree = "<group>"; };
+		CC62294F208A29AD000D9E1A /* LYSDefineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSDefineManager.m; sourceTree = "<group>"; };
+		CC622950208A29AD000D9E1A /* LYSDefineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDefineManager.h; sourceTree = "<group>"; };
+		CC622951208A29AD000D9E1A /* LYSKVOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKVOManager.h; sourceTree = "<group>"; };
+		CC622952208A29AD000D9E1A /* LYSandboxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSandboxManager.h; sourceTree = "<group>"; };
+		CC622953208A29AD000D9E1A /* LYSandboxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSandboxManager.m; sourceTree = "<group>"; };
+		CC622954208A29AD000D9E1A /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
+		CC622955208A29AE000D9E1A /* NSString+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYSCategory.h"; sourceTree = "<group>"; };
+		CC622956208A29AE000D9E1A /* UIView+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYSCategory.m"; sourceTree = "<group>"; };
+		CC622957208A29AE000D9E1A /* NSDictionary+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LYSCategory.h"; sourceTree = "<group>"; };
+		CC622958208A29AE000D9E1A /* UIImage+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LYSCategory.m"; sourceTree = "<group>"; };
+		CC622959208A29AE000D9E1A /* LYSAPPDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSAPPDelegateManager.m; sourceTree = "<group>"; };
+		CC62295A208A29AE000D9E1A /* NSDictionary+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LYSCategory.m"; sourceTree = "<group>"; };
+		CC62295B208A29AE000D9E1A /* UIViewController+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYSCategory.h"; sourceTree = "<group>"; };
+		CC62295C208A29AE000D9E1A /* LYSKeyedArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKeyedArchiverManager.h; sourceTree = "<group>"; };
+		CC62295D208A29AE000D9E1A /* UIImage+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LYSCategory.h"; sourceTree = "<group>"; };
+		CC62295E208A29AE000D9E1A /* LYSGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSGCDManager.h; sourceTree = "<group>"; };
+		CC62295F208A29AE000D9E1A /* LYSKVOManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSKVOManager.m; sourceTree = "<group>"; };
+		CC622960208A29AE000D9E1A /* UINavigationBar+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+LYSCategory.h"; sourceTree = "<group>"; };
+		CC622961208A29AF000D9E1A /* UINavigationBar+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+LYSCategory.m"; sourceTree = "<group>"; };
+		CC622962208A29AF000D9E1A /* LYSGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSGCDManager.m; sourceTree = "<group>"; };
+		CC622963208A29AF000D9E1A /* UITabBar+LYSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+LYSCategory.h"; sourceTree = "<group>"; };
+		CC622964208A29AF000D9E1A /* NSDate+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LYSCategory.m"; sourceTree = "<group>"; };
+		CC622965208A29AF000D9E1A /* NSString+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYSCategory.m"; sourceTree = "<group>"; };
+		CC622966208A29AF000D9E1A /* UITabBar+LYSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+LYSCategory.m"; sourceTree = "<group>"; };
+		CC622967208A29AF000D9E1A /* LYSRuntimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSRuntimeManager.m; sourceTree = "<group>"; };
 		CCC90D8C2089B0BF00CA4F8E /* LYSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC90D8F2089B0BF00CA4F8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCC90D902089B0BF00CA4F8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,39 +132,39 @@
 		CC622901208A27B3000D9E1A /* LYSKit */ = {
 			isa = PBXGroup;
 			children = (
-				CC622902208A27B3000D9E1A /* LYSKeyedArchiverManager.h */,
-				CC622903208A27B3000D9E1A /* NSDate+LYSCategory.m */,
-				CC622904208A27B3000D9E1A /* UIImage+LYSCategory.m */,
-				CC622905208A27B3000D9E1A /* LYSAPPDelegateManager.m */,
-				CC622906208A27B3000D9E1A /* NSString+LYSCategory.h */,
-				CC622907208A27B3000D9E1A /* UIViewController+LYSCategory.h */,
-				CC622908208A27B3000D9E1A /* LYSandboxManager.h */,
-				CC622909208A27B3000D9E1A /* LYSDefineManager.h */,
-				CC62290A208A27B3000D9E1A /* LYSGCDManager.m */,
-				CC62290B208A27B3000D9E1A /* UITabBar+LYSCategory.m */,
-				CC62290C208A27B3000D9E1A /* UINavigationBar+LYSCategory.h */,
-				CC62290D208A27B3000D9E1A /* LYSDateManager.h */,
-				CC62290E208A27B3000D9E1A /* LYSKVOManager.h */,
-				CC62290F208A27B3000D9E1A /* UIView+LYSCategory.h */,
-				CC622910208A27B3000D9E1A /* LYSRuntimeManager.m */,
-				CC622911208A27B3000D9E1A /* NSDictionary+LYSCategory.h */,
-				CC622912208A27B3000D9E1A /* LYSAPPDelegateManager.h */,
-				CC622913208A27B3000D9E1A /* UIImage+LYSCategory.h */,
-				CC622914208A27B3000D9E1A /* NSDate+LYSCategory.h */,
-				CC622915208A27B3000D9E1A /* LYSKeyedArchiverManager.m */,
-				CC622916208A27B3000D9E1A /* LYSandboxManager.m */,
-				CC622917208A27B3000D9E1A /* LYSKit.h */,
-				CC622918208A27B3000D9E1A /* UIViewController+LYSCategory.m */,
-				CC622919208A27B3000D9E1A /* NSString+LYSCategory.m */,
-				CC62291A208A27B3000D9E1A /* LYSDateManager.m */,
-				CC62291B208A27B3000D9E1A /* UINavigationBar+LYSCategory.m */,
-				CC62291C208A27B3000D9E1A /* UITabBar+LYSCategory.h */,
-				CC62291D208A27B3000D9E1A /* LYSGCDManager.h */,
-				CC62291E208A27B3000D9E1A /* LYSDefineManager.m */,
-				CC62291F208A27B3000D9E1A /* NSDictionary+LYSCategory.m */,
-				CC622920208A27B3000D9E1A /* LYSRuntimeManager.h */,
-				CC622921208A27B3000D9E1A /* UIView+LYSCategory.m */,
-				CC622922208A27B3000D9E1A /* LYSKVOManager.m */,
+				CC622952208A29AD000D9E1A /* LYSandboxManager.h */,
+				CC622953208A29AD000D9E1A /* LYSandboxManager.m */,
+				CC622947208A29AD000D9E1A /* LYSAPPDelegateManager.h */,
+				CC622959208A29AE000D9E1A /* LYSAPPDelegateManager.m */,
+				CC622948208A29AD000D9E1A /* LYSDateManager.h */,
+				CC62294A208A29AD000D9E1A /* LYSDateManager.m */,
+				CC622950208A29AD000D9E1A /* LYSDefineManager.h */,
+				CC62294F208A29AD000D9E1A /* LYSDefineManager.m */,
+				CC62295E208A29AE000D9E1A /* LYSGCDManager.h */,
+				CC622962208A29AF000D9E1A /* LYSGCDManager.m */,
+				CC62295C208A29AE000D9E1A /* LYSKeyedArchiverManager.h */,
+				CC62294C208A29AD000D9E1A /* LYSKeyedArchiverManager.m */,
+				CC622954208A29AD000D9E1A /* LYSKit.h */,
+				CC622951208A29AD000D9E1A /* LYSKVOManager.h */,
+				CC62295F208A29AE000D9E1A /* LYSKVOManager.m */,
+				CC622949208A29AD000D9E1A /* LYSRuntimeManager.h */,
+				CC622967208A29AF000D9E1A /* LYSRuntimeManager.m */,
+				CC62294B208A29AD000D9E1A /* NSDate+LYSCategory.h */,
+				CC622964208A29AF000D9E1A /* NSDate+LYSCategory.m */,
+				CC622957208A29AE000D9E1A /* NSDictionary+LYSCategory.h */,
+				CC62295A208A29AE000D9E1A /* NSDictionary+LYSCategory.m */,
+				CC622955208A29AE000D9E1A /* NSString+LYSCategory.h */,
+				CC622965208A29AF000D9E1A /* NSString+LYSCategory.m */,
+				CC62295D208A29AE000D9E1A /* UIImage+LYSCategory.h */,
+				CC622958208A29AE000D9E1A /* UIImage+LYSCategory.m */,
+				CC622960208A29AE000D9E1A /* UINavigationBar+LYSCategory.h */,
+				CC622961208A29AF000D9E1A /* UINavigationBar+LYSCategory.m */,
+				CC622963208A29AF000D9E1A /* UITabBar+LYSCategory.h */,
+				CC622966208A29AF000D9E1A /* UITabBar+LYSCategory.m */,
+				CC62294D208A29AD000D9E1A /* UIView+LYSCategory.h */,
+				CC622956208A29AE000D9E1A /* UIView+LYSCategory.m */,
+				CC62295B208A29AE000D9E1A /* UIViewController+LYSCategory.h */,
+				CC62294E208A29AD000D9E1A /* UIViewController+LYSCategory.m */,
 			);
 			name = LYSKit;
 			path = ../../../LYSKit;
@@ -357,25 +357,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC622976208A29AF000D9E1A /* UITabBar+LYSCategory.m in Sources */,
+				CC62296D208A29AF000D9E1A /* UIView+LYSCategory.m in Sources */,
+				CC622968208A29AF000D9E1A /* LYSDateManager.m in Sources */,
 				CCC90D942089B0BF00CA4F8E /* ViewController.m in Sources */,
-				CC62292A208A27B3000D9E1A /* LYSandboxManager.m in Sources */,
-				CC622924208A27B3000D9E1A /* UIImage+LYSCategory.m in Sources */,
-				CC622928208A27B3000D9E1A /* LYSRuntimeManager.m in Sources */,
+				CC622973208A29AF000D9E1A /* LYSGCDManager.m in Sources */,
+				CC622971208A29AF000D9E1A /* LYSKVOManager.m in Sources */,
+				CC622972208A29AF000D9E1A /* UINavigationBar+LYSCategory.m in Sources */,
+				CC62296F208A29AF000D9E1A /* LYSAPPDelegateManager.m in Sources */,
 				CCC90D9F2089B0C000CA4F8E /* main.m in Sources */,
-				CC622926208A27B3000D9E1A /* LYSGCDManager.m in Sources */,
-				CC622927208A27B3000D9E1A /* UITabBar+LYSCategory.m in Sources */,
+				CC622970208A29AF000D9E1A /* NSDictionary+LYSCategory.m in Sources */,
 				CCC90D912089B0BF00CA4F8E /* AppDelegate.m in Sources */,
-				CC62292D208A27B3000D9E1A /* LYSDateManager.m in Sources */,
-				CC622932208A27B3000D9E1A /* LYSKVOManager.m in Sources */,
-				CC622931208A27B3000D9E1A /* UIView+LYSCategory.m in Sources */,
-				CC62292E208A27B3000D9E1A /* UINavigationBar+LYSCategory.m in Sources */,
-				CC622923208A27B3000D9E1A /* NSDate+LYSCategory.m in Sources */,
-				CC622930208A27B3000D9E1A /* NSDictionary+LYSCategory.m in Sources */,
-				CC62292F208A27B3000D9E1A /* LYSDefineManager.m in Sources */,
-				CC622925208A27B3000D9E1A /* LYSAPPDelegateManager.m in Sources */,
-				CC622929208A27B3000D9E1A /* LYSKeyedArchiverManager.m in Sources */,
-				CC62292B208A27B3000D9E1A /* UIViewController+LYSCategory.m in Sources */,
-				CC62292C208A27B3000D9E1A /* NSString+LYSCategory.m in Sources */,
+				CC62296C208A29AF000D9E1A /* LYSandboxManager.m in Sources */,
+				CC62296E208A29AF000D9E1A /* UIImage+LYSCategory.m in Sources */,
+				CC622969208A29AF000D9E1A /* LYSKeyedArchiverManager.m in Sources */,
+				CC622977208A29AF000D9E1A /* LYSRuntimeManager.m in Sources */,
+				CC62296A208A29AF000D9E1A /* UIViewController+LYSCategory.m in Sources */,
+				CC622975208A29AF000D9E1A /* NSString+LYSCategory.m in Sources */,
+				CC62296B208A29AF000D9E1A /* LYSDefineManager.m in Sources */,
+				CC622974208A29AF000D9E1A /* NSDate+LYSCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
