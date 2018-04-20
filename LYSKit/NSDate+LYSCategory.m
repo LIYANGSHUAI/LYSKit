@@ -81,7 +81,8 @@ formatter;\
         time = -time;
         if (time < 60)
         {
-            result = FORMAT(@"%@秒后",@(time));
+            temp = time;
+            result = FORMAT(@"%ld秒后",temp);
         } else
             if((temp = time / 60) <60)
             {
