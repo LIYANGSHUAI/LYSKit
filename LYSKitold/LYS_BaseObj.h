@@ -1,11 +1,10 @@
-
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
 #pragma mark - 元组 -
 #define LYSTuple(ONE,TWO) [LYSTupleManager ly_create:ONE two:TWO]
 
-// LYSTupleManager 类,主要是模仿swift中的元组类,实现一个对象可以同时存储两个任意对象的效果
+// LYSTupleManager类,主要是模仿swift中的元组类,实现一个对象可以同时存储两个任意对象的效果
 
 @class LYSTupleManager;
 
