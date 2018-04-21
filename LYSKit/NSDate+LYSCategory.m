@@ -50,8 +50,8 @@ formatter;\
 + (NSString *)ly_compareCurrentTime:(NSDate *)compareDate
 {
     NSTimeInterval timeInterval = -[compareDate timeIntervalSinceNow];
-    NSInteger time = round(timeInterval);
-    NSInteger temp = 0;
+    double time = round(timeInterval);
+    long temp = 0;
     NSString *result = nil;
     if (time >= 0) {
         if ((temp = time) < 60)
