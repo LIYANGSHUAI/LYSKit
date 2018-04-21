@@ -8,34 +8,34 @@
 
 #import <UIKit/UIKit.h>
 
-#pragma mark - 获取完整设备型号 -
+#pragma mark - 获取完整设备型号 -  iPhone 6s
 #define LYSDeviceStringIntegrity               [LYSDefineManager ly_deviceStringIntegrity]
 
-#pragma mark - 获取简单设备型号 -
+#pragma mark - 获取简单设备型号 - iPhone 6s
 #define LYSDeviceStringSimpleness              [LYSDefineManager ly_deviceStringSimpleness]
 
-#pragma mark - 获取当前设备别名 -
+#pragma mark - 获取当前设备别名 - iPhone (2)
 #define LYSUserPhoneName                       [LYSDefineManager ly_userPhoneName]
 
-#pragma mark - 获取当前设备名称 -
+#pragma mark - 获取当前设备名称 - iOS
 #define LYSDeviceName                          [LYSDefineManager ly_deviceName]
 
-#pragma mark - 获取当前设备型号 -
+#pragma mark - 获取当前设备型号 - iPhone
 #define LYSDeviceModel                         [LYSDefineManager ly_deviceModel]
 
-#pragma mark - 获取当前设备国际化区域名称 -
+#pragma mark - 获取当前设备国际化区域名称 - iPhone
 #define LYSDeviceLocalModel                    [LYSDefineManager ly_deviceLocalModel]
 
-#pragma mark - 获取当前APP名称 -
+#pragma mark - 获取当前APP名称 - 工具包
 #define LYSProjectName                         [LYSDefineManager ly_projectName]
 
-#pragma mark - 获取当前APP对外版本号 -
+#pragma mark - 获取当前APP对外版本号 - 1.0.0
 #define LYSAppCurVersion                       [LYSDefineManager ly_appCurVersion]
 
-#pragma mark - 获取当前APP的build -
+#pragma mark - 获取当前APP的build - 1.0.0
 #define LYSAppCurVersionBuild                  [LYSDefineManager ly_appCurVersionBuild]
 
-#pragma mark - 获取当前设备系统版本 -
+#pragma mark - 获取当前设备系统版本 - 11.3
 #define LYSystemVersion                        [LYSDefineManager ly_systemVersion]
 
 #pragma mark - 版本的判断 -
@@ -182,7 +182,6 @@ break;\
 @interface LYSDefineManager : NSObject
 
 #pragma mark - 系统信息获取 -
-
 // 获取完整设备型号
 + (NSString *)ly_deviceStringIntegrity;
 // 获取简单设备型号
@@ -205,7 +204,6 @@ break;\
 + (NSString *)ly_systemVersion;
 
 #pragma mark - 版本信息判断 -
-
 // 版本之后
 + (BOOL)ly_laterIOS:(CGFloat)index;
 // 版本之前

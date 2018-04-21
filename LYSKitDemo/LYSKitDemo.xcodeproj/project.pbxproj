@@ -14,11 +14,11 @@
 		CC3D5C212043F1DF00C1486C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3D5C1F2043F1DF00C1486C /* LaunchScreen.storyboard */; };
 		CC3D5C242043F1DF00C1486C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D5C232043F1DF00C1486C /* main.m */; };
 		CC3D5C4D2043F62C00C1486C /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC3D5C4C2043F62B00C1486C /* LYSKit.podspec */; };
-		CC622940208A27D4000D9E1A /* LYSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622938208A27D4000D9E1A /* LYSReachability.m */; };
-		CC622941208A27D4000D9E1A /* LYSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62293A208A27D4000D9E1A /* LYSLocation.m */; };
-		CC622942208A27D4000D9E1A /* LYS_BaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62293D208A27D4000D9E1A /* LYS_BaseObj.m */; };
-		CC622943208A27D4000D9E1A /* LYS_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62293E208A27D4000D9E1A /* LYS_Manager.m */; };
-		CC622944208A27D4000D9E1A /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62293F208A27D4000D9E1A /* LYS_Category.m */; };
+		CCE8879A208ABAC800AA5E41 /* LYS_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE8878E208ABAC800AA5E41 /* LYS_Category.m */; };
+		CCE8879B208ABAC800AA5E41 /* LYS_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE88790208ABAC800AA5E41 /* LYS_Manager.m */; };
+		CCE8879C208ABAC800AA5E41 /* LYSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE88791208ABAC800AA5E41 /* LYSLocation.m */; };
+		CCE8879D208ABAC800AA5E41 /* LYSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE88793208ABAC800AA5E41 /* LYSReachability.m */; };
+		CCE8879E208ABAC800AA5E41 /* LYS_BaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE88797208ABAC800AA5E41 /* LYS_BaseObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,18 +33,18 @@
 		CC3D5C222043F1DF00C1486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC3D5C232043F1DF00C1486C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC3D5C4C2043F62B00C1486C /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../LYSKit.podspec; sourceTree = "<group>"; };
-		CC622934208A27D4000D9E1A /* LYSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSLocation.h; sourceTree = "<group>"; };
-		CC622935208A27D4000D9E1A /* LYS_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Category.h; sourceTree = "<group>"; };
-		CC622936208A27D4000D9E1A /* LYS_Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Manager.h; sourceTree = "<group>"; };
-		CC622937208A27D4000D9E1A /* LYS_BaseObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_BaseObj.h; sourceTree = "<group>"; };
-		CC622938208A27D4000D9E1A /* LYSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSReachability.m; sourceTree = "<group>"; };
-		CC622939208A27D4000D9E1A /* LYSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDefine.h; sourceTree = "<group>"; };
-		CC62293A208A27D4000D9E1A /* LYSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSLocation.m; sourceTree = "<group>"; };
-		CC62293B208A27D4000D9E1A /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
-		CC62293C208A27D4000D9E1A /* LYSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSReachability.h; sourceTree = "<group>"; };
-		CC62293D208A27D4000D9E1A /* LYS_BaseObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_BaseObj.m; sourceTree = "<group>"; };
-		CC62293E208A27D4000D9E1A /* LYS_Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Manager.m; sourceTree = "<group>"; };
-		CC62293F208A27D4000D9E1A /* LYS_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Category.m; sourceTree = "<group>"; };
+		CCE8878E208ABAC800AA5E41 /* LYS_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Category.m; sourceTree = "<group>"; };
+		CCE8878F208ABAC800AA5E41 /* LYSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSKit.h; sourceTree = "<group>"; };
+		CCE88790208ABAC800AA5E41 /* LYS_Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_Manager.m; sourceTree = "<group>"; };
+		CCE88791208ABAC800AA5E41 /* LYSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSLocation.m; sourceTree = "<group>"; };
+		CCE88792208ABAC800AA5E41 /* LYSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSReachability.h; sourceTree = "<group>"; };
+		CCE88793208ABAC800AA5E41 /* LYSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSReachability.m; sourceTree = "<group>"; };
+		CCE88794208ABAC800AA5E41 /* LYS_BaseObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_BaseObj.h; sourceTree = "<group>"; };
+		CCE88795208ABAC800AA5E41 /* LYSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSLocation.h; sourceTree = "<group>"; };
+		CCE88796208ABAC800AA5E41 /* LYS_Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Manager.h; sourceTree = "<group>"; };
+		CCE88797208ABAC800AA5E41 /* LYS_BaseObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYS_BaseObj.m; sourceTree = "<group>"; };
+		CCE88798208ABAC800AA5E41 /* LYS_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYS_Category.h; sourceTree = "<group>"; };
+		CCE88799208ABAC800AA5E41 /* LYSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,18 +95,18 @@
 		CC622933208A27D4000D9E1A /* LYSKitold */ = {
 			isa = PBXGroup;
 			children = (
-				CC622934208A27D4000D9E1A /* LYSLocation.h */,
-				CC622935208A27D4000D9E1A /* LYS_Category.h */,
-				CC622936208A27D4000D9E1A /* LYS_Manager.h */,
-				CC622937208A27D4000D9E1A /* LYS_BaseObj.h */,
-				CC622938208A27D4000D9E1A /* LYSReachability.m */,
-				CC622939208A27D4000D9E1A /* LYSDefine.h */,
-				CC62293A208A27D4000D9E1A /* LYSLocation.m */,
-				CC62293B208A27D4000D9E1A /* LYSKit.h */,
-				CC62293C208A27D4000D9E1A /* LYSReachability.h */,
-				CC62293D208A27D4000D9E1A /* LYS_BaseObj.m */,
-				CC62293E208A27D4000D9E1A /* LYS_Manager.m */,
-				CC62293F208A27D4000D9E1A /* LYS_Category.m */,
+				CCE88794208ABAC800AA5E41 /* LYS_BaseObj.h */,
+				CCE88797208ABAC800AA5E41 /* LYS_BaseObj.m */,
+				CCE88798208ABAC800AA5E41 /* LYS_Category.h */,
+				CCE8878E208ABAC800AA5E41 /* LYS_Category.m */,
+				CCE88796208ABAC800AA5E41 /* LYS_Manager.h */,
+				CCE88790208ABAC800AA5E41 /* LYS_Manager.m */,
+				CCE88799208ABAC800AA5E41 /* LYSDefine.h */,
+				CCE8878F208ABAC800AA5E41 /* LYSKit.h */,
+				CCE88795208ABAC800AA5E41 /* LYSLocation.h */,
+				CCE88791208ABAC800AA5E41 /* LYSLocation.m */,
+				CCE88792208ABAC800AA5E41 /* LYSReachability.h */,
+				CCE88793208ABAC800AA5E41 /* LYSReachability.m */,
 			);
 			name = LYSKitold;
 			path = ../../LYSKitold;
@@ -185,13 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC3D5C192043F1DF00C1486C /* ViewController.m in Sources */,
-				CC622940208A27D4000D9E1A /* LYSReachability.m in Sources */,
 				CC3D5C242043F1DF00C1486C /* main.m in Sources */,
+				CCE8879B208ABAC800AA5E41 /* LYS_Manager.m in Sources */,
+				CCE8879A208ABAC800AA5E41 /* LYS_Category.m in Sources */,
+				CCE8879D208ABAC800AA5E41 /* LYSReachability.m in Sources */,
+				CCE8879E208ABAC800AA5E41 /* LYS_BaseObj.m in Sources */,
 				CC3D5C162043F1DF00C1486C /* AppDelegate.m in Sources */,
-				CC622941208A27D4000D9E1A /* LYSLocation.m in Sources */,
-				CC622943208A27D4000D9E1A /* LYS_Manager.m in Sources */,
-				CC622944208A27D4000D9E1A /* LYS_Category.m in Sources */,
-				CC622942208A27D4000D9E1A /* LYS_BaseObj.m in Sources */,
+				CCE8879C208ABAC800AA5E41 /* LYSLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

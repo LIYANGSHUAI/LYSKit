@@ -86,8 +86,6 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2);
 
 @interface LYSDateManager : NSObject
 
-
-
 /**
  获取今天的LYDate格式
  

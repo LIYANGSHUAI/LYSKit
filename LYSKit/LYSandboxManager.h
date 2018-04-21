@@ -129,6 +129,14 @@
  @param filePath                            文件路径
  @return                                    返回文件信息
  */
++ (NSString *)ly_fileSizeForFilePath:(NSString *)filePath;
+
+/**
+ 获取文件创建时间
+
+ @param filePath                             文件路径
+ @return                                     返回时间字符串
+ */
 + (NSString *)ly_fileCreateDateForFilePath:(NSString *)filePath;
 
 /**

@@ -51,7 +51,7 @@ formatter;\
 {
     NSTimeInterval timeInterval = -[compareDate timeIntervalSinceNow];
     NSInteger time = round(timeInterval);
-    long temp = 0;
+    NSInteger temp = 0;
     NSString *result = nil;
     if (time >= 0) {
         if ((temp = time) < 60)

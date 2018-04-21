@@ -8,6 +8,7 @@
 
 #import "LYSDefineManager.h"
 #import "sys/utsname.h"
+#import "NSString+LYSCategory.h"
 
 #define DEVICEINFOINTEGRITY @{\
 \
@@ -225,7 +226,7 @@
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    return [[DEVICEINFOINTEGRITY allKeys] containsObject:platform] ? DEVICEINFOSIMPLENESS[platform] : @"未知";
+    return [[DEVICEINFOINTEGRITY allKeys] containsObject:platform] ? DEVICEINFOINTEGRITY[platform] : @"未知";
 }
 // 获取简单设备型号
 + (NSString *)ly_deviceStringSimpleness
@@ -277,7 +278,6 @@
 }
 
 #pragma mark - 版本信息判断 -
-
 // 版本之后
 + (BOOL)ly_laterIOS:(CGFloat)index
 {
@@ -291,7 +291,7 @@
 // 是否是IPhoneX
 + (BOOL)ly_isIPhoneX
 {
-    return [[self ly_deviceStringSimpleness] containsString:@"iPhone X"];
+    return [[self ly_deviceStringSimpleness] ly_containsString:@"iPhone X"];
 }
 
 #pragma mark - 获取UI -
