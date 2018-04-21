@@ -60,47 +60,47 @@ formatter;\
         } else
             if((temp = temp / 60) <60)
             {
-                result = FORMAT(@"%ld分前",temp);
+                result = FORMAT(@"%@分前",@(temp));
             } else
                 if((temp = temp / 60) <24)
                 {
-                    result = FORMAT(@"%ld小时前",temp);
+                    result = FORMAT(@"%@小时前",@(temp));
                 } else
                     if((temp = temp / 24) <30)
                     {
-                        result = FORMAT(@"%ld天前",temp);
+                        result = FORMAT(@"%@天前",@(temp));
                     } else
                         if((temp = temp / 30) <12)
                         {
-                            result = FORMAT(@"%ld个月前",temp);
+                            result = FORMAT(@"%@个月前",@(temp));
                         } else
                         {
-                            result = FORMAT(@"%ld年前",temp / 12);
+                            result = FORMAT(@"%@年前",@(temp / 12));
                         }
     } else {
         time = -time;
         if ((temp = time) < 60)
         {
-            result = FORMAT(@"%ld秒后",temp);
+            result = FORMAT(@"%@秒后",@(temp));
         } else
             if((temp = temp / 60) <60)
             {
-                result = FORMAT(@"%ld分后",temp);
+                result = FORMAT(@"%@分后",@(temp));
             } else
                 if((temp = temp / 60) <24)
                 {
-                    result = FORMAT(@"%ld小时后",temp);
+                    result = FORMAT(@"%@小时后",@(temp));
                 } else
                     if((temp = temp / 24) <30)
                     {
-                        result = FORMAT(@"%ld天后",temp);
+                        result = FORMAT(@"%@天后",@(temp));
                     } else
                         if((temp = temp / 30) <12)
                         {
-                            result = FORMAT(@"%ld个月后",temp);
+                            result = FORMAT(@"%@个月后",@(temp));
                         } else
                         {
-                            result = FORMAT(@"%ld年后",temp / 12);
+                            result = FORMAT(@"%@年后",@(temp / 12));
                         }
     }
     return  result;
