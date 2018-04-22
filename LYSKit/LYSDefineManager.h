@@ -63,7 +63,7 @@
 #define LYSLayoutHeight(A)                     [LYSDefineManager ly_layoutHeight:A]
 
 #pragma mark - 角度转换 -
-#define LYSDegreesToRadians(degrees)           [LYSDefineManager ly_degreesToRadians:degrees]
+#define LYSDegreesToRadians(A)                 [LYSDefineManager ly_degreesToRadians:A]
 
 #pragma mark - 随机数 -
 #define LYSRandom(start,end)                   [LYSDefineManager ly_randomA:start B:end]
@@ -73,7 +73,7 @@
 #define LYSFONT(A,B)                           [LYSDefineManager ly_font:A auto:B]
 
 #pragma mark - 带有透明度的RGB格式和颜色转换 -
-#define LYSRGBA(r,g,b,a)                       [LYSDefineManager ly_rgbaR:r g:g b:b a:a]
+#define LYSRGBA(red,green,blue,alpha)          [LYSDefineManager ly_rgbaR:red g:green b:blue a:alpha]
 
 #pragma mark - 透明度默认是1.0的RGB格式和颜色转换 -
 #define LYSRGB(r,g,b)                          LYSRGBA(r,g,b,1.0f)
@@ -101,8 +101,8 @@
 #define LYSBorderColor                         LYSRGB(187,187,187)
 
 #pragma mark - 对循环引用的解决办法 -
-#define LYSWeakSelf(type)  __weak typeof(type) weak##type = type;
-#define LYStrongSelf(type)  __strong typeof(type) type = weak##type;
+#define LYSWeakSelf(TYPE)  __weak typeof(TYPE) weak##TYPE = TYPE;
+#define LYStrongSelf(TYPE)  __strong typeof(TYPE) TYPE = weak##TYPE;
 
 #pragma mark - 改写打印函数,使其在特定的条件下执行 -
 #ifdef DEBUG
