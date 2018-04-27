@@ -9,16 +9,29 @@
 #import "ViewController.h"
 #import "LYSKit.h"
 
-@interface ViewController ()
+@interface ViewController ()<LYSLocationDelegate>
+
 
 @end
 
 @implementation ViewController
-
+{
+    LYSLocation *location;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    location = [[LYSLocation alloc] init];
+    location.delegate = self;
+    [location startLocation];
+}
 
+- (void)location:(LYSLocation *)mlocation didUpdateLocation:(CLLocation *)location{
+    NSLog(@"%@",location);
+}
+
+- (void)location:(LYSLocation *)mlocation didFailLocation:(NSError *)error {
     
 }
 

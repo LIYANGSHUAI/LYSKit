@@ -7,13 +7,14 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LYSKit.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+LYSOrientationAndDefaultOrientation(LYSupportedOrientationMaskPortrait)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

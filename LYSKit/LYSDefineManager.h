@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
 
 #pragma mark - 获取完整设备型号 -  iPhone 6s
 #define LYSDeviceStringIntegrity               [LYSDefineManager ly_deviceStringIntegrity]
