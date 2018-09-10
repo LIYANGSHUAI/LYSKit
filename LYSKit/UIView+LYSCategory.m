@@ -8,6 +8,8 @@
 
 #import "UIView+LYSCategory.h"
 #import <objc/runtime.h>
+#import "UIImage+LYSCategory.h"
+#import "UIView+LYSFrame.h"
 
 @implementation UIView (LYSCategory)
 - (NSMutableArray *)ly_getTopSubViews
@@ -159,6 +161,72 @@
 {
     id tapGesture = objc_getAssociatedObject(self, @"LYS_tapGesture");
     ((void(^)(UITapGestureRecognizer *sender,UIView *view))tapGesture)(sender,self);
+}
+
+- (UIView *)ly_addBorderLineWithColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth type:(BorderLineType)type
+{
+    UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage ly_imageWithColor:lineColor alpha:1]];
+    
+    if (type == BorderLineTypeTop) {
+        line.frame = CGRectMake(0, 0, self.ly_width, lineWidth);
+    } else if (type == BorderLineTypeLeft) {
+        line.frame = CGRectMake(0, 0, lineWidth, self.ly_height);
+    } else if (type == BorderLineTypeRight) {
+        line.frame = CGRectMake(self.ly_width-lineWidth, 0, lineWidth, self.ly_height);
+    } else if (type == BorderLineTypeBottom) {
+        line.frame = CGRectMake(0, self.ly_height-lineWidth, self.ly_width, lineWidth);
+    }
+    [self addSubview:line];
+    return line;
+}
+- (UITapGestureRecognizer *)ly_addTapGetsureWithTarget:(id)target action:(SEL)action
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:tap];
+    self.userInteractionEnabled = YES;
+    return tap;
+}
+- (UITapGestureRecognizer *)ly_addTapGetsureWithBlock:(void(^)(UITapGestureRecognizer *sender))block
+{
+    objc_setAssociatedObject(self, @"tapAction", block, OBJC_ASSOCIATION_COPY);
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+    [self addGestureRecognizer:tap];
+    self.userInteractionEnabled = YES;
+    return tap;
+}
+- (void)tapAction:(UITapGestureRecognizer *)sender
+{
+    id block = objc_getAssociatedObject(self, @"tapAction");
+    ((void(^)(UITapGestureRecognizer *sender))block)(sender);
+}
+- (void)ly_removeAllSubViews
+{
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+}
++ (UIView *)ly_createArcWithRadius:(CGFloat)radius color:(UIColor *)color
+{
+    UIView *view = [[UIView alloc] init];
+    view.frame = CGRectMake(0, 0, radius * 2, radius * 2);
+    view.backgroundColor = color;
+    view.layer.cornerRadius = radius;
+    view.layer.masksToBounds = YES;
+    return view;
+}
++ (UIImageView *)ly_createArcWithRadius:(CGFloat)radius color:(UIColor *)color image:(UIImage *)image
+{
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage ly_imageWithColor:color alpha:1]];
+    imageView.frame = CGRectMake(0, 0, radius * 2, radius * 2);
+    imageView.layer.cornerRadius = radius;
+    imageView.layer.masksToBounds = YES;
+    
+    UIImageView *subImg = [[UIImageView alloc] initWithImage:image];
+    subImg.frame = CGRectMake(0, 0, radius, radius);
+    subImg.center = imageView.ly_interiorCenter;
+    [imageView addSubview:subImg];
+    
+    return imageView;
 }
 
 @end

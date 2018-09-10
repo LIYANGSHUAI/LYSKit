@@ -67,6 +67,18 @@
     
     NSLog(@"%d",LYSRandom(0, 10));
     NSLog(@"%d",LYSRandom_uniform(10, 20));
+    
+    NSLog(@"%d",LYSISIPhone_X);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self ly_alertTitle:@"提示" message:@"输入框" textfieldPlaceholder:@[@"用户名",@"密码"] actionTitles:@[@"取消",@"确定"] clickWithFieldAction:^(NSInteger index, NSArray<UITextField *> *textFields) {
+        NSLog(@"%@",textFields[0].text);
+        NSLog(@"%@",textFields[1].text);
+    } cancelStr:@"取消" cancelAction:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

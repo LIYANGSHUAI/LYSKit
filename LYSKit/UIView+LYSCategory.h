@@ -21,6 +21,13 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
     LYSQHLDirectionVertical
 };
 
+typedef NS_ENUM(NSUInteger, BorderLineType) {
+    BorderLineTypeLeft,
+    BorderLineTypeTop,
+    BorderLineTypeRight,
+    BorderLineTypeBottom
+};
+
 @interface UIView (LYSCategory)
 /**
  获取某个view的叶子View(一般为Window)
@@ -91,4 +98,15 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
  */
 - (void)ly_tapGesture:(void(^)(UITapGestureRecognizer *sender,UIView *view))tapGesture tapNum:(NSInteger)tapNum touchNum:(NSInteger)touchNum;
 
+/// 给视图添加边框线
+- (UIView *)ly_addBorderLineWithColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth type:(BorderLineType)type;
+/// 添加点击事件
+- (UITapGestureRecognizer *)ly_addTapGetsureWithTarget:(id)target action:(SEL)action;
+- (UITapGestureRecognizer *)ly_addTapGetsureWithBlock:(void(^)(UITapGestureRecognizer *sender))block;
+/// 移除所有子视图
+- (void)ly_removeAllSubViews;
+
+// 创建圆
++ (UIView *)ly_createArcWithRadius:(CGFloat)radius color:(UIColor *)color;
++ (UIImageView *)ly_createArcWithRadius:(CGFloat)radius color:(UIColor *)color image:(UIImage *)image;
 @end

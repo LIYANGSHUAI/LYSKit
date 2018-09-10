@@ -188,6 +188,18 @@
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 
+- (void)ly_alertTitle:(NSString *)title message:(NSString *)message textfieldPlaceholder:(NSArray<NSString *> *)placeholders actionTitles:(NSArray<NSString *> *)actionTitles clickWithFieldAction:(void(^)(NSInteger index,NSArray<UITextField *> *textFields))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void(^)(void))cancelAction
+{
+    UIAlertController *alertVC = [UIViewController alertWithTitle:title
+                                                          message:message
+                                             textfieldPlaceholder:placeholders
+                                                     actionTitles:actionTitles
+                                             clickWithFieldAction:clickAction
+                                                        cancelStr:cancelStr
+                                                     cancelAction:cancelAction];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
+
 + (void)ly_alertTitle:(NSString *)title
               message:(NSString *)message
  textfieldPlaceholder:(NSArray<NSString *> *)placeholders
@@ -204,6 +216,64 @@
                                             cancelStr:cancelStr
                                          cancelAction:cancelAction];
     [[self ly_getOuterViewController] presentViewController:alertVC animated:YES completion:nil];
+}
+
++ (void)ly_alertTitle:(NSString *)title message:(NSString *)message textfieldPlaceholder:(NSArray<NSString *> *)placeholders actionTitles:(NSArray<NSString *> *)actionTitles clickWithFieldAction:(void(^)(NSInteger index,NSArray<UITextField *> *textFields))clickAction cancelStr:(NSString *)cancelStr cancelAction:(void(^)(void))cancelAction
+{
+    UIAlertController *alertVC = [self alertWithTitle:title
+                                              message:message
+                                 textfieldPlaceholder:placeholders
+                                         actionTitles:actionTitles
+                                 clickWithFieldAction:clickAction
+                                            cancelStr:cancelStr
+                                         cancelAction:cancelAction];
+    [[self ly_getOuterViewController] presentViewController:alertVC animated:YES completion:nil];
+}
+
++ (UIAlertController *)alertWithTitle:(NSString *)title
+                              message:(NSString *)message
+                 textfieldPlaceholder:(NSArray<NSString *> *)placeholders
+                         actionTitles:(NSArray<NSString *> *)actionTitles
+                 clickWithFieldAction:(void(^)(NSInteger index,NSArray<UITextField *> *textFields))clickAction
+                            cancelStr:(NSString *)cancelStr
+                         cancelAction:(void(^)(void))cancelAction
+{
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    if (placeholders)
+    {
+        for (NSString *str in placeholders)
+        {
+            [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                textField.placeholder = str;
+            }];
+        }
+    }
+    if (actionTitles)
+    {
+        for (int i = 0;i < actionTitles.count;i++)
+        {
+            UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitles[i]
+                                                             style:(UIAlertActionStyleDefault)
+                                                           handler:^(UIAlertAction * _Nonnull action)
+                                     {
+                                         if (clickAction) { clickAction(i,alertVC.textFields);}
+                                     }
+                                     ];
+            [alertVC addAction:action];
+        }
+    }
+    if (cancelStr)
+    {
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:cancelStr
+                                                         style:(UIAlertActionStyleCancel)
+                                                       handler:^(UIAlertAction * _Nonnull action)
+                                 {
+                                     if (cancelAction) { cancelAction();}
+                                 }
+                                 ];
+        [alertVC addAction:cancel];
+    }
+    return alertVC;
 }
 
 + (UIAlertController *)alertWithTitle:(NSString *)title
@@ -290,6 +360,5 @@
     }
     return alertVC;
 }
-
 
 @end

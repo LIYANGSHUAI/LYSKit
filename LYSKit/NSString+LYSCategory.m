@@ -22,6 +22,11 @@
     return [NSJSONSerialization JSONObjectWithData:[self ly_toData] options:(NSJSONReadingAllowFragments) error:nil];
 }
 
+- (NSDictionary *)ly_toArray
+{
+    return [NSJSONSerialization JSONObjectWithData:[self ly_toData] options:(NSJSONReadingAllowFragments) error:nil];
+}
+
 - (NSString *)ly_stringClearWhitespaceAndNewLine
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

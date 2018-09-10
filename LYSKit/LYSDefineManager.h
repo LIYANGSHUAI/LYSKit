@@ -42,8 +42,6 @@
 #pragma mark - 版本的判断 -
 #define LYSLaterIOS(A)                         [LYSDefineManager ly_laterIOS:A]
 #define LYSBeforeIOS(A)                        [LYSDefineManager ly_beforeIOS:A]
-#define LYSISIPhone_X                          [LYSDefineManager ly_systemVersion]
-
 
 #pragma mark - 获取当前运行的应用程序 -
 #define LYSApplication                         [LYSDefineManager ly_application]
@@ -56,6 +54,15 @@
 
 #pragma mark - 获取当前手机屏幕尺寸 -
 #define LYScreenSize                           [LYSDefineManager ly_screenSize]
+
+/// IPHONE_X判断
+#define LYSISIPhone_X ((LYScreenSize.height == 812.0f) ? YES : NO)
+
+/// 状态栏高度
+#define LYSSTATUSBARHEIGHT (IS_IPHONE_X ? 44 : 20)
+
+/// 底部边距
+#define LYSTABBARBOTTOMHEIGHT (IS_IPHONE_X ? 34 : 0)
 
 #pragma mark - 屏幕适配,以6s屏幕大小为基准 -
 #define LYSAdaptation_H                        [LYSDefineManager ly_adaptation_H]

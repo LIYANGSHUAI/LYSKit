@@ -32,6 +32,13 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
 - (NSDictionary *)ly_toDictionary;
 
 /**
+ 将字符串类型转换为数组类型
+ 
+ @return                                    数组格式
+ */
+- (NSDictionary *)ly_toArray;
+
+/**
  去掉字符串结尾换行和空格
  
  @return                                    返回转换后的字符串
