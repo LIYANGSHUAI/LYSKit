@@ -59,10 +59,10 @@
 #define LYSISIPhone_X ((LYScreenSize.height == 812.0f) ? YES : NO)
 
 /// 状态栏高度
-#define LYSSTATUSBARHEIGHT (IS_IPHONE_X ? 44 : 20)
+#define LYSSTATUSBARHEIGHT (LYSISIPhone_X ? 44 : 20)
 
 /// 底部边距
-#define LYSTABBARBOTTOMHEIGHT (IS_IPHONE_X ? 34 : 0)
+#define LYSTABBARBOTTOMHEIGHT (LYSISIPhone_X ? 34 : 0)
 
 #pragma mark - 屏幕适配,以6s屏幕大小为基准 -
 #define LYSAdaptation_H                        [LYSDefineManager ly_adaptation_H]
