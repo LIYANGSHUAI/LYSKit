@@ -163,17 +163,17 @@
     ((void(^)(UITapGestureRecognizer *sender,UIView *view))tapGesture)(sender,self);
 }
 
-- (UIView *)ly_addBorderLineWithColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth type:(BorderLineType)type
+- (UIView *)ly_addBorderLineWithColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth type:(LYSBorderLineType)type
 {
     UIImageView *line = [[UIImageView alloc] initWithImage:[UIImage ly_imageWithColor:lineColor alpha:1]];
     
-    if (type == BorderLineTypeTop) {
+    if (type == LYSBorderLineTypeTop) {
         line.frame = CGRectMake(0, 0, self.ly_width, lineWidth);
-    } else if (type == BorderLineTypeLeft) {
+    } else if (type == LYSBorderLineTypeLeft) {
         line.frame = CGRectMake(0, 0, lineWidth, self.ly_height);
-    } else if (type == BorderLineTypeRight) {
+    } else if (type == LYSBorderLineTypeRight) {
         line.frame = CGRectMake(self.ly_width-lineWidth, 0, lineWidth, self.ly_height);
-    } else if (type == BorderLineTypeBottom) {
+    } else if (type == LYSBorderLineTypeBottom) {
         line.frame = CGRectMake(0, self.ly_height-lineWidth, self.ly_width, lineWidth);
     }
     [self addSubview:line];

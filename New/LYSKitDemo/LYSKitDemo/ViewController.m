@@ -69,6 +69,9 @@
     NSLog(@"%d",LYSRandom_uniform(10, 20));
     
     NSLog(@"%d",LYSISIPhone_X);
+    
+    NSLog(@"%@",LYSStringFormat(@"%@/%@",@"11",@"00"));
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

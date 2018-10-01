@@ -21,11 +21,11 @@ typedef NS_ENUM(NSInteger, LYSQHLDirection) {
     LYSQHLDirectionVertical
 };
 
-typedef NS_ENUM(NSUInteger, BorderLineType) {
-    BorderLineTypeLeft,
-    BorderLineTypeTop,
-    BorderLineTypeRight,
-    BorderLineTypeBottom
+typedef NS_ENUM(NSUInteger, LYSBorderLineType) {
+    LYSBorderLineTypeLeft,
+    LYSBorderLineTypeTop,
+    LYSBorderLineTypeRight,
+    LYSBorderLineTypeBottom
 };
 
 @interface UIView (LYSCategory)
@@ -99,7 +99,7 @@ typedef NS_ENUM(NSUInteger, BorderLineType) {
 - (void)ly_tapGesture:(void(^)(UITapGestureRecognizer *sender,UIView *view))tapGesture tapNum:(NSInteger)tapNum touchNum:(NSInteger)touchNum;
 
 /// 给视图添加边框线
-- (UIView *)ly_addBorderLineWithColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth type:(BorderLineType)type;
+- (UIView *)ly_addBorderLineWithColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth type:(LYSBorderLineType)type;
 /// 添加点击事件
 - (UITapGestureRecognizer *)ly_addTapGetsureWithTarget:(id)target action:(SEL)action;
 - (UITapGestureRecognizer *)ly_addTapGetsureWithBlock:(void(^)(UITapGestureRecognizer *sender))block;

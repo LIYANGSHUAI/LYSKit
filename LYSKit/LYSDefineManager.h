@@ -112,6 +112,9 @@
 #define LYSWeakSelf(TYPE)  __weak typeof(TYPE) weak##TYPE = TYPE;
 #define LYStrongSelf(TYPE)  __strong typeof(TYPE) TYPE = weak##TYPE;
 
+#pragma mark - 快速拼接字符串 -
+#define LYSStringFormat(...) [NSString stringWithFormat:__VA_ARGS__]
+
 #pragma mark - 改写打印函数,使其在特定的条件下执行 -
 #ifdef DEBUG
 #define LYSNSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
