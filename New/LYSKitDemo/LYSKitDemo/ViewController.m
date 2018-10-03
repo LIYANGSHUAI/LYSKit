@@ -72,6 +72,14 @@
     
     NSLog(@"%@",LYSStringFormat(@"%@/%@",@"11",@"00"));
     
+    NSLog(@"%ld",[LYSDateManager ly_WeekDayForDate:[NSDate date]]);
+    
+    
+    NSLog(@"%@",[[NSDate date] ly_monthBeginDate]);
+    NSLog(@"%@",[[NSDate date] ly_monthEndDate]);
+    
+    NSLog(@"%@",[[NSDate date] ly_yearBeginDate]);
+    NSLog(@"%@",[[NSDate date] ly_yearEndDate]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

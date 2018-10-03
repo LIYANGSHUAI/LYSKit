@@ -120,7 +120,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2){
     NSInteger index = 0;
     NSCalendar *calendar = [NSCalendar currentCalendar];
     [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:8]];
-    [calendar setLocale:[NSLocale currentLocale]];
+    calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     switch ([calendar component:(NSCalendarUnitWeekday) fromDate:date]) {
         case 1:
             index = 7;
@@ -151,7 +151,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2){
 
 + (NSInteger)ly_DayNumForDate:(NSDate *)date{
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar setLocale:[NSLocale currentLocale]];
+    calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:8]];
     NSRange range = [calendar rangeOfUnit:(NSCalendarUnitDay) inUnit:(NSCalendarUnitMonth) forDate:date];
     return range.length;
@@ -178,7 +178,7 @@ NSInteger ly_CompareDate(LYDate date1,LYDate date2){
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:8]];
     NSString *dateStr = [NSString stringWithFormat:@"%ld-%@-%@ %@:%@:%@",(long)date.y,[self compareNum:date.m],[self compareNum:date.d],[self compareNum:date.h],[self compareNum:date.f],[self compareNum:date.s]];
     return [dateFormatter dateFromString:dateStr];

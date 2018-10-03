@@ -103,4 +103,29 @@ extern NSString *const lyDateFormatterOptionTime;
  */
 + (NSDate *)ly_dateYesterday;
 
+/**
+ 获取这个月的第一天 00:00:00
+
+ @return 返回第一天
+ */
+- (NSDate *)ly_monthBeginDate;
+
+/**
+ 获取这个月的最后一天 23:59:59
+ 
+ @return 返回最后一天
+ */
+- (NSDate *)ly_monthEndDate;
+/**
+ 获取这一年的第一天 00:00:00
+ 
+ @return 返回第一天
+ */
+- (NSDate *)ly_yearBeginDate;
+/**
+ 获取这一年最后一天 23:59:59
+ 
+ @return 返回最后一天
+ */
+- (NSDate *)ly_yearEndDate;
 @end

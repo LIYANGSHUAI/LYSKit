@@ -120,4 +120,64 @@ formatter;\
 {
     return [self ly_dateSincleNow:-24 * 3600];
 }
+- (NSDate *)ly_monthBeginDate
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    // 话说在真机上需要设置区域，才能正确获取本地日期，天朝代码:zh_CN
+    calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    NSDateComponents *comps = [calendar components:unitFlags fromDate:self];
+    [comps setDay:1];
+    [comps setHour:0];
+    [comps setMinute:0];
+    [comps setSecond:0];
+    return [calendar dateFromComponents:comps];
+}
+- (NSDate *)ly_monthEndDate
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    // 话说在真机上需要设置区域，才能正确获取本地日期，天朝代码:zh_CN
+    calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    NSDateComponents *comps = [calendar components:unitFlags fromDate:self];
+    NSRange range = [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
+    [comps setDay:range.length];
+    [comps setHour:23];
+    [comps setMinute:59];
+    [comps setSecond:59];
+    return [calendar dateFromComponents:comps];
+}
+- (NSDate *)ly_yearBeginDate
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    // 话说在真机上需要设置区域，才能正确获取本地日期，天朝代码:zh_CN
+    calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    NSDateComponents *comps = [calendar components:unitFlags fromDate:self];
+    [comps setMonth:1];
+    [comps setDay:1];
+    [comps setHour:0];
+    [comps setMinute:0];
+    [comps setSecond:0];
+    return [calendar dateFromComponents:comps];
+}
+- (NSDate *)ly_yearEndDate
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    // 话说在真机上需要设置区域，才能正确获取本地日期，天朝代码:zh_CN
+    calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    NSDateComponents *comps = [calendar components:unitFlags fromDate:self];
+    [comps setMonth:12];
+    [comps setDay:1];
+    [comps setHour:0];
+    [comps setMinute:0];
+    [comps setSecond:0];
+    NSDate *date = [calendar dateFromComponents:comps];
+    return [date ly_monthEndDate];
+}
 @end
