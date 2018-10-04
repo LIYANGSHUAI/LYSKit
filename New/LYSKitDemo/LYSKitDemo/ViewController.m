@@ -80,6 +80,11 @@
     
     NSLog(@"%@",[[NSDate date] ly_yearBeginDate]);
     NSLog(@"%@",[[NSDate date] ly_yearEndDate]);
+    
+    NSDate *date = [NSDate ly_dateWithString:@"20180801" formatter:@"yyyyMMdd"];
+    
+    NSLog(@"%@",[date ly_weakDayBeginDateCrossMonth:NO]);
+    NSLog(@"%@",[date ly_weakDayEndDateCrossMonth:NO]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

@@ -128,4 +128,30 @@ extern NSString *const lyDateFormatterOptionTime;
  @return 返回最后一天
  */
 - (NSDate *)ly_yearEndDate;
+/**
+ 获取今天开始时间 00:00:00
+ 
+ @return 返回今天开始时间
+ */
+- (NSDate *)ly_dayBeginDate;
+/**
+ 获取今天结束时间 23:59:59
+ 
+ @return 返回今天结束时间
+ */
+- (NSDate *)ly_dayEndDate;
+/**
+ 获取本周第一天 00:00:00
+ 
+ @param crossMonth                        是否跨月
+ @return 返回本周y第一天
+ */
+- (NSDate *)ly_weakDayBeginDateCrossMonth:(BOOL)crossMonth;
+/**
+ 获取本周最后一天 23:59:59
+ 
+ @param crossMonth                        是否跨月
+ @return 返回本周最后一天
+ */
+- (NSDate *)ly_weakDayEndDateCrossMonth:(BOOL)crossMonth;
 @end
