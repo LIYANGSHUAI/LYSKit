@@ -27,4 +27,5 @@
 #import "LYSandboxManager.h"
 #import "LYSAPPDelegateManager.h"
 #import "LYSDateManager.h"
+#import "LYSCodeManager.h"
 #endif /* LYSKit_h */

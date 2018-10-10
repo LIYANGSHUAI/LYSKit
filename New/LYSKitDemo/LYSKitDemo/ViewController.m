@@ -85,6 +85,14 @@
     
     NSLog(@"%@",[date ly_weakDayBeginDateCrossMonth:NO]);
     NSLog(@"%@",[date ly_weakDayEndDateCrossMonth:NO]);
+    
+    NSLog(@"%@",[LYSCodeManager ly_matchingPropertyWithDict:@{
+                                                               @"name": @"11",
+                                                               @"age": @(23),
+                                                               @"firends": @[],
+                                                               @"girlds": @{}
+                                                               }]);
+ 
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
