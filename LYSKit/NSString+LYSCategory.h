@@ -106,4 +106,11 @@ typedef NS_ENUM(NSUInteger, LYSTelephoneNumber) {
  @return                                   返回判断结果
  */
 - (BOOL)ly_containsString:(NSString *)str;
+
+/**
+ base64字符串转UIImage
+
+ @return 转换之后的图片
+ */
+- (UIImage *)decodeBase64ToImg;
 @end

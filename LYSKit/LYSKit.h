@@ -28,4 +28,6 @@
 #import "LYSAPPDelegateManager.h"
 #import "LYSDateManager.h"
 #import "LYSCodeManager.h"
+#import "LYSEncryptManager.h"
+
 #endif /* LYSKit_h */

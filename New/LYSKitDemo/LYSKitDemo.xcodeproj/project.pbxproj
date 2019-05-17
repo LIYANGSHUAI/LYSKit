@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5BE0E4228E545C000795A1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC5BE0E3228E545C000795A1 /* README.md */; };
 		CC622946208A27F5000D9E1A /* LYSKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC622945208A27F4000D9E1A /* LYSKit.podspec */; };
 		CC622968208A29AF000D9E1A /* LYSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62294A208A29AD000D9E1A /* LYSDateManager.m */; };
 		CC622969208A29AF000D9E1A /* LYSKeyedArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62294C208A29AD000D9E1A /* LYSKeyedArchiverManager.m */; };
@@ -26,6 +27,7 @@
 		CC622977208A29AF000D9E1A /* LYSRuntimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622967208A29AF000D9E1A /* LYSRuntimeManager.m */; };
 		CC67B593213E5F77002442B0 /* NSArray+LYSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC67B592213E5F77002442B0 /* NSArray+LYSCategory.m */; };
 		CC67B596213E628F002442B0 /* UIView+LYSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CC67B595213E628F002442B0 /* UIView+LYSFrame.m */; };
+		CC8AA9E5228BABC600DAD2A3 /* LYSEncryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8AA9E4228BABC600DAD2A3 /* LYSEncryptManager.m */; };
 		CCABE446216D877C00A4D3B0 /* LYSCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCABE445216D877C00A4D3B0 /* LYSCodeManager.m */; };
 		CCC90D912089B0BF00CA4F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC90D902089B0BF00CA4F8E /* AppDelegate.m */; };
 		CCC90D942089B0BF00CA4F8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC90D932089B0BF00CA4F8E /* ViewController.m */; };
@@ -55,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC5BE0E3228E545C000795A1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 		CC622945208A27F4000D9E1A /* LYSKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYSKit.podspec; path = ../../../LYSKit.podspec; sourceTree = "<group>"; };
 		CC622947208A29AD000D9E1A /* LYSAPPDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSAPPDelegateManager.h; sourceTree = "<group>"; };
 		CC622948208A29AD000D9E1A /* LYSDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDateManager.h; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 		CC67B592213E5F77002442B0 /* NSArray+LYSCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LYSCategory.m"; sourceTree = "<group>"; };
 		CC67B594213E628F002442B0 /* UIView+LYSFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYSFrame.h"; sourceTree = "<group>"; };
 		CC67B595213E628F002442B0 /* UIView+LYSFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYSFrame.m"; sourceTree = "<group>"; };
+		CC8AA9E3228BABC600DAD2A3 /* LYSEncryptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSEncryptManager.h; sourceTree = "<group>"; };
+		CC8AA9E4228BABC600DAD2A3 /* LYSEncryptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSEncryptManager.m; sourceTree = "<group>"; };
 		CCABE444216D877C00A4D3B0 /* LYSCodeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSCodeManager.h; sourceTree = "<group>"; };
 		CCABE445216D877C00A4D3B0 /* LYSCodeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSCodeManager.m; sourceTree = "<group>"; };
 		CCC90D8C2089B0BF00CA4F8E /* LYSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +185,8 @@
 				CC62294E208A29AD000D9E1A /* UIViewController+LYSCategory.m */,
 				CCABE444216D877C00A4D3B0 /* LYSCodeManager.h */,
 				CCABE445216D877C00A4D3B0 /* LYSCodeManager.m */,
+				CC8AA9E3228BABC600DAD2A3 /* LYSEncryptManager.h */,
+				CC8AA9E4228BABC600DAD2A3 /* LYSEncryptManager.m */,
 			);
 			name = LYSKit;
 			path = ../../../LYSKit;
@@ -209,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				CC622945208A27F4000D9E1A /* LYSKit.podspec */,
+				CC5BE0E3228E545C000795A1 /* README.md */,
 				CC622901208A27B3000D9E1A /* LYSKit */,
 				CCC90D8F2089B0BF00CA4F8E /* AppDelegate.h */,
 				CCC90D902089B0BF00CA4F8E /* AppDelegate.m */,
@@ -346,6 +354,7 @@
 			files = (
 				CCC90D9C2089B0C000CA4F8E /* LaunchScreen.storyboard in Resources */,
 				CCC90D992089B0C000CA4F8E /* Assets.xcassets in Resources */,
+				CC5BE0E4228E545C000795A1 /* README.md in Resources */,
 				CC622946208A27F5000D9E1A /* LYSKit.podspec in Resources */,
 				CCC90D972089B0BF00CA4F8E /* Main.storyboard in Resources */,
 			);
@@ -372,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8AA9E5228BABC600DAD2A3 /* LYSEncryptManager.m in Sources */,
 				CC622976208A29AF000D9E1A /* UITabBar+LYSCategory.m in Sources */,
 				CC62296D208A29AF000D9E1A /* UIView+LYSCategory.m in Sources */,
 				CC622968208A29AF000D9E1A /* LYSDateManager.m in Sources */,

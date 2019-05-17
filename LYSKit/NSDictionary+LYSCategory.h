@@ -24,4 +24,11 @@
  */
 - (NSString *)ly_toString;
 
+/**
+ 判断字典里面是否包含key
+
+ @param key key
+ @return 返回判断结果
+ */
+- (BOOL)ly_containWithKey:(NSString *)key;
 @end

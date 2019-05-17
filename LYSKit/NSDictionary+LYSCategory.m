@@ -15,10 +15,17 @@
                                            options:(NSJSONWritingPrettyPrinted)
                                              error:nil];
 }
-
 - (NSString *)ly_toString
 {
     return [[NSString alloc] initWithData:[self ly_toData]
                                  encoding:NSUTF8StringEncoding];
+}
+- (BOOL)ly_containWithKey:(NSString *)key
+{
+    if ([[self allKeys] containsObject:key]) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 @end

@@ -43,4 +43,11 @@
  @return                                    压缩后的图片
  */
 - (NSData *)ly_compressionImageWithMaxWidth:(CGFloat)maxWidth limitSize:(NSInteger)limitSize;
+
+/**
+ 图片转base64字符串
+
+ @return 编码后的字符串
+ */
+- (NSString *)encodeToBase64String;
 @end

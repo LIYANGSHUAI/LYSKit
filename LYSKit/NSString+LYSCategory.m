@@ -137,4 +137,9 @@
         return [self rangeOfString:str].length > 0;
     }
 }
+- (UIImage *)decodeBase64ToImg
+{
+    NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [UIImage imageWithData:data];
+}
 @end
