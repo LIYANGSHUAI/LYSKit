@@ -21,7 +21,7 @@
 /**
  获取沙盒路径
  
- @return                                    返回沙盒路径
+ @return                                    返回沙盒路径˜
  */
 + (NSString *)ly_sandboxPathForHomeDirectory;
 

@@ -122,6 +122,9 @@ static NSString *const AES_IV_PARAMETER = @"偏移量";
     NSLog(@"DES ECB模式解密: %@",[LYSEncryptManager ly_DES_ECB_128_DecryptString:bastStr3 key:@"asiainfo.aiecs"]);
     
     NSLog(@"sha1 加密: %@", [LYSEncryptManager ly_sha1EncryptString:@"1234@qwer"]);
+    
+    
+    [self.view ly_addTapGetsureWithTarget:<#(id)#> action:<#(SEL)#>]
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
